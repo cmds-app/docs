@@ -1,0 +1,18 @@
+:root {
+  --md-primary-fg-color: #005A9C;
+  --md-primary-fg-color--light: #1A70B0;
+  --md-primary-fg-color--dark: #00416F;
+}
+
+.md-nav__link:is(:hover, :focus),
+.md-nav__link:is(:hover, :focus) .md-ellipsis {
+  color: #00416F;
+}
+
+.md-nav--primary a.md-nav__link {
+  padding-left: 0.75rem;
+}
+
+.md-content__inner {
+  padding-bottom: 3rem;
+}
