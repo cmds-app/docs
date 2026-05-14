@@ -53,4 +53,4 @@ Contribution guidelines live in [cmds-app/.github](https://github.com/cmds-app/.
 
 ## License
 
-_To be completed._
+[MIT](LICENSE)
