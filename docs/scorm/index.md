@@ -5,9 +5,9 @@ Welcome! If you deliver online training through CMDS, SCORM is probably part of 
 This section walks you through it all:
 
 - **New to SCORM?** Start with the short [What is SCORM?](#what-is-scorm) below for a plain-language overview.
-- **Need a definition?** The [Glossary](glossary.md) explains the terms you'll come across.
-- **Wondering which version to use?** See [Versions](versions.md) for a quick comparison of SCORM 1.2, SCORM 2004, xAPI, and friends.
-- **Ready to add a course?** Follow the step-by-step walkthrough in [Tutorials](tutorials.md).
+- **Need a definition?** The [glossary](glossary.md) explains the terms you'll come across.
+- **Wondering which version to use?** See [versions](versions.md) for a quick comparison of SCORM 1.2, SCORM 2004, xAPI, and friends.
+- **Ready to add a course?** Follow the step-by-step walkthrough in [tutorials](tutorials.md).
 
 ## What is SCORM?
 

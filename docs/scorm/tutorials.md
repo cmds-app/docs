@@ -1,8 +1,8 @@
 # Adding SCORM content to a course
 
-Step-by-step instructions to add a SCORM package to a course activity.
+Adding a SCORM package to a course activity in CMDS is a simple process.
 
-Adding a SCORM package to a course in CMDS is a simple process.
+Here are the step-by-step instructions.
 
 ## Step 1
 
