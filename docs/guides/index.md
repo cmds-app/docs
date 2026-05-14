@@ -7,25 +7,35 @@ Pick the guide that matches what you're trying to do.
 ## I want to...
 
 **Use CMDS day-to-day** — complete my assigned training, self-assess on competencies, see my progress, or work through an e-learning module.
-→ [Learner guide](user/learner.md)
+→ [Learning guide](learning.md)
 
 **Review or sign off on someone else's work** — validate submitted competencies and approve learners' progress.
-→ [Validator guide](user/validator.md)
+→ [Validation guide](validation.md)
 
 **Set up and manage CMDS for my organization** — configure settings, manage users, run reports, and handle administration tasks.
-→ [Administrator guide](user/administrator.md)
+→ [Administration guide](administration.md)
 
-**Deliver an orientation or issue a certificate** — run an orientation session and manage completion certificates.
-→ [Orientations and certificates](orientation/orientations-and-certificates.md)
+**Complete a site orientation** — register for My Orientations, complete required orientations, and access your certificates.
+→ [Orientation guide](orientation.md)
+
+**Upload a safety certificate** — self-declare a Time-Sensitive Safety Certificate in Skills Passport.
+→ [Certification guide](certification.md)
 
 **Find a course and register** — browse what's available in your learning catalogue and sign up for online learning or classroom training.
-→ [Keyera learning catalogue and registration quick reference](registration/learning-catalogue-and-registration.md)
+→ [Registration guide](registration.md)
+
+**Understand CMDS terms and structure** — learn how Organizations, Departments, Profiles, Programs, Competencies, and Achievements relate.
+→ [Terminology and hierarchy](terminology.md)
 
 ## All sections
 
-- **User guides** — [Learner](user/learner.md), [Validator](user/validator.md), and [Administrator](user/administrator.md).
-- **Orientation guides** — [Orientations and certificates](orientation/orientations-and-certificates.md).
-- **Registration guides** — [Keyera learning catalogue and registration quick reference](registration/learning-catalogue-and-registration.md).
+- **Learning** — [Learning guide](learning.md)
+- **Validation** — [Validation guide](validation.md)
+- **Administration** — [Administration guide](administration.md)
+- **Orientation** — [Orientation guide](orientation.md)
+- **Certification** — [Certification guide](certification.md)
+- **Registration** — [Registration guide](registration.md)
+- **Terminology** — [Terminology and hierarchy](terminology.md)
 
 ## Can't find what you need?
 

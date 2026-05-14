@@ -1,4 +1,4 @@
-# Versions
+# Versions of SCORM
 
 The evolution of eLearning standards: what you need to know.
 

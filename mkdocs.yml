@@ -74,14 +74,13 @@ nav:
       - Terminology: help/terminology.md
   - Guides:
       - Overview: guides/index.md
-      - User guides:
-          - Learner: guides/user/learner.md
-          - Validator: guides/user/validator.md
-          - Administrator: guides/user/administrator.md
-      - Orientation guides:
-          - Orientations and certificates: guides/orientation/orientations-and-certificates.md
-      - Registration guides:
-          - Keyera learning catalogue &amp; registration quick reference: guides/registration/learning-catalogue-and-registration.md
+      - Learning: guides/learning.md
+      - Validation: guides/validation.md
+      - Administration: guides/administration.md
+      - Orientation: guides/orientation.md
+      - Certification: guides/certification.md
+      - Registration: guides/registration.md
+      - Terminology: guides/terminology.md
   - SCORM:
       - Overview: scorm/index.md
       - Glossary: scorm/glossary.md

@@ -4,22 +4,22 @@ Welcome! This is the starting point for finding help with CMDS. Below you'll fin
 
 ## Get help
 
-- [Submit a support request](/ui/portal/support)
+- [Submit a support request](https://www.keyeracmds.com/support/)
 - [Blog posts, news, and updates](https://www.keyeracmds.com/blog)
 
 ## User guides
 
-- [Learner guide](https://hub.cmds.app/lobby/docs/guides/learner.pdf)
-- [Validator guide](https://hub.cmds.app/lobby/docs/guides/validator.pdf)
-- [Administrator guide](https://hub.cmds.app/lobby/docs/guides/administrator.pdf)
+- [Learner guide](../guides/learning.pdf)
+- [Validator guide](../guides/validation.pdf)
+- [Administrator guide](../guides/administration.pdf)
 
 ## Orientation guides
 
-- [Orientations and certificates](https://hub.cmds.app/lobby/docs/guides/orientation.pdf)
+- [Orientations and certificates](../guides/orientation.pdf)
 
 ## Registration guides
 
-- [Keyera learning catalogue & registration quick reference](https://hub.cmds.app/lobby/docs/guides/learning-catalogue-and-registration.pdf)
+- [Keyera learning catalogue & registration quick reference](../guides/registration.pdf)
 
 ## Still stuck?
 

@@ -1,4 +1,4 @@
-# SCORM in CMDS
+# Overview of SCORM in CMDS
 
 Welcome! If you deliver online training through CMDS, SCORM is probably part of your world — and the good news is that **CMDS fully supports both hosting and delivery of SCORM-packaged training content**. You can drop a SCORM course straight into a learning activity, and CMDS handles the rest: launching it for your learners, tracking their progress, and feeding completions back into your records.
 

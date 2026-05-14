@@ -1,4 +1,4 @@
-# Glossary
+# Glossary of terms for SCORM
 
 Essential terms for learning professionals working with the Shareable Content Object Reference Model.
 
