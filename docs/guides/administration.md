@@ -4,6 +4,8 @@ Created & Reviewed by the CMDS Team — <https://www.keyeracmds.com/>
 
 Last revised: January 2025
 
+[Download PDF](administration.pdf){ .md-button }
+
 ## Tasks of a CMDS Admin
 
 As a CMDS administrator, you are generally required to perform the following tasks in the system:

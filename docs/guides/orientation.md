@@ -4,6 +4,8 @@
 
 Revised: May 29, 2026
 
+[Download PDF](orientation.pdf){ .md-button }
+
 ## New Users
 
 ### Creating An Account

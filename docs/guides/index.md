@@ -37,6 +37,18 @@ Pick the guide that matches what you're trying to do.
 - **Registration** — [Registration guide](registration.md)
 - **Terminology** — [Terminology and hierarchy](terminology.md)
 
+## Download PDFs
+
+Prefer a printable copy? Download any guide as a PDF.
+
+- [Learning guide](learning.pdf)
+- [Validation guide](validation.pdf)
+- [Administration guide](administration.pdf)
+- [Orientation guide](orientation.pdf)
+- [Certification guide](certification.pdf)
+- [Registration guide](registration.pdf)
+- [Terminology and hierarchy](terminology.pdf)
+
 ## Can't find what you need?
 
 If none of the guides cover your question, our support team is here to help. Reach out any time and we'll point you in the right direction.

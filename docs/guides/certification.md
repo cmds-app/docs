@@ -1,5 +1,7 @@
 # Safety Certificate Upload User Guide
 
+[Download PDF](certification.pdf){ .md-button }
+
 ## Uploading a Safety Certificate
 
 - Login to Skills Passport (<https://www.skillspassport.com/start/>).

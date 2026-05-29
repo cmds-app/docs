@@ -1,5 +1,7 @@
 # CMDS Terminology & Hierarchy
 
+[Download PDF](terminology.pdf){ .md-button }
+
 In an **Organization**, **Learners** are assigned to **Departments** created in CMDS. Each **Department** has a set of **Profiles** and **Programs** available for assignment to its Learners. Each **Program** contains a list of **Achievements** based on premise of the Program. Each **Profile** has a set of **Competencies** that best represent the role and function of the Profile. **Competencies** have **Achievements** attached to them to fulfill the 'Knowledge' needed to safely perform a task. **Achievements** are classified by their **type**, and depending on the **Achievement Type**, a **File or Link** may be attached to be reviewed and signed-off by the Learner. Learners use their **Accounts** to complete the **Achievements** that are assigned to them.
 
 ## Hierarchy

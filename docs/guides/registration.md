@@ -1,5 +1,7 @@
 # Keyera's Learning Catalogue & Registration Guide
 
+[Download PDF](registration.pdf){ .md-button }
+
 ## Overview
 
 Keyera's Learning Catalogue in CMDS is the central resource to access and register for Keyera's learning and development offerings, including:

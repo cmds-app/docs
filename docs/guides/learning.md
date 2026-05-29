@@ -4,6 +4,8 @@ Created & Reviewed by the CMDS Team — <https://www.keyeracmds.com/>
 
 Last reviewed: January 2025
 
+[Download PDF](learning.pdf){ .md-button }
+
 ## Logging into CMDS
 
 Go to <https://www.keyeracmds.com/> and click **"Sign In"** (top right corner).
