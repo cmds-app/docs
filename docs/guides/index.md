@@ -27,15 +27,15 @@ Pick the guide that matches what you're trying to do.
 **Understand CMDS terms and structure** — learn how Organizations, Departments, Profiles, Programs, Competencies, and Achievements relate.
 → [Terminology and hierarchy](terminology.md)
 
-## All sections
+## Available guides
 
-- **Learning** — [Learning guide](learning.md)
-- **Validation** — [Validation guide](validation.md)
-- **Administration** — [Administration guide](administration.md)
-- **Orientation** — [Orientation guide](orientation.md)
-- **Certification** — [Certification guide](certification.md)
-- **Registration** — [Registration guide](registration.md)
-- **Terminology** — [Terminology and hierarchy](terminology.md)
+- [Learning](learning.md)
+- [Validation](validation.md)
+- [Administration](administration.md)
+- [Orientation](orientation.md)
+- [Certification](certification.md)
+- [Registration](registration.md)
+- [Terminology and hierarchy](terminology.md)
 
 ## Download PDFs
 
