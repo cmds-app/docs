@@ -7,6 +7,9 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
+# Silence the Material for MkDocs 2.0 advocacy banner.
+$env:NO_MKDOCS_2_WARNING = 'true'
+
 $repoRoot = Split-Path -Parent $PSScriptRoot
 Set-Location $repoRoot
 
