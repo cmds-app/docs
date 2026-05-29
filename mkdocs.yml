@@ -11,6 +11,7 @@ exclude_docs: |
 
 theme:
   name: material
+  favicon: favicon.ico
   font:
     text: Inter
     code: Roboto Mono
