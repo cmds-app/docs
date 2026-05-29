@@ -42,7 +42,7 @@ Revised: February 2026
 ### Accessing Your Certificates
 
 1. Return to the home page by selecting **"Portal"** in the top toolbar.
-2. Select **"My Certificates"** to access your certificate(s).
+2. Select **"Certificates"** to access your certificate(s).
 3. Press the download icon to download a PDF copy of your certificate.
 
 ### Logging Out
@@ -85,13 +85,13 @@ Revised: February 2026
 ### Accessing Your Certificates
 
 1. Return to the home page by selecting **"Portal"** in the top toolbar.
-2. Select **"My Certificates"** to access your certificate(s).
+2. Select **"Certificates"** to access your certificate(s).
 3. Press the download icon to download a PDF copy of your certificate.
 
 ### Completing Another Company's Orientations
 
 1. Return to the home page by selecting **"Portal"** in the top toolbar.
-2. Select **"Other Companies"** to access the list of other companies.
+2. Select **"Partners"** to access the list of other companies.
 3. Select the appropriate company from the list.
 4. Follow the **"Completing Your Orientations"** steps above for any required orientation(s).
 
@@ -116,7 +116,7 @@ Revised: February 2026
 - Visible by both regular users and administrators.
 - Lists company site contact information.
 
-### All User Certificates
+### User Certificates
 
 - Visible to administrators only.
 - Shows My Orientations users and their quiz scores.
@@ -184,11 +184,11 @@ Revised: February 2026
 
 #### Issue #4: A User Did Not Print Their Certificate
 
-- Ask the user to login to My Orientations and click **"My Certificates."** The user will see their completed orientations and can print their certificate(s) by clicking the "Download" button to the right.
-- *OR* as the administrator, go to **"All User Certificates,"** type in the user's first or last name in the **"Criteria"** tab. You will see if the user has successfully completed any orientations.
-- *OR* as the administrator, go to **"Users,"** search for the user using the **"Search"** tab, and click the impersonate icon. You will be viewing the user's home page and can click on "My Certificates" to access certificates for their completed orientations. To stop impersonating the user, click on your name in the top right.
+- Ask the user to login to My Orientations and click **"Certificates."** The user will see their completed orientations and can print their certificate(s) by clicking the "Download" button to the right.
+- *OR* as the administrator, go to **"User Certificates,"** type in the user's first or last name in the **"Criteria"** tab. You will see if the user has successfully completed any orientations.
+- *OR* as the administrator, go to **"Users,"** search for the user using the **"Search"** tab, and click the impersonate icon. You will be viewing the user's home page and can click on "Certificates" to access certificates for their completed orientations. To stop impersonating the user, click on your name in the top right.
 
 #### Issue #5: A User Cannot Access the Company They Need for Orientations
 
 - Ask the user to log out and choose the correct company they need prior to signing in. Ensure they are using Microsoft Edge, Firefox, or Google Chrome as their browser.
-- *OR* have the user click **"Other Companies"** to easily get to the correct company.
+- *OR* have the user click **"Partners"** to navigate to the correct company.
