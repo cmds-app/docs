@@ -14,7 +14,7 @@ It includes 208 code-change commits from 3 developers over multiple weeks, affec
 
 **User-facing impact.** The overall platform contains 870 web pages. (415 of these pages are **not** used by CMDS and are omitted from these release notes.)
 
-81 pages modified directly, with 41 having visible markup changes and 76 having code-behind logic changes (36 pages had both).
+49 pages modified directly, with 28 having visible markup changes and 43 having code-behind logic changes (22 pages had both).
 
 20 database upgrade scripts run on deploy, altering schema and data. These are irreversible without backup and restore.
 
