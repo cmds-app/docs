@@ -1,6 +1,6 @@
 # Version 26.2
 
-The update to the Live environment was released on May 6, 2026 at 8:00 PM MDT.
+This update to the Live environment was released on May 6, 2026 at 8:00 PM MDT.
 
 ## Business Summary
 

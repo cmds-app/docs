@@ -60,6 +60,9 @@ markdown_extensions:
 plugins:
   - search
 
+extra:
+  generator: false
+
 extra_css:
   - stylesheets/extra.css
 
