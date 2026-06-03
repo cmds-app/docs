@@ -6,26 +6,24 @@ This update to the Live environment is scheduled for June 10, 2026 at 8:00 PM MD
 
 **Scope.** This is a major release.
 
-It includes 208 code-change commits from 4 developers over multiple weeks, affecting 1,731 files under `source/`.
+It includes 208 code-change commits from 3 developers over multiple weeks, affecting 1,731 files under `source/`.
 
 13,858 lines of code added, 9,737 lines deleted within `source/`.
 
-~49% of code changes (by commit count) were contributed by the CMDS team, spanning CMDS pages and partition/Hub integration.
+~49% of code changes (by commit count) were contributed by the CMDS team, spanning Shift iQ pages and CMDS Hub integration.
 
-**User-facing impact.** The overall platform contains 870 web pages. (415 of those forms are **not** used by CMDS and are omitted from these release notes.)
+**User-facing impact.** The overall platform contains 870 web pages. (415 of these pages are **not** used by CMDS and are omitted from these release notes.)
 
 81 pages modified directly, with 41 having visible markup changes and 76 having code-behind logic changes (36 pages had both).
 
-Hundreds more pages potentially affected indirectly via shared helper code.
-
-20 database upgrade scripts run on deploy, altering schema and data - irreversible without backup and restore.
+20 database upgrade scripts run on deploy, altering schema and data. These are irreversible without backup and restore.
 
 **Headline changes.**
 
-- Platform documentation is now consolidated in the CMDS Docs repository (GitHub)
-- Static web-accessible content is now consolidated in the CMDS Assets repository (GitHub)
-- Application features and functions implementated specifically for CMDS partners are now consolidated in the CMDS Hub (authentication is via SAML)
-- Platform-wide team memberships for invoicing contacts per organization
+- Platform documentation is now consolidated in the CMDS Docs repository
+- Static web-accessible content is now consolidated in the CMDS Assets repository
+- Application features and functions implementated specifically for CMDS partners are now consolidated in the CMDS Hub (authentication is via SAML with Keyera's IT infrastructure)
+- Platform-wide team membership for invoicing contacts per company
 
 ## Technical Details
 
@@ -37,7 +35,7 @@ This is the command used to identify differences:
 
 ### 1. Modified Screens
 
-These screens had their markup or code-behind changed. Every URL below should be retested.
+These screens had their markup or code-behind changed. Every URL below should be tested.
 
 > Screens that are not used by CMDS are omitted from the CMDS-specific section, but are listed below for completeness.
 
