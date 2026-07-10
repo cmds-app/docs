@@ -12,13 +12,13 @@ Add a Link activity to a module in your course.
 
 ## Step 2
 
-Select the option to use "Scoop" as your SCORM Platform.
+Select the option to use "OpenSCORM (Scoop)" as your SCORM Platform.
 
 If an SCO library is not already created for your organization, the system will create it automatically, and display a link to the library.
 
 Click the link to open your SCO library.
 
-![Choose Scoop as the SCORM platform](../assets/scorm/choose-platform.png)
+![Choose OpenSCORM (Scoop) as the SCORM platform](../assets/scorm/choose-platform.png)
 
 ## Step 3
 
@@ -28,13 +28,13 @@ Click the button to choose a file on your computer, and click the button to add 
 
 ![Upload SCORM package](../assets/scorm/upload-package.png)
 
-The system will generate a SCORM package identifier for you automatically. It converts the name of your file to lowercase, and replaces non-alphanumeric characters to hyphens. This ensures the identifier is web-friendly. Copy this to your clipboard.
+The system will generate a SCORM package identifier for you automatically. It converts the name of your file to lowercase, and replaces non-alphanumeric characters with hyphens. This ensures the identifier is web-friendly. Copy this to your clipboard.
 
 ![Generated SCORM package identifier](../assets/scorm/package-id.png)
 
 ## Step 4
 
-Paste the SCORM package identifier into the field labelled "SCORM Package ID".
+Paste the SCORM package identifier into the field labeled "SCORM Package ID".
 
 ![Paste SCORM Package ID](../assets/scorm/paste-id.png)
 
