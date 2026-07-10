@@ -1,6 +1,6 @@
 site_name: CMDS Docs
 site_url: https://docs.cmds.app
-site_description: Developer documentation for CMDS projects.
+site_description: Documentation for CMDS.
 site_dir: dist/docs
 
 repo_url: https://github.com/cmds-app/docs
@@ -47,7 +47,7 @@ markdown_extensions:
   - md_in_html
   - tables
   - toc:
-      permalink: true
+      permalink: "#"
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tabbed:
