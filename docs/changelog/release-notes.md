@@ -6,16 +6,23 @@ Looking for a specific release date? See the [release dates](release-dates.md) p
 
 ---
 
-## Current: Version 26.2
+## Current: Version 26.3
 
-The current version in the **Live** environment was released **May 6, 2026** at 8:00 PM MDT.
+The current version in the **Live** environment was released **June 10, 2026** at 8:00 PM MDT.
 
-Detailed release notes are [available here](version-26-2.md).
+Detailed release notes are [available here](version-26-3.md).
 
 ---
 
-## Upcoming: Version 26.3
+## Upcoming: Version 26.4
 
-The next update to the **Demo** environment is **June 3, 2026** at 8:00 PM MDT.
+The next update to the **Demo** environment is **July 29, 2026** at 8:00 PM MDT.
 
-The next update to the **Live** environment is **June 10, 2026** at 8:00 PM MDT.
+The next update to the **Live** environment is **August 5, 2026** at 8:00 PM MDT.
+
+---
+
+## Previous releases
+
+- **Version 26.2** - released May 6, 2026 ([release notes](version-26-2.md))
+- **Version 26.1** - released February 18, 2026
