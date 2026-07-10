@@ -9,7 +9,7 @@ A git repository should contain some (or all) of the following root-level folder
 | `data`    | Project data assets             | Reference datasets, example data, fixtures, and non-database data files used by or bundled with the project. |
 | `db`      | Database schema and migrations  | SQL schema definitions (DDL), migration scripts, seed data, and other files that describe or populate the project's database. |
 | `dist`    | Build output artifacts          | Compiled, bundled, and/or generated files produced by the build process. This folder represents the deployable or distributable form of the project. (It should be excluded from version control.) |
-| `docs`    | Project documentation           | Technical documentation related to the project. Includes markdown files, HTML files, API references, user guides, architecture overviews, or other documents that provide instructions, tutorials, and reference materials for developers. |
+| `docs`    | Project documentation           | Technical documentation related to the project. Includes Markdown files, HTML files, API references, user guides, architecture overviews, or other documents that provide instructions, tutorials, and reference materials for developers. |
 | `public`  | Static web-visible resources    | Static files used in the project and intended to be publicly accessible. These might include images, icons, fonts, HTML/CSS/JS files, and other media assets. |
 | `src`     | Application source code         | Source code files. Projects may be organized into subfolders by type: api, cli, lib, web  |
 
