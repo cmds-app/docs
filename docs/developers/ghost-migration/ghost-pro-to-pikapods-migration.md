@@ -4,7 +4,7 @@ Ghost(Pro) charges $31 USD per month for hosting that a Pikapods Ghost pod deliv
 
 Two facts drive the ordering. First, Ghost's JSON export does not include images, and the storage.ghost.io CDN serving them goes dark the moment the Ghost(Pro) subscription is cancelled - so images are secured first, before anything else. Second, self-hosted Ghost has two separate email paths (SMTP config for transactional, Mailgun API key for newsletters), and both must be proven working before DNS cutover, because failures surface as silent bounces rather than errors.
 
-Supporting scripts live in `inbox/ghost-migration-scripts/` (crawl-site.ps1, upload-images.ps1, verify-pod.ps1), parameterized and defaulting to myorientations paths. Output goes to `tmp/data/myorientations-site/`.
+Supporting scripts live in `scripts/` beside this document (crawl-site.ps1, upload-images.ps1, verify-pod.ps1), parameterized; point their output at a scratch folder such as `tmp/data/<site>/` in the repo you run them from.
 
 ## Step 1: secure the images
 
