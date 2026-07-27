@@ -16,7 +16,7 @@ Built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
 ## Prerequisites
 
 - Python 3.10+
-- PowerShell 7+ (for `.work\start.ps1`)
+- PowerShell 7+ (for `tools\start.ps1`)
 
 ## Local development
 
@@ -30,7 +30,7 @@ python -m venv .venv
 Serve with live reload:
 
 ```powershell
-.\.work\start.ps1
+.\tools\start.ps1
 ```
 
 Open <http://127.0.0.1:8000>.
