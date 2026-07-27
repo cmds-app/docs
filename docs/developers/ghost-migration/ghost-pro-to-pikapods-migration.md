@@ -90,3 +90,7 @@ Ghost sends two kinds of email through two unrelated code paths. Confusing them 
 - The R2 bucket contains at least one restic snapshot.
 - Bare-domain and www URLs both resolve to the pod over HTTPS.
 - Ghost(Pro) subscription cancelled; hosting cost drops from $31 to roughly $2.50 per month.
+
+## After cutover: restore the CDN
+
+Ghost(Pro) served pages from Fastly, and cancelling it removes that edge cache along with the hosting. Expect time-to-first-byte to rise by roughly a factor of ten - keyeracmds went from about 65 ms to about 650 ms. See [Put Cloudflare in front of a Pikapods Ghost pod](cloudflare-cache-in-front-of-pikapods.md) for the fix.
