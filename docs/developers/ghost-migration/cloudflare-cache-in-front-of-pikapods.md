@@ -46,7 +46,9 @@ Miss a mail record and nothing fails loudly. Newsletters keep sending and quietl
 - [ ] Add site, Free plan. Cloudflare scans the existing zone and imports what it finds.
 - [ ] **Diff the imported records against your GoDaddy export, one by one.** The scanner is reliable for common types and misses long TXT values and some subdomain records. This is the single highest-risk step in the runbook and it is entirely mechanical.
 
-On keyeracmds the scan imported 18 of 26 records. It dropped four A records, two CNAMEs, and two TXT records, one of which was the Mailgun DKIM key at `pic._domainkey.mail`. Both categories it missed are predictable: records nested two labels deep under a subdomain, and TXT values split across multiple strings.
+On keyeracmds the scan imported 18 of 26 records, dropping four A records, two CNAMEs, and two TXT records - one of them the Mailgun DKIM key at `pic._domainkey.mail`. On myorientations it imported 13 of 15 and dropped **two of the three DKIM keys**: `krs._domainkey.mail`, nested under a subdomain, and `myorientations2025._domainkey`, which sits at the apex exactly like the `smtp._domainkey` record it imported without trouble.
+
+So there is no reliable rule about which records survive. "Nested records get dropped" fits keyeracmds and fails on myorientations, where two structurally identical apex selectors got different treatment. **Check every `_domainkey` record by name, every time.** They are the highest-consequence records in the zone and the ones the scanner handles worst.
 
 **Split TXT values need care when you re-enter them.** A single TXT character-string caps at 255 bytes, so a 2048-bit DKIM key arrives in the export as two quoted chunks:
 
@@ -69,7 +71,12 @@ Pick **Dynamic**, not Static. Cloudflare's Static type takes a fixed URL and dis
 
     concat("https://www.keyeracmds.com", http.request.uri.path)
 
-Set status 301 and check preserve query string. If you would rather not commit to a permanent redirect while the zone settles, use 302 first and edit it to 301 once verified - browsers cache a 301 hard, and some cache it indefinitely.
+Set status 301 and check **preserve query string** - the box is easy to miss, and the failure is quiet. The path still carries, so the redirect looks correct in a browser; what disappears is the query. Campaign links to the bare apex arrive at www with their UTM parameters stripped, and those visits land in analytics as direct traffic. Test with a query string, not just a path:
+
+    curl -sS -o /dev/null -w '%{http_code} -> %{redirect_url}\n' \
+      'https://<domain>/about/?utm_source=x&ref=newsletter'
+
+If you would rather not commit to a permanent redirect while the zone settles, use 302 first and edit it to 301 once verified - browsers cache a 301 hard, and some cache it indefinitely.
 
 **Create the rule in the same sitting as the dummy A record.** Those two checkboxes are one change, not two. `192.0.2.1` is an address nothing answers on, so the moment Cloudflare starts serving the apex without a redirect rule to intercept it first, every apex request becomes a `522 Connection timed out`. While the old droplet A record is still cached you will not notice, which is exactly what makes it easy to leave half-done and walk away.
 
@@ -165,18 +172,22 @@ Each clause earns its place:
 - **`/.well-known/`** carries ACME challenges. See the certificate note at the end - this clause is load-bearing.
 - **The cookie clause is the important one.** Ghost renders member-specific HTML server-side, keyed on the `ghost-members-ssr` cookie. Without this bypass, a signed-in member's personalized page can be cached and served to strangers. Everything else in this list is a correctness or analytics concern; this one is a privacy incident.
 
-**Rule 2, "Cache HTML at edge"** - expression, which is rule 1's expression negated and anded onto the hostname:
+**Rule 2, "Cache HTML at edge"** - rule 1's conditions negated one at a time and anded onto the hostname:
 
     http.host eq "www.<domain>"
-    and not (
-      starts_with(http.request.uri.path, "/ghost/")
-      or starts_with(http.request.uri.path, "/members/")
-      or starts_with(http.request.uri.path, "/r/")
-      or starts_with(http.request.uri.path, "/p/")
-      or starts_with(http.request.uri.path, "/webmentions/")
-      or starts_with(http.request.uri.path, "/.well-known/")
-      or http.cookie contains "ghost-members-ssr"
-    )
+    and not starts_with(http.request.uri.path, "/ghost/")
+    and not starts_with(http.request.uri.path, "/members/")
+    and not starts_with(http.request.uri.path, "/r/")
+    and not starts_with(http.request.uri.path, "/p/")
+    and not starts_with(http.request.uri.path, "/webmentions/")
+    and not starts_with(http.request.uri.path, "/.well-known/")
+    and not (http.cookie contains "ghost-members-ssr")
+
+**Write it flat like that, never as `not ( A or B or C )`.** The dashboard's expression builder has no grouping construct, so it rewrites a negated `or` chain into a plain `or` chain and drops the `not` entirely. On myorientations that turned rule 2 into "cache anything carrying a member cookie" - the precise inversion of its purpose, deployed and Active, reading plausibly in the rule list. De Morgan's law gives the flat form above, where every operator is `and` at the top level and there is nothing to reorder.
+
+Enter it through **Edit expression**, the raw text field, rather than the field-picker view.
+
+**Do not verify it from the rule list.** The "Match against" column renders `not (http.cookie contains "x")` as `Cookie contains x`, stating the opposite of the stored expression. A correct rule can look broken there, and a broken one can look correct. The image test in step 8 is the only check that tells you the truth.
 
 Settings:
 
@@ -207,6 +218,8 @@ Which means these four checks cannot tell you whether rule 1 is firing. To prove
       https://www.<domain>/content/images/<any-image>          | grep -i cf-cache-status   # DYNAMIC
 
 Same URL, cached copy sitting at the edge, and the cookie suppresses the hit. That is rule 1 doing its job, and nothing else explains it.
+
+A `HIT` on that last line means a bypass is not happening, and images are cached by Cloudflare's defaults with no rule involved - so it is what you see when the bypass rule is absent, inactive, or overridden. That is exactly how the rewritten rule 2 on myorientations was caught. Every HTML check had passed.
 
 - [ ] All four match.
 - [ ] Sign in as a member in a browser and confirm you see member state, not a cached anonymous page.
