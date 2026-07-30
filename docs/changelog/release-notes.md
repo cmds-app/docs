@@ -20,6 +20,8 @@ The next update to the **Demo** environment is **July 29, 2026** at 8:00 PM MDT.
 
 The next update to the **Live** environment is **August 5, 2026** at 8:00 PM MDT.
 
+Draft release notes are [available here](version-26-4.md).
+
 ---
 
 ## Previous releases

@@ -130,5 +130,6 @@ nav:
       - Overview: changelog/index.md
       - Release dates: changelog/release-dates.md
       - Release notes: changelog/release-notes.md
+      - Version 26.4: changelog/version-26-4.md
       - Version 26.3: changelog/version-26-3.md
       - Version 26.2: changelog/version-26-2.md
