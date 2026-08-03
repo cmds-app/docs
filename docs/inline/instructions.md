@@ -27,11 +27,7 @@ The term "contextual help" is widely recognized in UX design and technical writi
 
 **Need Some Guidance?**
 
-Follow the steps in the guide <a target="_blank" href="https://docs.cmds.app/guides/safety-certificate-upload/learner.pdf">HERE</a>
-
-**What is a Safety Certificate?**
-
-View the example ticket for reference <a target="_blank" href="https://docs.cmds.app/guides/safety-certificate-upload/example.pdf">HERE</a>
+Follow the steps in the guide <a target="_blank" href="https://docs.cmds.app/guides/certification.pdf">HERE</a>
 
 
 # ui/cmds/admin/users/edit#reporting-lines
