@@ -20,7 +20,7 @@ The next update to the **Demo** environment is **September 30, 2026** at 8:00 PM
 
 The next update to the **Live** environment is **October 7, 2026** at 8:00 PM MDT.
 
-Draft release notes are [available here](version-26-5.md).
+Draft release notes are _coming soon_. <!--[available here](version-26-5.md).-->
 
 ---
 
