@@ -10,8 +10,7 @@ Wondering what changed in a release? See the [release notes](release-notes.md).
 
 | Release | Available in Demo | Goes Live    |
 | :------ | :---------------- | :----------- |
-| **v26.3 (current)** | **Jun 3, 2026** | **Jun 10, 2026** |
-| v26.4   | Jul 29, 2026      | Aug 5, 2026  |
+| **v26.4 (current)** | **Jul 29, 2026** | **Aug 5, 2026** |
 | v26.5   | Sep 30, 2026      | Oct 7, 2026  |
 | v26.6   | Dec 2, 2026       | Dec 9, 2026  |
 
