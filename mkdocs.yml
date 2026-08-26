@@ -1,0 +1,133 @@
+site_name: CMDS Docs
+site_url: https://docs.cmds.app
+site_description: Documentation for CMDS.
+site_dir: dist/docs
+
+repo_url: https://github.com/cmds-app/docs
+edit_uri: edit/main/docs/
+
+exclude_docs: |
+  inline/
+
+theme:
+  name: material
+  favicon: favicon.ico
+  font:
+    text: Inter
+    code: Geist Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    # - navigation.instant    # disabled: breaks livereload in `mkdocs serve`
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: "#"
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+plugins:
+  - search
+
+extra:
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home:
+      - Welcome: index.md
+      - Environments: environments.md
+      - Contributions: contributions.md
+  - Help Center:
+      - Resources: help/index.md
+      - Quick links: help/quick-links.md
+      - Tips: help/tips.md
+      - Terminology: help/terminology.md
+  - Guides:
+      - Overview: guides/index.md
+      - Learning: guides/learning.md
+      - Validation: guides/validation.md
+      - Administration: guides/administration.md
+      - Orientation: guides/orientation.md
+      - Certification: guides/certification.md
+      - Registration: guides/registration.md
+      - Terminology: guides/terminology.md
+  - SCORM:
+      - Overview: scorm/index.md
+      - Glossary: scorm/glossary.md
+      - Versions: scorm/versions.md
+      - Tutorials: scorm/tutorials.md
+  - Developers:
+      - Overview: developers/index.md
+      - Getting started:
+          - Queries and commands: developers/getting-started/queries-and-commands.md
+      - API:
+          - Introduction: developers/api/introduction.md
+          - Authentication: developers/api/authentication.md
+          - Request/response formats: developers/api/request-and-response-formats.md
+          - Example: developers/api/example.md
+          - Rate limits and throttling: developers/api/rate-limits-and-throttling.md
+      - Resources:
+          - .NET: developers/resources/dotnet-versions.md
+          - Date and time values: developers/resources/date-and-time-values.md
+      - Integrations:
+          - Power BI: developers/integrations/power-bi.md
+          - Safe Exam Browser: developers/integrations/safe-exam-browser.md
+          - Single Sign-On: developers/integrations/single-sign-on.md
+  - Contributors:
+      - Overview: contributors/index.md
+      - Environment setup: contributors/environment-setup.md
+      - Conventions:
+          - Folder structure: contributors/conventions/folder-structure.md
+          - Project names: contributors/conventions/project-names.md
+          - API conventions: contributors/conventions/api-conventions.md
+          - Database schemas: contributors/conventions/database-schemas.md
+          - README files: contributors/conventions/readme-files.md
+          - Style guide: contributors/conventions/style-guide.md
+          - Task list comment tokens: contributors/conventions/task-list-comment-tokens.md
+          - Version numbers: contributors/conventions/version-numbers.md
+          - Video recommendations: contributors/conventions/video-recommendations.md
+      - Tools:
+          - VS Code: contributors/tools/vscode.md
+          - Insomnia: contributors/tools/insomnia.md
+          - DataGrip: contributors/tools/datagrip.md
+  - Changelog:
+      - Overview: changelog/index.md
+      - Release dates: changelog/release-dates.md
+      - Release notes: changelog/release-notes.md
+      - Version 26.4: changelog/version-26-4.md
+      - Version 26.3: changelog/version-26-3.md
+      - Version 26.2: changelog/version-26-2.md

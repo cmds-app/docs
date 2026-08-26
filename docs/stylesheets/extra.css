@@ -1,0 +1,190 @@
+/* ── Color system, aligned to the app (platform/web/src/styles/globals.css) ──
+   The app rations its indigo primary: a warm neutral ambient, white reading
+   surfaces, muted grays for secondary text, and indigo only on links and active
+   items. These blocks map the app's tokens onto Material's own variables, per
+   color scheme, so the docs read as the same product. */
+
+[data-md-color-scheme="default"] {
+  /* Warm ambient behind the white reading surface - the app's page background. */
+  --app-chrome-bg: #f7f5f0;
+
+  --md-primary-fg-color: oklch(0.47 0.22 273);
+  --md-primary-fg-color--light: oklch(0.55 0.2 273);
+  --md-primary-fg-color--dark: oklch(0.4 0.22 273);
+  --md-accent-fg-color: oklch(0.47 0.22 273);
+
+  /* White content and sidebar, matching the app's cards. */
+  --md-default-bg-color: #ffffff;
+  --md-default-fg-color: oklch(0.32 0.03 258);
+  --md-default-fg-color--light: oklch(0.55 0.03 258);
+  --md-default-fg-color--lighter: oklch(0.72 0.02 258);
+  --md-default-fg-color--lightest: oklch(0.92 0.008 255);
+
+  --md-typeset-color: oklch(0.32 0.03 258);
+  --md-typeset-a-color: oklch(0.47 0.22 273);
+
+  --md-code-bg-color: oklch(0.97 0.005 255);
+  --md-code-fg-color: oklch(0.32 0.03 258);
+}
+
+[data-md-color-scheme="slate"] {
+  --app-chrome-bg: oklch(0.17 0.02 265);
+
+  --md-primary-fg-color: oklch(0.62 0.2 273);
+  --md-primary-fg-color--light: oklch(0.7 0.17 273);
+  --md-primary-fg-color--dark: oklch(0.55 0.2 273);
+  --md-accent-fg-color: oklch(0.72 0.16 269);
+
+  --md-default-bg-color: oklch(0.2 0.02 265);
+  --md-default-fg-color: oklch(0.9 0.01 258);
+  --md-default-fg-color--light: oklch(0.68 0.02 258);
+  --md-default-fg-color--lighter: oklch(0.5 0.02 265);
+  --md-default-fg-color--lightest: oklch(0.28 0.02 265);
+
+  --md-typeset-color: oklch(0.9 0.01 258);
+  --md-typeset-a-color: oklch(0.72 0.16 269);
+
+  --md-code-bg-color: oklch(0.24 0.02 265);
+  --md-code-fg-color: oklch(0.9 0.01 258);
+}
+
+/* Neutral header and tabs. Material tints them with the primary color; the app's
+   chrome is a surface, not a colored banner, so indigo is reserved for links and
+   active nav. Overriding --md-primary-bg-color here (not globally) turns the
+   header's own text and icons dark, since they read that variable. */
+.md-header,
+.md-tabs {
+  background-color: var(--app-chrome-bg);
+  color: var(--md-default-fg-color);
+  --md-primary-bg-color: var(--md-default-fg-color);
+  --md-primary-bg-color--light: var(--md-default-fg-color--light);
+}
+
+.md-header {
+  box-shadow: 0 1px 0 var(--md-default-fg-color--lightest);
+}
+
+/* Links pick up the app's indigo on hover, not the old blue. */
+.md-nav__link:is(:hover, :focus),
+.md-nav__link:is(:hover, :focus) .md-ellipsis {
+  color: var(--md-accent-fg-color);
+}
+
+.md-nav--primary a.md-nav__link {
+  padding-left: 0.75rem;
+}
+
+.md-content__inner {
+  padding-bottom: 3rem;
+}
+
+/* Typography aligned to the app (platform/web/src/styles/globals.css). The body
+   face (Inter) and mono face (Geist Mono) are set in mkdocs.yml theme.font; the
+   rules below pin the size and the OpenType features to what the app uses. */
+
+.md-typeset {
+  /* Absolute 16px, so content stays 16px at every width. Material's default is
+     .8rem of a root that grows to 137.5% / 150% on wide screens, which drifts
+     above the app's fixed 16px body. Headings use em and still scale from here. */
+  font-size: 16px;
+}
+
+body {
+  /* tnum = tabular figures, cv11 = Inter's single-story a. The app sets both on
+     its body, so numerals and identifiers read the same in both places. */
+  font-feature-settings: "tnum", "cv11";
+}
+
+/* ── Component alignment (Tier 2) ────────────────────────────────────────────
+   Admonition colors, radii, table borders, and the filled active-nav pill, all
+   drawn from the app's semantic tokens and its rounded-lg / rounded-md radii. */
+
+[data-md-color-scheme="default"] {
+  --app-success: oklch(0.72 0.18 152);
+  --app-warning: oklch(0.79 0.16 78);
+  --app-danger: oklch(0.63 0.22 27);
+  /* Table borders and row rules read the app's border token. */
+  --md-typeset-table-color: var(--md-default-fg-color--lightest);
+}
+
+[data-md-color-scheme="slate"] {
+  --app-success: oklch(0.75 0.17 152);
+  --app-warning: oklch(0.83 0.17 82);
+  --app-danger: oklch(0.68 0.22 27);
+  --md-typeset-table-color: var(--md-default-fg-color--lightest);
+}
+
+/* Recolor admonitions to the app's semantic set. Material hardcodes a hue per
+   type; map each family onto a token and carry it in --app-adm so the border,
+   title bar, and icon all follow one value. The app has no cyan/teal, so
+   informational types take the indigo primary and tips take the success green. */
+.md-typeset .admonition:is(.note, .info),
+.md-typeset details:is(.note, .info) {
+  --app-adm: var(--md-primary-fg-color);
+}
+
+.md-typeset .admonition:is(.tip, .success),
+.md-typeset details:is(.tip, .success) {
+  --app-adm: var(--app-success);
+}
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  --app-adm: var(--app-warning);
+}
+
+.md-typeset .admonition:is(.danger, .failure, .bug),
+.md-typeset details:is(.danger, .failure, .bug) {
+  --app-adm: var(--app-danger);
+}
+
+.md-typeset .admonition:is(.note, .info, .tip, .success, .warning, .danger, .failure, .bug),
+.md-typeset details:is(.note, .info, .tip, .success, .warning, .danger, .failure, .bug) {
+  border-color: var(--app-adm);
+}
+
+.md-typeset :is(.note, .info, .tip, .success, .warning, .danger, .failure, .bug)
+  > :is(.admonition-title, summary) {
+  background-color: color-mix(in srgb, var(--app-adm) 10%, transparent);
+}
+
+.md-typeset :is(.note, .info, .tip, .success, .warning, .danger, .failure, .bug)
+  > :is(.admonition-title, summary)::before {
+  background-color: var(--app-adm);
+}
+
+.md-typeset .admonition:is(.note, .info, .tip, .success, .warning, .danger, .failure, .bug):focus-within,
+.md-typeset details:is(.note, .info, .tip, .success, .warning, .danger, .failure, .bug):focus-within {
+  box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--app-adm) 12%, transparent);
+}
+
+/* Radii: rounded-lg (0.5rem) on the boxes the app treats as cards, rounded-md
+   (0.375rem) on inline code chips. */
+.md-typeset pre,
+.md-typeset pre > code,
+.md-typeset .highlight,
+.md-typeset .admonition,
+.md-typeset details,
+.md-typeset table:not([class]) {
+  border-radius: 0.5rem;
+}
+
+.md-typeset code {
+  border-radius: 0.375rem;
+}
+
+/* Active nav item: a filled indigo pill, the way the app marks the current
+   route (bg-primary text-primary-foreground rounded-lg). Scoped to the primary
+   sidebar so the table of contents keeps its plain treatment. */
+.md-nav--primary .md-nav__link--active {
+  background-color: var(--md-primary-fg-color);
+  border-radius: 0.5rem;
+}
+
+.md-nav--primary .md-nav__link--active,
+.md-nav--primary .md-nav__link--active .md-ellipsis,
+.md-nav--primary .md-nav__link--active:is(:hover, :focus),
+.md-nav--primary .md-nav__link--active:is(:hover, :focus) .md-ellipsis {
+  /* The app's primary-foreground, near-white, on the indigo fill. */
+  color: oklch(0.985 0 0);
+}
