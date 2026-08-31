@@ -75,6 +75,7 @@ nav:
       - Resources: help/index.md
       - Quick links: help/quick-links.md
       - Tips: help/tips.md
+      - Password security: help/password-security.md
       - Terminology: help/terminology.md
   - Guides:
       - Overview: guides/index.md
