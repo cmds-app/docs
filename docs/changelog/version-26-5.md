@@ -6,7 +6,7 @@ Version 26.5 is a major release. It updates 116 pages across the platform, along
 
 ## Highlights
 
-- The compliance summary report now shows up-to-the-minute information.
+- The compliance summary report now shows up-to-the-minute information
 - A new compliance trend report charts each department's compliance month by month, with Excel and PDF export
 - Training reports offer new filter criteria and clearer labels
 - Learners can request enrollment in a training program, and administrators can review and approve or reject each request
