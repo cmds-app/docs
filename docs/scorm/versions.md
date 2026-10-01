@@ -8,7 +8,6 @@ Just like smartphones have evolved from basic devices to powerful computers, eLe
 
 | Standard | Year | Still Relevant? | Best For | Cross-Platform? |
 | :--- | :--- | :--- | :--- | :---: |
-| **AICC HACP** | 1998 | Yes | Legacy systems, cross-domain hosting | Yes |
 | **SCORM 1.2** | 2001 | Yes | Most current training programs | No |
 | **SCORM 2004** | 2009 | Yes | Advanced course sequencing | No |
 | **xAPI** | 2013 | Growing | Mobile, games, advanced tracking | Yes |
@@ -53,14 +52,6 @@ Just like smartphones have evolved from basic devices to powerful computers, eLe
 ---
 
 ## Beyond SCORM: other standards you should know
-
-### AICC HACP (1998)
-
-**The veteran standard that refuses to retire**
-
-**Why it matters:** AICC was doing eLearning standards before SCORM existed, and it's still valuable today.
-**Key advantage:** Works when your training content and LMS are hosted on different domains (which SCORM struggles with).
-**Our recommendation:** Keep supporting this — it's still the second most common standard after SCORM 1.2.
 
 ### xAPI/Tin Can API (2013)
 
@@ -111,21 +102,19 @@ Just like smartphones have evolved from basic devices to powerful computers, eLe
 
 ### For most organizations (start here):
 
-1. **SCORM 1.2** — Your foundation. Nearly universal compatibility.
-2. **AICC HACP** — Your backup plan for hosting flexibility.
+1. **SCORM 1.2** - Your foundation. Nearly universal compatibility.
 
 ### If you want very advanced features:
 
-3. **SCORM 2004 3rd or 4th Edition** — For complex course navigation and prerequisites.
+2. **SCORM 2004 3rd or 4th Edition** - For complex course navigation and prerequisites.
 
 ### If you're forward-thinking:
 
-4. **xAPI + cmi5** — For comprehensive learning analytics and modern learning experiences.
+3. **xAPI + cmi5** - For comprehensive learning analytics and modern learning experiences.
 
 ### Special situations:
 
 - **Academic institutions:** Add IMS LTI support
-- **Content hosted separately from LMS:** Prioritize AICC HACP
 - **Mobile-heavy training:** Invest in xAPI capabilities
 
 ---

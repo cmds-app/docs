@@ -21,22 +21,17 @@ SCORM also tracks what your learners do. Completion status, quiz scores, and tim
 
 CMDS fully supports SCORM. When you add a SCORM course to a learning activity, learners can launch and complete it like any other CMDS content, and their progress flows back into your records.
 
-You'll store the actual SCORM course files (the ZIPs) on a **SCORM hosting platform**, and CMDS will launch them for learners from there. You can use any platform you like. Here are the three we see most often:
+You'll store the actual SCORM course files (the ZIPs) on a **SCORM hosting platform**, and CMDS will launch them for learners from there.
 
-### OpenSCORM (recommended)
+### OpenSCORM
 
-[OpenSCORM](https://www.openscorm.com) (nicknamed Scoop) is our top recommendation, especially if you're just getting started. It's open-source, inexpensive, and easy to use. It connects to CMDS through [Single Sign-On](../developers/integrations/single-sign-on.md), so adding a SCORM course to a learning activity takes just a few clicks.
+CMDS hosts SCORM content on [OpenSCORM](https://www.openscorm.com) (nicknamed Scoop). It's inexpensive and easy to use, and its web front end is open source. CMDS connects to it behind the scenes, so learners launch a course without a second sign-in, and adding a SCORM course to a learning activity takes just a few clicks.
 
-You're not locked in. If you ever need to switch platforms later, migration is straightforward, and the OpenSCORM team is happy to help.
+CMDS also supports SCORM courses on OpenSCORM that are packaged in more than one language.
 
-### SCORM Cloud
-
-[SCORM Cloud](https://cloud.scorm.com/) is a well-known commercial service from Rustici Software. It's a great choice if you need advanced features or already rely on Rustici's tools. It also doubles as a testing ground where course authors can check content for SCORM compliance before publishing. CMDS integrates with SCORM Cloud directly.
-
-### Moodle
-
-[Moodle](https://moodle.org/) is a popular open-source LMS with solid SCORM support. If you're already using Moodle to host your SCORM content, CMDS can work with it so your courses are available in either system.
+!!! note
+    From version 26.5, OpenSCORM is the only SCORM hosting platform CMDS supports. Earlier versions could also launch courses from SCORM Cloud; that integration has been retired.
 
 ## Need help?
 
-If you're not sure which hosting platform fits your organization, or you need a hand setting up a SCORM course, reach out to our support team. We're happy to help.
+If you need a hand setting up a SCORM course, reach out to our support team. We're happy to help.
