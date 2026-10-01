@@ -188,3 +188,12 @@ body {
   /* The app's primary-foreground, near-white, on the indigo fill. */
   color: oklch(0.985 0 0);
 }
+
+/* A printed guide is the PDF itself, so it should not carry a button to download the PDF
+   or the page's edit and view-source actions. */
+@media print {
+  .md-content .md-button,
+  .md-content__button {
+    display: none;
+  }
+}
