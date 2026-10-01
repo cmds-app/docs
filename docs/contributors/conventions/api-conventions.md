@@ -44,7 +44,7 @@ public sealed class AssignmentsController : ControllerBase
 ## Routes
 
 - **Full route on each action.** Every action carries its complete route in its HTTP attribute (`[HttpGet("certification/assignments")]`). There is no class-level `[Route]`, so you can read the URL of an endpoint without looking anywhere else.
-- **No `/api` prefix.** The API never names its own mount point. A deployment mounts it at `/api` and strips the prefix before the request reaches a controller, so moving the API to another host or path is a configuration change, not a code change.
+- **No `/api` prefix.** The API never names its own mount point. Deployed, it is the root of its own host (`test-api.cmds.app`, `api.cmds.app`), so a request arrives at a controller as `/certification/plans`. Only in development does the SPA address it as `/api` through the Vite proxy, and `UsePathBase` strips that prefix there. Moving the API to another host or path is a configuration change, not a code change.
 - **Lowercase, grouped by area.** A route starts with its feature area and uses plural nouns for collections: `certification/plans`, `notification/dispatches/{dispatchId:guid}/approve`. Multi-word segments are kebab case (`me/client-secret`).
 - **Typed route parameters.** A route parameter is camel case and carries a type constraint (`{dispatchId:guid}`), so a malformed id is a `404` before any code runs.
 
