@@ -4,6 +4,6 @@ The API client the team uses to design, debug, and test the CMDS API. It is also
 
 ## Getting started
 
-- Import the API's OpenAPI (Swagger) description to load every endpoint at once.
+- Import the API's OpenAPI description to load every endpoint at once: `https://test-api.cmds.app/swagger/v1/swagger.json` on Test, or `http://localhost:5145/swagger/v1/swagger.json` from a local API.
 - Set the base URL for the environment you are working against - `https://test-api.cmds.app` for Test, `https://api.cmds.app` for Live.
 - Authenticate with a personal API secret, sent as a bearer token in the `Authorization` header. See [Authentication](../../developers/api/authentication.md).

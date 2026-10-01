@@ -16,15 +16,13 @@ This causes it to stand out - because lowercase and Title Case filenames are muc
 
 ## Where to put your README
 
-`README.md` files should be located in the top-level directory for each library's codebase.
-
-All top-level directories for a source code package should have a current `README.md` file. This is especially important for package directories that provide interfaces for other teams.
+Every repository has a `README.md` at its root. Inside a repository, a folder gets its own `README.md` when people browse it to find their way, such as `tests/manual/notices/`, where the README holds the procedure every script in the folder follows. A source project under `src/` does not need one: the repository README and the code reference site describe the projects.
 
 ## What to put in your README
 
 At a minimum, your `README.md` file should contain a link to user- and/or team-facing documentation.
 
-Every package-level `README.md` should include (or link to) the following information:
+The repository `README.md` should include (or link to) the following information:
 
 1. A summary of the purpose and contents of the package or library.
 2. A list of relevant contacts.

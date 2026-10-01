@@ -4,9 +4,7 @@ Conventions for a consistent, unified approach to layout and style throughout th
 
 ## Overview
 
-As a general rule, we follow the principles and practices in Google's Material Design style guide. Any time you are uncertain about how to proceed with a style decision, please refer to it for guidance.
-
-The official reference is here: [Material Design style guide](https://m3.material.io/foundations/content-design/style-guide/ux-writing-best-practices).
+The CMDS design system in the `cmds-app/platform` repository is the reference for the web app's look and layout: `design/README.md` sets the visual foundations, and `design/guidelines/page-patterns.md` sets the shape of each kind of page. It is extracted from the running code, and where the two disagree the code wins. This page covers the conventions that hold beyond it.
 
 ## Tabs
 
@@ -18,8 +16,8 @@ Tabs should represent a logical information architecture, and should use progres
 
 For example:
 
-- Basic Info (required, foundational)
-- Advanced Settings (optional, builds on basic)
+- Basic info (required, foundational)
+- Advanced settings (optional, builds on basic)
 - Permissions (contextual, depends on other settings)
 - Review (summary, final step)
 
@@ -36,36 +34,18 @@ Button placement depends on the specific context and type of action. **Bottom pl
 
 **Top placement** is preferred for:
 
-- **Page-level actions** (Create New, Add Item, Export)
+- **Page-level actions** (Create new, Add item, Export)
 - **Toolbar actions** (Edit, Delete, Share) that apply to the entire page or selected content
 - **Navigation actions** that don't require form completion
 - **Destructive actions** that you want to separate from form submission buttons
 
-Material Design principles specify:
-
-- **Forms**: Primary actions should be at the bottom, following the natural completion flow
-- **Content pages**: Actions can be at the top in app bars or floating action buttons
-- **Mobile**: Consider reachability - bottom placement is often more accessible
-
 ### Alignment and sequence
 
-On web forms, buttons should be placed at the bottom of the page, aligned to the left margin. The correct sequence (from left to right) is:
+Page and record actions sit on the right of the page header. A form's buttons sit at its foot in a consistent order, with the primary action last:
 
-1. **Save** (primary action - leftmost)
-2. **Cancel** (dismissive action - next to primary)
-3. **Duplicate** (secondary action)
-4. **View References** (secondary action)
-5. **Delete** (destructive action - rightmost or separated)
-
-The key principle here is:
-
-- **Primary actions go first** (leftmost) in the natural reading flow
-- **Dismissive actions** (e.g., Cancel) typically appear next to the primary action
-- **Destructive actions** (e.g., Delete) are placed last or visually separated
-
-This follows the logic that users read left-to-right and encounter the most important action first. The "Save then Cancel" pairing at the beginning creates a clear primary action hierarchy.
-
-When it is possible to do so, buttons that perform destructive actions should be separated entirely. For example, a Delete button should be placed in a different area of the form, rather than mixing it with form submission buttons.
+- **Primary action** (Save, Submit) - the solid button, last in the row.
+- **Secondary actions** (Cancel, Back) - outline buttons, before it.
+- **Destructive actions** (Delete, Revoke) - the destructive button, and always confirmed before they run. Where possible, keep them apart from the form's other buttons, for example in the page header or a section of their own.
 
 ## Confirmations
 

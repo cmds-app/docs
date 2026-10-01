@@ -12,10 +12,12 @@ For example (the product name here is illustrative):
 
 ## Test projects
 
-Each test project is named after the project it tests, with a `.Tests` suffix, and lives in `tests/` rather than `src/`:
+Each project that has automated tests gets one test project, named after the project it tests with a `.Tests` suffix, in `tests/` rather than `src/`. Not every project has one: a command-line tool or a thin host may be verified by hand instead.
 
 - `tests/<Product>.Api.Tests`
 - `tests/<Product>.Notices.Tests`
+
+By-hand verification scripts, the steps a person follows to check something no automated test can, live in `tests/manual/`, one folder per subject, each with a `README.md` that holds the shared procedure.
 
 ## Namespaces
 
