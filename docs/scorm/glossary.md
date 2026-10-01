@@ -55,7 +55,7 @@ Essential terms for HR managers, training directors, safety coordinators, and in
 **Environment**: A separate copy of a system, each serving a different stage of the software lifecycle. Like Runbook, this is a general IT term rather than a SCORM one, but it comes up whenever we discuss where to try something out. The typical lifecycle environments are:
 
 - **Test** - testing environment for automated tests (unit and integration), manual quality assurance testing by internal teams, and user acceptance testing by external teams for customer signoff. Also called: dev, qa, uat.
-- **Demo** - pre-release environment with near-parity to production, used to preview upcoming releases and for product demos and training. Also called: sandbox, staging.
+- **Demo** - pre-release environment with near-parity to production, used to preview upcoming releases and for product demos and training. Also called: staging.
 - **Live** - production environment with real users and real data. Also called: prod, production.
 
 See [Environments](../environments.md) for what each CMDS environment is for and which one to log in to.

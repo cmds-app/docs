@@ -20,7 +20,7 @@ You need three things in place:
 
 1. **A personal API secret.** This is the credential you send with the request. Generate one on your account page once API access is enabled - see [Authentication](authentication.md).
 2. **Report access.** The compliance report reads a whole organization's standing, so it is gated more tightly than the rest of the API. An operator has to grant your account report access on the Security > Accounts page, on top of API access. Without it the endpoint answers `403`, even with a working secret.
-3. **Your base address.** Use the environment you are integrating against - `https://api.cmds.app` for production, or `https://test-api.cmds.app` for the sandbox. See [Introduction](introduction.md).
+3. **Your base address.** Use the environment you are integrating against - `https://test-api.cmds.app` (Test) while you build, and `https://api.cmds.app` (Live) once your integration is ready. See [Introduction](introduction.md).
 
 Your personal secret carries its own organization, so you do not send an `X-Company` header with it.
 

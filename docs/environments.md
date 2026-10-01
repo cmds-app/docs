@@ -16,15 +16,15 @@ All three environments run the same software. What differs is the audience, the 
 
 ## Test
 
-**For the development team.** This is the workspace where our developers build and validate new features. Code changes appear here first, often several times a day. Data resets frequently and nothing here is considered permanent.
+**For the development team and for integrators.** This is the workspace where our developers build and validate new features. Code changes appear here first, often several times a day. Data resets frequently and nothing here is considered permanent.
 
-You generally won't be invited to Test unless you're actively working with our team on a feature or debugging something. It's noisy, experimental, and not meant for customer work.
+If you are building an integration against the CMDS API, build and test it here, against `https://test-api.cmds.app`, before you point it at Live. Otherwise you generally won't be invited to Test unless you're actively working with our team on a feature or debugging something. It's noisy and experimental, and not meant for everyday customer work.
 
 ## Demo
 
 **For you to preview and practise.** Demo is where each release lands about a week before it goes Live. If you want to see a new feature before your learners do, or rehearse a training program, or explore a configuration change safely, Demo is the place.
 
-Demo uses a separate dataset from Live. Nothing you do here affects your real users, and nothing they do affects you. It's a safe sandbox where you can poke around, make mistakes, and learn.
+Demo uses a separate dataset from Live. Nothing you do here affects your real users, and nothing they do affects you. It's a safe place to poke around, make mistakes, and learn.
 
 To log in to Demo, choose your organization on the [Demo links](https://www.keyeracmds.com/demo-links/) page.
 
@@ -42,14 +42,15 @@ To log in to Live, choose your organization on the [Partners](https://www.keyera
 
 | Environment | Audience                        | Data        | Stability |
 | :---------- | :------------------------------ | :---------- | :-------- |
-| Test        | Development team                | Throwaway   | Low       |
-| Demo        | You, for previewing & practice  | Safe sandbox| Medium    |
+| Test        | Development team, integrators   | Throwaway   | Low       |
+| Demo        | You, for previewing & practice  | Separate    | Medium    |
 | Live        | Your real learners              | Real data   | High      |
 
 ## Which one do I log in to?
 
 - Doing your normal work? Use [**Live**](https://www.keyeracmds.com/partners/).
 - Want to try a new feature, practise a workflow, or test a setting? Use [**Demo**](https://www.keyeracmds.com/demo-links/).
+- Building an integration against the API? Use **Test** (`https://test-api.cmds.app`), then move to Live.
 - Working with our development team on a specific issue? Use **Test** (we'll point you there).
 
 If you're unsure, start with **Live**.

@@ -12,7 +12,7 @@ The API has its own host per environment. Append a route directly to it - there 
 | Environment | API base address | For |
 | :--- | :--- | :--- |
 | Live | `https://api.cmds.app` | Production - real data |
-| Test | `https://test-api.cmds.app` | A sandbox for building and validating an integration |
+| Test | `https://test-api.cmds.app` | Building and validating an integration before it goes Live |
 
 Every request must be secured over HTTPS on port 443.
 
