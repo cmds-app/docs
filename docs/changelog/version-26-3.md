@@ -13,7 +13,7 @@ Version 26.3 is a major release. It updates 49 pages across the platform, along 
 
 ## Updated pages
 
-The following pages were updated in this release. If you use any of them regularly, you may notice small improvements to layout or behavior.
+The following pages were updated in this release. If you use any of them regularly, you may notice small improvements to layout or behaviour.
 
 ### Specific to CMDS
 

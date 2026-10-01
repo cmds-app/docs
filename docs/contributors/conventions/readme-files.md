@@ -12,7 +12,7 @@ README files must be named `README.md`.
 
 The file name must be uppercase `README`, and the file extension must be lowercase `md`.
 
-This causes it to stand out — because lowercase and Title Case filenames are much more common. Also, on [Unix-like](https://en.wikipedia.org/wiki/Unix-like) systems, the [`ls`](https://en.wikipedia.org/wiki/Ls) command sorts and displays files in [ASCII-code order](https://en.wikipedia.org/wiki/ASCIIbetical), so uppercase filenames appear first.
+This causes it to stand out - because lowercase and Title Case filenames are much more common. Also, on [Unix-like](https://en.wikipedia.org/wiki/Unix-like) systems, the [`ls`](https://en.wikipedia.org/wiki/Ls) command sorts and displays files in [ASCII-code order](https://en.wikipedia.org/wiki/ASCIIbetical), so uppercase filenames appear first.
 
 ## Where to put your README
 

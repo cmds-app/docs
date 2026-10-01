@@ -9,7 +9,7 @@ Version 26.5 is a major release. It updates 116 pages across the platform, along
 - The compliance summary report now shows up-to-the-minute information
 - A new compliance trend report charts each department's compliance month by month, with Excel and PDF export
 - Training reports offer new filter criteria and clearer labels
-- Learners can request enrollment in a training program, and administrators can review and approve or reject each request
+- Learners can request enrolment in a training program, and administrators can review and approve or reject each request
 - SCORM courses packaged in more than one language are supported, and course completion is reported more reliably from the Scoop (OpenSCORM) platform
 
 ## Updated pages
@@ -116,8 +116,8 @@ The following pages were updated in this release. If you use any of them regular
 | Add learners to a program | `ui/admin/learning/programs/enrollments/add` |
 | Assign learners to a program | `ui/admin/learning/programs/enrollments/assign` |
 | Remove a learner from a program | `ui/admin/learning/programs/enrollments/remove` |
-| Review a program enrollment request | `ui/admin/learning/programs/enrollments/requests/outline` |
-| Search program enrollment requests | `ui/admin/learning/programs/enrollments/requests/search` |
+| Review a program enrolment request | `ui/admin/learning/programs/enrollments/requests/outline` |
+| Search program enrolment requests | `ui/admin/learning/programs/enrollments/requests/search` |
 | Assign a catalog to a program | `ui/admin/learning/programs/modify-catalog` |
 | Modify program publication | `ui/admin/learning/programs/modify-publication` |
 | Program outline | `ui/admin/learning/programs/outline` |
@@ -216,7 +216,7 @@ The following pages were updated in this release. If you use any of them regular
 | Course catalogue | `ui/portal/learning/catalogue` |
 | Start a course | `ui/portal/learning/course` |
 | Training plan | `ui/portal/learning/plan` |
-| Request enrollment in a program | `ui/portal/learning/programs/request` |
+| Request enrolment in a program | `ui/portal/learning/programs/request` |
 | View my profile | `ui/portal/profile` |
 | Delete a credential | `ui/portal/record/credentials/learners/delete` |
 | Sign in as another user | `ui/portal/security/impersonation/start` |
@@ -240,7 +240,7 @@ This release also improves shared components that appear on many pages. You may 
 - Date and time selection, time zone lists, and time zone handling (Alberta adopted permanent daylight time (UTC−6) under the Official Time Act, eliminating the usual fall back on November 1, 2026)
 - Person search criteria and results, memberships, and sign-in details
 - Department checklists and role lists on groups
-- Course outlines, activity setup, and course enrollment lists
+- Course outlines, activity setup, and course enrolment lists
 - Program publication settings, contacts, and learner lists
 - Class setup, location details, registration lists, and class search results
 - Class registration reports and search downloads

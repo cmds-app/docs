@@ -1,6 +1,6 @@
 # Contributors
 
-Welcome! This section is for people who write code for CMDS — whether you're adding a new feature, fixing a bug, or starting on a brand new project. You'll find everything you need here to get set up and fit in with how the team works.
+Welcome! This section is for people who write code for CMDS - whether you're adding a new feature, fixing a bug, or starting on a brand new project. You'll find everything you need here to get set up and fit in with how the team works.
 
 New to the team? Start with **Conventions** to see how we organize code and name things. Then browse **Tools** to set up your development environment.
 
@@ -11,4 +11,4 @@ New to the team? Start with **Conventions** to see how we organize code and name
 
 ## Something missing?
 
-If you come across a gap — a convention that isn't written down or a tool we should recommend — open a pull request or flag it to the team. These docs improve when contributors update them.
+If you come across a gap - a convention that isn't written down or a tool we should recommend - open a pull request or flag it to the team. These docs improve when contributors update them.

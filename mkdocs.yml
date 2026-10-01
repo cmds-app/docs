@@ -71,7 +71,7 @@ nav:
       - Welcome: index.md
       - Environments: environments.md
       - Contributions: contributions.md
-  - Help Center:
+  - Help Centre:
       - Resources: help/index.md
       - Quick links: help/quick-links.md
       - Tips: help/tips.md

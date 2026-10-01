@@ -1,6 +1,6 @@
-# Help Center
+# Help Centre
 
-Welcome! This is the starting point for finding help with CMDS. Below you'll find downloadable guides and support links — and if you're new here, take a moment to explore the other pages in this section: [Quick links](quick-links.md) routes you to the right spot based on what you're trying to do, [Tips](tips.md) shares a few shortcuts for getting around, and [Terminology](terminology.md) is a handy reference for the words we use.
+Welcome! This is the starting point for finding help with CMDS. Below you'll find downloadable guides and support links - and if you're new here, take a moment to explore the other pages in this section: [Quick links](quick-links.md) routes you to the right spot based on what you're trying to do, [Tips](tips.md) shares a few shortcuts for getting around, and [Terminology](terminology.md) is a handy reference for the words we use.
 
 ## Get help
 
@@ -23,4 +23,4 @@ Welcome! This is the starting point for finding help with CMDS. Below you'll fin
 
 ## Still stuck?
 
-Our support team is happy to help. If you're not sure where to start, or you've tried the guides and still have questions, reach out — we'll get you moving.
+Our support team is happy to help. If you're not sure where to start, or you've tried the guides and still have questions, reach out - we'll get you moving.

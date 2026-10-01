@@ -101,8 +101,8 @@ Click **"Login with Email"**.
 - Use the **dropdown** to toggle between "Primary profile only" and "All profiles requiring compliance".
 - When "Primary profile only" is selected, the name of your primary profile will display, and the competency totals in the 'Compliance Summary' will reflect your primary profile only.
 - When "All profiles requiring compliance" is selected, the competency totals in the 'Compliance Summary' will reflect *all* profiles requiring compliance.
-- The 'Compliance Summary' breaks down each compliance category, showing your percent complete in each area. To view the assigned items, click on the colored text to the right (e.g., **1 out of 3 completed**).
-- The 'Learning Summary' box shows any additional training that you have been assigned. To view the assigned items, click on the colored text to the right (e.g., **3 out of 4 completed**).
+- The 'Compliance Summary' breaks down each compliance category, showing your percent complete in each area. To view the assigned items, click on the coloured text to the right (e.g., **1 out of 3 completed**).
+- The 'Learning Summary' box shows any additional training that you have been assigned. To view the assigned items, click on the coloured text to the right (e.g., **3 out of 4 completed**).
 
 ### Competency Summary
 
@@ -135,14 +135,14 @@ There are a variety of ways to access your competencies to perform your self-ass
 - Once you click **"View My Self-Assessments"** click on the competency number for which you would like to self-assess.
     - NOTE: you can use Criteria to locate a specific competency, category, or criticality.
 
-### Method #2: From your profile(s)
+### Method #2: from your profile(s)
 
 - From your home page, select the **"My Profiles"** under 'Shortcuts'.
 - Click on the Profile name that you would like to self-assess on.
 - Click on the competency number for which you would like to self-assess.
     - NOTE: you can use Criteria to locate a specific competency, category, or criticality.
 
-### Method #3: From the side menu
+### Method #3: from the side menu
 
 - The side menu is available from any page in CMDS, *except* when completing an e-learning module.
 - Click **"Self-Assessments"** under 'My Competencies' on the side menu.
@@ -271,13 +271,13 @@ If you have been **assigned** a document for review, an eLearning module for com
 - Expand **"Criteria"** and enter the name of the user you would like to add.
     - **\*\*Double check that the user you are adding is not already in the system!!!**
 - If the user is not in the system already, click **"Add New Person"**.
-- Enter the person's information – first name, last name, and email are **mandatory** fields.
+- Enter the person's information - first name, last name, and email are **mandatory** fields.
 - Click the **"Organization and Department"** tab. Use the dropdowns to select the user's organization and department. Choose the appropriate radio button:
     - Select **"is employed by this department"** if the user is a worker in that department.
     - Select **"is employed by this organization"** if the user needs access to the organization / department but should not show up on reports (e.g., an administrator that needs access to multiple departments but should not show up on the reports).
     - Select **"has access to the data for this organization/department"** for individuals not employed with the organization (e.g., external validator).
 - Click **"Save"**.
-    - NOTE: If the name entered is similar to an existing user, the screen will indicate the name is similar to an existing user. Click **"Yes – Add New User"** if the user is new. If the person you are trying to enter already exists in the system, **STOP** and contact <admin_cmds@keyera.com>.
+    - NOTE: If the name entered is similar to an existing user, the screen will indicate the name is similar to an existing user. Click **"Yes - Add New User"** if the user is new. If the person you are trying to enter already exists in the system, **STOP** and contact <admin_cmds@keyera.com>.
 - Click the 'Login' tab and change the status to **"Approved"**.
 - Click the 'Groups' tab. Check the appropriate user group for that user.
     - NOTE: Everyone should be assigned to the **"CMDS Worker"** user group.
@@ -638,7 +638,7 @@ You can see a user's expiry date by:
 
 ## CMDS Terminology & Hierarchy
 
-In an **Organization**, **Learners** are assigned to **Departments** created in CMDS. Each **Department** has a set of **Profiles** and **Programs** available for assignment to its Learners. Each **Program** contains a list of **Achievements** based on premise of the Program. Each **Profile** has a set of **Competencies** that best represent the role and function of the Profile. **Competencies** have **Achievements** attached to them to fulfill the 'Knowledge' needed to safely perform a task. **Achievements** are classified by their **type**, and depending on the **Achievement Type**, a **File or Link** may be attached to be reviewed and signed-off by the Learner. Learners use their **Accounts** to complete the **Achievements** that are assigned to them.
+In an **Organization**, **Learners** are assigned to **Departments** created in CMDS. Each **Department** has a set of **Profiles** and **Programs** available for assignment to its Learners. Each **Program** contains a list of **Achievements** based on premise of the Program. Each **Profile** has a set of **Competencies** that best represent the role and function of the Profile. **Competencies** have **Achievements** attached to them to fulfil the 'Knowledge' needed to safely perform a task. **Achievements** are classified by their **type**, and depending on the **Achievement Type**, a **File or Link** may be attached to be reviewed and signed-off by the Learner. Learners use their **Accounts** to complete the **Achievements** that are assigned to them.
 
 - **Organization → Departments → Programs → Achievements**
 - **Departments → Profiles → Competencies → Achievements**

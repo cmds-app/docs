@@ -29,10 +29,10 @@ For example:
 
 Button placement depends on the specific context and type of action. **Bottom placement** is preferred for:
 
-- **Form submission buttons** (Save, Submit, Continue) — users expect these at the bottom after completing the form
+- **Form submission buttons** (Save, Submit, Continue) - users expect these at the bottom after completing the form
 - **Wizard/stepper navigation** (Next, Previous, Finish)
-- **Modal dialogs** — actions typically appear at the bottom
-- **Mobile interfaces** — bottom placement is more thumb-friendly
+- **Modal dialogs** - actions typically appear at the bottom
+- **Mobile interfaces** - bottom placement is more thumb-friendly
 
 **Top placement** is preferred for:
 
@@ -45,17 +45,17 @@ Material Design principles specify:
 
 - **Forms**: Primary actions should be at the bottom, following the natural completion flow
 - **Content pages**: Actions can be at the top in app bars or floating action buttons
-- **Mobile**: Consider reachability — bottom placement is often more accessible
+- **Mobile**: Consider reachability - bottom placement is often more accessible
 
 ### Alignment and sequence
 
 On web forms, buttons should be placed at the bottom of the page, aligned to the left margin. The correct sequence (from left to right) is:
 
-1. **Save** (primary action — leftmost)
-2. **Cancel** (dismissive action — next to primary)
+1. **Save** (primary action - leftmost)
+2. **Cancel** (dismissive action - next to primary)
 3. **Duplicate** (secondary action)
 4. **View References** (secondary action)
-5. **Delete** (destructive action — rightmost or separated)
+5. **Delete** (destructive action - rightmost or separated)
 
 The key principle here is:
 

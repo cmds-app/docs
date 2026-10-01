@@ -22,7 +22,7 @@ Just like smartphones have evolved from basic devices to powerful computers, eLe
 
 **Status:** Historical only
 **What it was:** The first rough draft of what would become SCORM. Think of it as the prototype that proved the concept could work.
-**Our recommendation:** Ignore it completely — no one uses this anymore.
+**Our recommendation:** Ignore it completely - no one uses this anymore.
 
 ### SCORM 1.1 (January 2001)
 
@@ -37,10 +37,10 @@ Just like smartphones have evolved from basic devices to powerful computers, eLe
 **What makes it special:** Reliable, simple, and works with virtually every LMS on the market.
 **Our recommendation:** **Essential support.** This is still the workhorse of the eLearning industry. If you're just getting started with SCORM, begin here.
 
-### SCORM 2004 editions (2004–2009)
+### SCORM 2004 editions (2004-2009)
 
 **Status:** Widely supported
-**What they added:** Advanced navigation controls and course sequencing — think of it as giving course authors the ability to create "if-then" rules for learner progress.
+**What they added:** Advanced navigation controls and course sequencing - think of it as giving course authors the ability to create "if-then" rules for learner progress.
 
 **The editions you'll encounter:**
 
@@ -138,7 +138,7 @@ Just like smartphones have evolved from basic devices to powerful computers, eLe
 
 **Problem it solves:** Eliminates the tedious process of manually uploading courses to your LMS
 **How it works:** Direct publishing from authoring tools to your LMS with a single click
-**Our recommendation:** Adopt this if you regularly import lots of content — it's a huge time-saver.
+**Our recommendation:** Adopt this if you regularly import lots of content - it's a huge time-saver.
 
 ---
 

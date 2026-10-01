@@ -6,9 +6,9 @@ Task list comment tokens improve code maintainability and communication between 
 
 ## Comment tokens
 
-Here is a list of color-coded tokens used in the source code for this platform.
+Here is a list of colour-coded tokens used in the source code for this platform.
 
-**RED** — code does not work/compile:
+**RED** - code does not work/compile:
 
 ```csharp
 // ERROR: This code throws a specific reproducible error.
@@ -18,7 +18,7 @@ Here is a list of color-coded tokens used in the source code for this platform.
 // WTF: WHAT THE ****?
 ```
 
-**ORANGE** — code works but is not right:
+**ORANGE** - code works but is not right:
 
 ```csharp
 // HACK: This code has intentionally been hacked to work. It should NOT go into any
@@ -35,7 +35,7 @@ Here is a list of color-coded tokens used in the source code for this platform.
 // SMELLS: Same as FIXME.
 ```
 
-**BLUE** — code works but needs more features or more explaining:
+**BLUE** - code works but needs more features or more explaining:
 
 ```csharp
 // TODO: Functionality is planned but not yet implemented.

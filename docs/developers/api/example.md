@@ -86,7 +86,7 @@ A successful request returns `200` and a JSON array. Each element is one member'
     {
         "department": { "id": "3f2504e0-4f89-41d3-9a0c-0305e82c3301", "name": "Operations", "code": null },
         "member": { "id": "7c9e6679-7425-40de-944b-e07fc1f90ae7", "name": "Jordan Avery", "code": "100482" },
-        "primaryProfile": { "id": "b1e7…", "name": "Field Operator", "code": "FO-2" },
+        "primaryProfile": { "id": "b1e7...", "name": "Field Operator", "code": "FO-2" },
         "measurement": {
             "key": 3,
             "name": "Required credentials",

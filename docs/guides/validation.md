@@ -52,8 +52,8 @@ Click **"Login with Email"**.
 - Use the **dropdown** to toggle between "Primary profile only" and "All profiles requiring compliance".
 - When "Primary profile only" is selected, the name of your primary profile will display, and the competency totals in the 'Compliance Summary' will reflect your primary profile only.
 - When "All profiles requiring compliance" is selected, the competency totals in the 'Compliance Summary' will reflect *all* profiles requiring compliance.
-- The 'Compliance Summary' breaks down each compliance category, showing your percent complete in each area. To view the assigned items, click on the colored text to the right (e.g., **1 out of 3 completed**).
-- The 'Learning Summary' box shows any additional training that you have been assigned. To view the assigned items, click on the colored text to the right (e.g., **3 out of 4 completed**).
+- The 'Compliance Summary' breaks down each compliance category, showing your percent complete in each area. To view the assigned items, click on the coloured text to the right (e.g., **1 out of 3 completed**).
+- The 'Learning Summary' box shows any additional training that you have been assigned. To view the assigned items, click on the coloured text to the right (e.g., **3 out of 4 completed**).
 
 ### Competency Summary Box
 
@@ -84,14 +84,14 @@ There are a variety of ways to access your competencies to perform your self-ass
 - Once you click **"View My Self-Assessments"** click on the competency number for which you would like to self-assess.
     - NOTE: you can use Criteria to locate a specific competency, category, or criticality.
 
-### Method #2: From your profile(s)
+### Method #2: from your profile(s)
 
 - From your home page, select the **"My Profiles"** under 'Shortcuts'.
 - Click on the Profile name that you would like to self-assess on.
 - Click on the competency number for which you would like to self-assess.
     - NOTE: you can use Criteria to locate a specific competency, category, or criticality.
 
-### Method #3: From the side menu
+### Method #3: from the side menu
 
 - The side menu is available from any page in CMDS, *except* when completing an e-learning module.
 - Click **"Self-Assessments"** under 'My Competencies' on the side menu.
@@ -254,7 +254,7 @@ There are a variety of ways to access user validations and validating users/comp
 
 Validation screen layout:
 
-- **Do you agree with this self-assessment?** – Yes / No buttons.
+- **Do you agree with this self-assessment?** - Yes / No buttons.
 - **Add your reason by selecting from the canned comments** or **add your own comments** in the free-text box.
 - Click **"Next"** to validate the next competency.
 

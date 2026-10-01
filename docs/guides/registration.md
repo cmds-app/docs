@@ -81,7 +81,7 @@ Notes about this page:
 
 ***Note:*** *The following billing steps apply only to courses that require payment. **For courses with a $0 fee, skip the billing section and proceed to the confirmation steps.***
 
-7. In the **"Bill To"** text box, enter the cost center code. If you're unsure of your cost center code, please contact your manager.
+7. In the **"Bill To"** text box, enter the cost centre code. If you're unsure of your cost centre code, please contact your manager.
 8. Click **"Next."**
 9. Review all registration details to ensure accuracy, including:
     - **Date**, **Address**, and the **Cancellation & Refund Policy**.
@@ -110,7 +110,7 @@ You are now registered for the course! Your status will be updated in the list o
 
 ***Note:*** *The following billing steps apply only to courses that require payment. For courses with a $0 fee, skip the billing steps and proceed to confirmation.*
 
-9. In the **'Bill To'** text box, type in the code for your cost center. If you are unsure of your cost center, please contact your manager.
+9. In the **'Bill To'** text box, type in the code for your cost centre. If you are unsure of your cost centre, please contact your manager.
 10. Click **"Next."**
 
 ***Note:*** *This concludes the billing steps.*

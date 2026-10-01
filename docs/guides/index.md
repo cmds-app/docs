@@ -1,28 +1,28 @@
 # Guides
 
-Welcome! This is the place to come when you want step-by-step help doing something in CMDS — whether you're completing your own training, checking someone else's work, setting up a new program, or registering for a course.
+Welcome! This is the place to come when you want step-by-step help doing something in CMDS - whether you're completing your own training, checking someone else's work, setting up a new program, or registering for a course.
 
 Pick the guide that matches what you're trying to do.
 
 ## I want to...
 
-**Use CMDS day-to-day** — complete my assigned training, self-assess on competencies, see my progress, or work through an e-learning module.
-→ [Learning guide](learning.md)
+**Use CMDS day-to-day** - complete my assigned training, self-assess on competencies, see my progress, or work through an e-learning module.
+Go to the [Learning guide](learning.md)
 
-**Review or sign off on someone else's work** — validate submitted competencies and approve learners' progress.
-→ [Validation guide](validation.md)
+**Review or sign off on someone else's work** - validate submitted competencies and approve learners' progress.
+Go to the [Validation guide](validation.md)
 
-**Set up and manage CMDS for my organization** — configure settings, manage users, run reports, and handle administration tasks.
-→ [Administration guide](administration.md)
+**Set up and manage CMDS for my organization** - configure settings, manage users, run reports, and handle administration tasks.
+Go to the [Administration guide](administration.md)
 
-**Complete a site orientation** — register for My Orientations, complete required orientations, and access your certificates.
-→ [Orientation guide](orientation.md)
+**Complete a site orientation** - register for My Orientations, complete required orientations, and access your certificates.
+Go to the [Orientation guide](orientation.md)
 
 **Upload a safety certificate** — self-declare a Time-Sensitive Safety Certificate in Skills Passport.
 → [Certification guide](certification.md)
 
-**Find a course and register** — browse what's available in your learning catalogue and sign up for online learning or classroom training.
-→ [Registration guide](registration.md)
+**Find a course and register** - browse what's available in your learning catalogue and sign up for online learning or classroom training.
+Go to the [Registration guide](registration.md)
 
 **Understand CMDS terms and structure** — learn how Organizations, Departments, Profiles, Programs, Competencies, and Achievements relate.
 → [Terminology and hierarchy](terminology.md)

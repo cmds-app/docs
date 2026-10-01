@@ -42,7 +42,7 @@ Content-Type: application/problem+json
 
 ## Staying within the limits
 
-- **Honor `Retry-After`.** When you get a `429`, wait the number of seconds it names before retrying. It is the exact time until your window resets.
+- **Honour `Retry-After`.** When you get a `429`, wait the number of seconds it names before retrying. It is the exact time until your window resets.
 - **Back off on repeated rejections.** If a retry is also rejected, increase the wait between attempts (exponential backoff) rather than retrying in a tight loop.
 - **Read deltas, not the whole world.** The heaviest cost is re-downloading a full collection you already hold. Mirror once, then poll `lastChangeTimeSince` for what has changed (see [Request and response formats](request-and-response-formats.md)). Fewer, smaller requests stay comfortably inside the limits.
 - **Match your polling to how often the data really changes.** Most collections change on the order of minutes, not milliseconds.

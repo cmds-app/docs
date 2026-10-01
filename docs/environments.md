@@ -9,7 +9,7 @@ Running CMDS as a single "one size fits all" system would be risky. New features
 Separating the three jobs - building, previewing, and running - gives each its own space:
 
 - Developers can build and break things without consequence.
-- You can preview new features and practice workflows before they affect your people.
+- You can preview new features and practise workflows before they affect your people.
 - Your real learners work in a stable environment with their real data.
 
 All three environments run the same software. What differs is the audience, the data, and how stable things are.
@@ -22,7 +22,7 @@ You generally won't be invited to Test unless you're actively working with our t
 
 ## Demo
 
-**For you to preview and practice.** Demo is where each release lands about a week before it goes Live. If you want to see a new feature before your learners do, or rehearse a training program, or explore a configuration change safely, Demo is the place.
+**For you to preview and practise.** Demo is where each release lands about a week before it goes Live. If you want to see a new feature before your learners do, or rehearse a training program, or explore a configuration change safely, Demo is the place.
 
 Demo uses a separate dataset from Live. Nothing you do here affects your real users, and nothing they do affects you. It's a safe sandbox where you can poke around, make mistakes, and learn.
 

@@ -1,6 +1,6 @@
 # Video recommendations
 
-Just a few of the favorite best-practice videos recommended by our contributors.
+Just a few of the favourite best-practice videos recommended by our contributors.
 
 ## Dependency injection: the best pattern
 
@@ -28,7 +28,7 @@ Watch: [Why I don't use the "else" keyword in my code](https://www.youtube.com/w
 
 ## Clean code with horrible performance
 
-Many "clean code" practices, often recommended for maintainability and readability, can drastically harm runtime performance — in some cases by factors of 10x to 20x. Muratori concludes that while maintainability is important, performance should not be sacrificed for dogmatic adherence to clean code rules. He recommends:
+Many "clean code" practices, often recommended for maintainability and readability, can drastically harm runtime performance - in some cases by factors of 10x to 20x. Muratori concludes that while maintainability is important, performance should not be sacrificed for dogmatic adherence to clean code rules. He recommends:
 
 - Avoid polymorphism when performance matters.
 - Prefer explicit knowledge of data internals when appropriate.

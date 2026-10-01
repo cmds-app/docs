@@ -6,7 +6,7 @@ New to CMDS? Start with [Environments](environments.md) to learn what each envir
 
 ## Sections
 
-- [**Help Center**](help/index.md) - orientation for new users, quick-start tips, and links to support, blog posts, guides, and terminology
+- [**Help Centre**](help/index.md) - orientation for new users, quick-start tips, and links to support, blog posts, guides, and terminology
 - [**Guides**](guides/index.md) - role-based guides for learners, validators, and administrators, plus orientation and course registration workflows
 - [**SCORM**](scorm/index.md) - SCORM and xAPI content delivery using CMDS, glossary of terms, and how to add a SCORM package to a CMDS course
 - [**Developers**](developers/index.md) - API reference (authentication, formats, rate limits), integrations (Power BI, Safe Exam Browser, SSO), and other technical resources

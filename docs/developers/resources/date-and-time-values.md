@@ -1,6 +1,6 @@
 # Date and time values
 
-> "Punctuality is not just limited to arriving at a place at the right time; it is also about taking actions at the right time." — Amit Kalantri
+> "Punctuality is not just limited to arriving at a place at the right time; it is also about taking actions at the right time." - Amit Kalantri
 
 The API stores date/time values in Microsoft SQL Server using the [DATETIMEOFFSET](https://learn.microsoft.com/en-us/sql/t-sql/data-types/datetimeoffset-transact-sql?view=sql-server-ver16) data type, and in PostgreSQL using the [timestamp with time zone](https://www.postgresql.org/docs/17/datatype-datetime.html) data type.
 
@@ -104,7 +104,7 @@ DateTimeOffset parsed = DateTimeOffset.Parse(serialized);
 ```
 
 !!! success
-    `parsed == original` — the round-trip is **lossless**
+    `parsed == original` - the round-trip is **lossless**
 
 ### Practice makes perfect
 
@@ -112,7 +112,7 @@ Check out this service in the API:
 
 ![Date/time service endpoint in the API](../../assets/developers/api-v2-datetime-service.png)
 
-You can practice with your own input values to see exactly how they are parsed and interpreted by the server. For example:
+You can practise with your own input values to see exactly how they are parsed and interpreted by the server. For example:
 
 #### Example input
 

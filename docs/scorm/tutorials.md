@@ -34,7 +34,7 @@ The system will generate a SCORM package identifier for you automatically. It co
 
 ## Step 4
 
-Paste the SCORM package identifier into the field labeled "SCORM Package ID".
+Paste the SCORM package identifier into the field labelled "SCORM Package ID".
 
 ![Paste SCORM Package ID](../assets/scorm/paste-id.png)
 
