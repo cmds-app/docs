@@ -41,5 +41,5 @@ Relationship definitions:
 - Validator: One or more individuals assigned to validate the user's competency profile(s); includes their site lead.
 
 Additional notes:
-- Reporting lines typically go up the hierarchy: Validator → Supervisor → Manager. However, there may be cases where a User’s Validator (i.e., site lead) overlaps with their Supervisor.
+- Reporting lines typically go up the hierarchy, from Validator to Supervisor to Manager. However, there may be cases where a User’s Validator (i.e., site lead) overlaps with their Supervisor.
 - The "Leader" relationship is automatically established and updated via the Workday integration and does not require administrative configuration. It may also overlap with one or more of the other relationships, depending on site reporting practices versus Workday org charts.

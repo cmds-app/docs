@@ -1,12 +1,12 @@
-# CMDS Administrator Guide
+# CMDS administrator guide
 
-Created & Reviewed by the CMDS Team — <https://www.keyeracmds.com/>
+Created and reviewed by the CMDS team - <https://www.keyeracmds.com/>
 
-Last revised: January 2025
+Last revised: September 2026
 
 [Download PDF](administration.pdf){ .md-button }
 
-## Tasks of a CMDS Admin
+## Tasks of a CMDS admin
 
 As a CMDS administrator, you are generally required to perform the following tasks in the system:
 
@@ -22,7 +22,7 @@ As a CMDS administrator, you are generally required to perform the following tas
 
 - CMDS offers several reports. As an administrator you should be familiar with the available CMDS reports, as well as how to export them from the system.
 
-### Notify CMDS Admin/Coordinator should anyone within your organization need to be archived
+### Notify CMDS admin/coordinator should anyone within your organization need to be archived
 
 - When personnel leave your organization, you must notify "CMDS Administration" (<admin_cmds@keyera.com>) so that you are not charged for these individuals come invoice time.
 
@@ -68,11 +68,11 @@ Click **"Login with Email"**.
 
 - You must use the email address that matches the one used in CMDS.
 - If this is your first time signing in, or you have a password reset, your password will be **cmds246**.
-- You will be required to change your password to one that is a minimum of 12 characters long.
+- You will be required to change your password. Your new password must be at least 12 characters long and include uppercase and lowercase letters, numbers, and symbols.
 - If you forget your password, click **"Forgot your password?"**.
 - If you are having difficulties logging in, contact <admin_cmds@keyera.com>.
 
-## Home Page – From Top to Bottom
+## Home page - from top to bottom
 
 ### Sidebar
 
@@ -85,26 +85,31 @@ Click **"Login with Email"**.
 - **Self-Assessments:** lists the critical and non-critical competencies assigned to you.
 - **Training Plan:** lists your assigned training (default displays incomplete training).
 
-### Home Page Box
+### Shortcut buttons
 
-- 7 tabs are available – **Dashboard, Shortcuts, Profiles, Contacts, Logins, Training Sessions, and Help.**
-- The 'Shortcuts' tab is the second tab available, where several shortcut tools are available for users to quickly access the most commonly used tools in CMDS (e.g., My Training Plan).
-- Users can view the information under each of the 7 tabs by clicking on the tab name (e.g., Profiles).
+- A row of shortcut buttons at the top of your home page gives you quick access to the most commonly used tools in CMDS: **eLearning**, **Orientations**, **Training Plan**, and **Education & Training**. Your organization may also add buttons for its own catalogues.
+
+### Home page box
+
+- 3 tabs are available - **Dashboard, Profiles, and Contacts.**
+- Users can view the information under each tab by clicking on the tab name (e.g., Profiles).
+- The **"Profiles"** tab lists your primary profile, your secondary profiles required for compliance, and your other profiles not required for compliance.
 - The **'Contacts'** tab contains a list of your manager(s), supervisor(s), and validator(s). If you are a manager, supervisor, and/or validator, you will also see a list of the individuals you manage, supervise, and/or validate.
     - If you are a Manager and have people assigned to you, you will see them listed under "Workers".
     - Managers can click on the speedometer icon next to the user's name and be directed to the user's dashboard to see where the user currently stands in their training.
     - If you are a Validator, you will see the people assigned to you listed under "Learners".
+- The 'Contacts' tab also shows your roles under 'My Roles', your organization's invoicing contacts, and your sign-in history under 'My Login History'.
 
-#### Profile(s) Required for Compliance box
+#### Profile(s) required for compliance box
 
-- Click **"My Dashboard"**.
+- Click **"Dashboard"**.
 - Use the **dropdown** to toggle between "Primary profile only" and "All profiles requiring compliance".
 - When "Primary profile only" is selected, the name of your primary profile will display, and the competency totals in the 'Compliance Summary' will reflect your primary profile only.
 - When "All profiles requiring compliance" is selected, the competency totals in the 'Compliance Summary' will reflect *all* profiles requiring compliance.
 - The 'Compliance Summary' breaks down each compliance category, showing your percent complete in each area. To view the assigned items, click on the coloured text to the right (e.g., **1 out of 3 completed**).
 - The 'Learning Summary' box shows any additional training that you have been assigned. To view the assigned items, click on the coloured text to the right (e.g., **3 out of 4 completed**).
 
-### Competency Summary
+### Competency summary
 
 - Shows a bar graph breakdown of your Profile(s).
 - Click on the status (e.g., **Expired**) to access the competencies.
@@ -116,18 +121,18 @@ Click **"Login with Email"**.
 - **Secondary Profiles (Required for Compliance):** Job profiles that contain a mandatory skill set for supporting or additional functions required for your job.
 - **Secondary Profiles (Not Required for Compliance):** Job profiles not required to safely and effectively complete your current job role (often roles you are training in).
 
-### Learning Portal
+### Learning portal
 
-- Contains 4 sections – **Profiles, College Certificates, Competencies,** and **Achievements.**
+- Contains 4 sections - **Upcoming Training Sessions, College Certificates, Competencies, and Achievements.** If you are enrolled in a program, a **My Programs** section also appears.
 - Each section contains various tools designed to assist administrators in performing their responsibilities efficiently and effectively.
 
-## Self-Assessment Guide
+## Self-assessment guide
 
 There are a variety of ways to access your competencies to perform your self-assessments.
 
 **NOTE: As an administrator, you may not have a profile and may not have to complete self-assessments. This information might be for information only.**
 
-### Method #1: Using your learning portal
+### Method #1: using your learning portal
 
 - From your home page, scroll down to your 'Learning Portal'.
 - Listed under 'Competencies', click **"Begin Self-Assessment"** or **"View My Self-Assessments"**.
@@ -137,7 +142,7 @@ There are a variety of ways to access your competencies to perform your self-ass
 
 ### Method #2: from your profile(s)
 
-- From your home page, select the **"My Profiles"** under 'Shortcuts'.
+- From your home page, click the **"Profiles"** tab.
 - Click on the Profile name that you would like to self-assess on.
 - Click on the competency number for which you would like to self-assess.
     - NOTE: you can use Criteria to locate a specific competency, category, or criticality.
@@ -149,7 +154,7 @@ There are a variety of ways to access your competencies to perform your self-ass
 - Click on the competency number for which you would like to self-assess.
     - NOTE: you can use Criteria to locate a specific competency, category, or criticality.
 
-### Method #4: Using your competency summary bar graph
+### Method #4: using your competency summary bar graph
 
 - From the 'Dashboard' tab on your homepage, scroll down to see your **"Competency Summary"**.
 - Click **Not Completed** in the Competency Summary bar graph.
@@ -163,13 +168,13 @@ There are a variety of ways to access your competencies to perform your self-ass
 - Once you have completed several self-assessments, and are ready to notify your validator, click **"Submit for Validation".**
     - This sends an email notification to your validator informing them that you are ready to be checked out on your submissions. NOTE: For competencies which have been self-assessed, but not submitted, no notifications are sent to your validator.
 
-### Locating Specific Competencies for Validation
+### Locating specific competencies for validation
 
 - When using any of the above methods, you can isolate a specific competency number, search for key words, isolate critical competencies, and/or search for expired competencies.
 - Expand the 'Criteria' box.
 - Using the dropdowns and search boxes, enter the applicable information and click **"Search"**.
 
-### Submitting Your Competencies for Validation
+### Submitting your competencies for validation
 
 Once you have completed a number of self-assessments, and would like to notify your validator that you are ready to be validated on your self-assessments:
 
@@ -179,21 +184,21 @@ Once you have completed a number of self-assessments, and would like to notify y
     - NOTE: Your validator will only be able to validate you if they themselves are validated in that competency.
     - You can verify who your assigned validator(s) are by going to your home page, clicking on the **"Contacts"** tab, and looking for your listed Validator(s). If no one is listed, contact your manager, administrator, or account manager.
 
-## Reviewing and Signing Off on Items in your Training Plan
+## Reviewing and signing off on items in your training plan
 
 If you have been **assigned** a document for review, an eLearning module for completion, or a safety certificate that is required, you will see this reflected on your dashboard.
 
 ### Option #1
 
-- To view what you have been assigned for completion, click **"My Training Plan"** under the 'Shortcuts' tab.
+- To view what you have been assigned for completion, click the **"Training Plan"** shortcut button at the top of your home page.
 - Display will default to show **ONLY items NOT COMPLETE**.
-    - To see BOTH complete and incomplete training, click the **box** next to "*Show all of the achievements in my training plan.*"
+    - To see BOTH complete and incomplete training, switch the toggle next to "*the completed achievements in my training plan*" from **Hide** to **Show**.
 - Click on the **name** of the achievement you are looking to complete.
 - Review the attachments under "Training Achievements" / "Achievement Downloads" and click **"Sign Off"**.
 
 ### Option #2
 
-- To view what you have been assigned, click **"My Education & Training"** under the shortcuts tab.
+- To view what you have been assigned, click the **"Education & Training"** shortcut button at the top of your home page.
     - NOTE: Everything you are assigned, regardless of if it is or isn't in your training plan, can be found here. If you are working on completing required training, please use Option #1 to find your required training.
 - Based on the flags, you can tell what education you have completed and what is waiting to be completed.
     - A *green flag* means that the training is completed and valid.
@@ -201,37 +206,37 @@ If you have been **assigned** a document for review, an eLearning module for com
 - Click on the **name** of the achievement you are looking to complete.
 - Review the attachments under "Training Achievements" / "Achievement Downloads" and click **"Sign Off"**.
 
-#### For Codes of Practice, Safe Operating Practices, Additional Compliance Requirements, Site-Specific Documents, and Training Guides
+#### For codes of practice, safe operating practices, additional compliance requirements, site-specific documents, and training guides
 
-- To view what you have been assigned for completion, click **"My Training Plan"** under the 'Shortcuts' tab. OR click **"My Education & Training"** under the 'Shortcuts' tab.
+- To view what you have been assigned for completion, click the **"Training Plan"** shortcut button OR the **"Education & Training"** shortcut button at the top of your home page.
 - For any of the categories listed above, you are required to **READ/REVIEW** and **SIGN OFF** that you **understand** the content.
 - Click on the document you would like to sign off on.
 - Open the document(s), under "Training Achievements"/"Achievement Downloads", read/review its content.
 - Click **"Sign Off"**.
 - This will remove the achievement from your training plan and show it as complete.
 
-### For Assigned eLearning
+### For assigned eLearning
 
-- To view what you have been assigned for completion, click **"My Training Plan"** under the 'Shortcuts' tab. OR click **"My Education & Training"** under the 'Shortcuts' tab.
+- To view what you have been assigned for completion, click the **"Training Plan"** shortcut button OR the **"Education & Training"** shortcut button at the top of your home page.
 - Click on the eLearning module title to open/complete the module.
     - You must complete the associated quiz with a grade of *90% or higher.*
 
-### For Time-Sensitive Safety Certificates
+### For time-sensitive safety certificates
 
 - Your organization may choose to track your required safety tickets in CMDS.
 - If your required / assigned TSSC is expired or not complete it will show in your 'Training Plan'.
 - You *cannot* remove this achievement or mark it as complete. **You must contact your local administrator and show proof of completion. Your administrator will then update your completion status.**
 
-#### Further Information
+#### Further information
 
 - **Clock icons** mean there is a time clock on that achievement. Once you sign off on that achievement, it will expire at a set interval from the sign off date (e.g., 1 year), at that time you will have to re-review the achievement.
 - **Red flags** mean you have not yet signed off on or completed that achievement.
 - **Green flags** mean you have completed reviewing the achievement and signed off.
 
-## eLearning User Guide
+## eLearning user guide
 
-- Access **"e-Learning"** from the 'Shortcuts' tab on the home page OR scroll down to your 'Learning Portal' and click **"e-Learning Modules"** under "Achievements".
-- You will see a list of the available modules open in a new screen or tab – modules are displayed alphabetically.
+- Click the **"eLearning"** shortcut button at the top of your home page.
+- You will see a list of the available modules open in a new screen or tab - modules are displayed alphabetically.
     - You can also search by category by expanding the 'Catalogue' name and clicking on the name of the category you are looking for.
 - To access a module, click the title and register for the course by clicking **"Start"**.
 - The module will then display.
@@ -247,16 +252,16 @@ If you have been **assigned** a document for review, an eLearning module for com
 - A passing mark will generate a certificate for your records. **If you would like a copy of the certificate, you can find it on the left-hand side under the Module name at any time.**
 - When viewing the quiz, to return to the module, click **"Return to Course Outline"**.
 - To return to the list of available modules, click the company logo in the top left corner.
-- From the list of available eLearning modules, you can search for a specific module using the **"Search catalog"** bar.
+- From the list of available eLearning modules, you can search for a specific module using the **"Search catalogue"** bar.
 - Type in a keyword related to your search and click the **magnifying glass**.
-- Once you have searched for something you **MUST** clear your search criteria to obtain the full list of available modules again. You can do this by clicking the **"X"** next to the 'Search catalog' bar.
+- Once you have searched for something you **MUST** clear your search criteria to obtain the full list of available modules again. You can do this by clicking the **"X"** next to the 'Search catalogue' bar.
 
-### Please Note
+### Please note
 
 - If a module contains multiple lessons, with more than one quiz, an average grade of 90%+ must be achieved to pass.
 - CMDS records your most recent grade, not necessarily your highest mark.
 - Modules are organized by category; the same module may appear in more than one category.
-- For a record of completed eLearning, see your **"My Education & Training"** in CMDS.
+- For a record of completed eLearning, see your **"Education & Training"** in CMDS.
 - There is **NO FEE** per module and users can "register" for as many modules as they would like.
 - You *do not* have to attempt the quiz.
 - We have done our best to make all videos and images viewable to all users. If a file is not loading, please try accessing the eLearning on an alternate browser.
@@ -265,7 +270,7 @@ If you have been **assigned** a document for review, an eLearning module for com
         - Google Chrome
         - Firefox
 
-## Adding New Users to CMDS
+## Adding new users to CMDS
 
 - Click on **"People"** under 'General' in the side menu.
 - Expand **"Criteria"** and enter the name of the user you would like to add.
@@ -302,7 +307,7 @@ If you have been **assigned** a document for review, an eLearning module for com
 - Click **"Send Welcome Email"**. A new page will pop up with the automated email generated. You can add content to the email or additional recipients.
 - Click **"Send"**.
 
-### Modifying Profiles Assigned to Users
+### Modifying profiles assigned to users
 
 - Click on **"People"** under 'General' in the side menu.
 - Expand **'Criteria'** and enter the name of the user whose profile(s) you would like to modify.
@@ -326,7 +331,7 @@ If you have been **assigned** a document for review, an eLearning module for com
 - The system requires a **unique and valid email address for all users.**
 - A user can have **more than one Secondary Profile** but can **only have one Primary Profile**. That primary profile should represent the job they are currently performing.
 
-## Assigning Organization-Specific Training to Individuals
+## Assigning organization-specific training to individuals
 
 To be completed ***after*** you have loaded your organization specific documents/links in the system.
 
@@ -346,7 +351,7 @@ To be completed ***after*** you have loaded your organization specific documents
 
 If the boxes **"Training Plan"** and **"Required"** were checked, the individual(s) will receive the assigned resource to their **Training Plan** and will be required to **"Sign Off"** on the achievement once they have **reviewed the associated material.**
 
-## Entering Time Sensitive Safety Certificates (Individual)
+## Entering time-sensitive safety certificates (individual)
 
 - Login to CMDS.
 - Click on **"People"** under 'General' in the side menu.
@@ -366,7 +371,7 @@ If the boxes **"Training Plan"** and **"Required"** were checked, the individual
 - You can choose to **upload a copy of the certificate** under 'Files' by clicking **"Upload File"**.
 - Click **"Save"**.
 
-### Updating an Existing Time Sensitive Safety Certificate
+### Updating an existing time-sensitive safety certificate
 
 - Click on **"People"** under 'General' in the side menu.
 - Expand **'Criteria'** and search to locate the individual you would like to enter the Time Sensitive Safety Certificate(s) for.
@@ -378,7 +383,7 @@ If the boxes **"Training Plan"** and **"Required"** were checked, the individual
     - You may also choose whether or not to remove the expired safety ticket. Ensure you save a copy in a secure location if needed for the future.
 - Click **"Save"**.
 
-## Uploading Organization Specific Documents
+## Uploading organization-specific documents
 
 When uploading organization specific documents to CMDS, there are two available methods:
 
@@ -387,7 +392,7 @@ When uploading organization specific documents to CMDS, there are two available 
 
 *NOTE: It is recommended you begin by **converting the document to a PDF** and saving it somewhere you will be able to easily locate it.*
 
-### Uploading a File
+### Uploading a file
 
 - Scroll down to your 'Learning Portal'.
 - Under 'Achievements', click **"Upload Files & Links"**.
@@ -416,7 +421,7 @@ NOTE: You can load more than one file under a single achievement; however, it is
 | --- | --- | --- | --- |
 | 2022 Jan Testing | Codes of Practices | testing | Cert for Phising.pdf; KPL-03-Corrosion-Control.pdf; Test; Testing |
 
-### Uploading a Link
+### Uploading a link
 
 - Scroll down to your 'Learning Portal'.
 - Under 'Achievements', click **"Upload Files & Links"**.
@@ -435,11 +440,11 @@ NOTE: You can load more than one file under a single achievement; however, it is
 
 NOTE: You can load more than one link under a single achievement; however, it is important to keep in mind that this will result in one "Sign Off" per multiple documents (example above).
 
-### PART 2: Adding a New Time Sensitive Safety Certificate (TSSC) Title
+### Part 2: adding a new time-sensitive safety certificate (TSSC) title
 
 Please contact your account manager or "CMDS Administration" (<admin_cmds@keyera.com>) and we will create it for you.
 
-## Updating Organization Specific Documents
+## Updating organization-specific documents
 
 There are two ways to update organization specific achievements:
 
@@ -462,12 +467,12 @@ There are two ways to update organization specific achievements:
 - From this screen, you can choose to upload a file, a new link, and/or remove any of the existing attachments by clicking the garbage can(s) to the right of the attachment.
     - We recommend you refresh your browser then check the document to make sure it was successfully replaced.
 
-### Notes to Consider
+### Notes to consider
 
 - You must use **'Option 2'** to update organization-specific links as you need to delete the old link and upload the new link. You are unable to override links as you can for files using 'Option 1'.
 - If you are having issues uploading or updating files and / or links, please reach out to your account manager or "CMDS Administration" (<admin_cmds@keyera.com>).
 
-## CMDS Available Reports
+## Available CMDS reports
 
 - Login to CMDS.
 - Click **"Reports"** under 'General' in the side menu.
@@ -488,12 +493,12 @@ Companies interested in setting up an API (application programming interface) sh
 
 ## Programs
 
-### Creating a New Program
+### Creating a new program
 
 From your CMDS home page:
 
 - Click **"Tools"** under 'General' in the side menu.
-- Under 'Libraries (Field Admins)' click **"Programs"**.
+- Under 'Libraries' click **"Programs"**.
 - Click **"Add New Program"**.
 - Under 'Program Name', **type in the name**.
 - Select the department from the drop down.
@@ -508,7 +513,7 @@ From your CMDS home page:
 - Please make sure the required box is checked for those resources that are required.
 - Click **"Save"**.
 
-### Editing an Existing Training Plan Template
+### Editing an existing program
 
 From your CMDS home page:
 
@@ -525,7 +530,7 @@ From your CMDS home page:
 - You will then see a message that indicates if any of the achievements could not be copied to the new template/department. This is due to the achievements not being currently assigned to the department you have selected.
 - You can continue by clicking **"Save"** and the template will be copied/created (excluding the resources identified above).
 
-### Assigning Training Plan Templates
+### Assigning programs
 
 From your CMDS home page:
 
@@ -535,11 +540,13 @@ From your CMDS home page:
 - Select the **"Program"** from the drop down.
 - Check/uncheck people as required.
 - Select the **radio button** indicating what should happen to the user(s) existing achievements assigned to them.
-    - Default option is *"Do not make any change to any existing achievement"*.
+    - **"Do nothing"** (the default) makes no changes to any previously assigned achievements.
+    - **"Make all unplanned and optional"** sets every previously assigned achievement to not planned and not required.
+    - **"Delete all previously assigned achievements (outside the program)"** removes every existing achievement that is not part of this program.
 - Click **"Next"**.
 - Review, then click **"Save"**.
 
-## Setting Up Email Notifications
+## Setting up email notifications
 
 From your CMDS home page, click **"Tools"** under 'General' in the side menu:
 
@@ -570,13 +577,13 @@ Next, you can choose to set up **carbon copy email notifications.**
 - **Check the box** next to the user's name for which you would like the **"Follower"** selected to receive carbon copy email notifications.
     - If you are unable to check the box next to the individuals name, this means that notification subscriptions are not set up for that user for that notification. **Please refer to Step 1.**
 
-## Troubleshooting a User's Password
+## Troubleshooting a user's password
 
 When logging into CMDS for the first time, a user will use the default password: **cmds246**.
 
 They will then be required to change their password to a password of their choice.
 
-If a user forgets their password, they should reset it using the **"Reset my password"** link on the login page. This will require them to enter their email address (the email address currently in CMDS) and the system will email them with instructions on resetting their password.
+If a user forgets their password, they should reset it using the **"Forgot your password?"** link on the login page. This will require them to enter their email address (the email address currently in CMDS) and the system will email them with instructions on resetting their password.
 
 As an administrator, you can reset a user's password, returning it to the default password of **cmds246**.
 
@@ -593,7 +600,7 @@ The user will then be able to login once using cmds246 and will be prompted to *
 
 This temporary password has a very short expiry date. If they do not login before this password expires, you will have to reset it again so that the "Password Expiry" date resets.
 
-Passwords are also set to **expire yearly**, one year from the date the user first changed their password.
+Passwords are also set to **expire every 6 months**, 6 months from the date the user last changed their password.
 
 You can see a user's expiry date by:
 
@@ -602,46 +609,46 @@ You can see a user's expiry date by:
 - Under the **"Login"** tab you will see **"Password Expiry"** and a date.
 - If you know this date will be an issue for the user, you can **modify the expiry date** prior to the password expiring.
 
-### Please Note
+### Please note
 
 - Once a user changes their password **no admin or CMDS team member** can see what they have changed their password to.
-- Passwords **expire yearly** for *all* users.
+- Passwords **expire every 6 months** for *all* users.
 - If a user is trying to access CMDS with the wrong email address, the system will indicate that the email address being entered does not match one on file, and they will be instructed to contact us, or their local administrator. At which time anyone with admin rights in CMDS can help them determine what email address is currently in CMDS and modify it if needed.
 
-## Terms and Definitions
+## Terms and definitions
 
-- **ACR** – Additional Compliance Requirements; general compliance category, allows each organization to track and assign training requirements that may not fall into one of the existing categories.
-- **CMDS** – Competency Management and Development System.
-- **CMDS blog** – information sharing platform where news and updates are posted <https://www.keyeracmds.com/blog>.
-- **COP** – Code of Practice; generally segregated due to the Alberta OH&S Code requirement stating that organizations must have a code of practice for all listed harmful substances (e.g., Benzene and Asbestos).
-- **Critical Competency** – a competency that addresses a high-risk activity or subject. Generally, this competency is marked time sensitive and requires revalidation at a set interval (e.g., 1 year).
-- **eLearning Modules** – unique to CMDS, these modules provide users with additional information and short quizzes to test their understanding. Generally, completing an eLearning module is optional unless otherwise indicated by your organization / manager / validator.
-- **HRD** – Human Resource Document; a document that requires employee review and sign off (e.g., a corporate drug and alcohol policy).
-- **Primary Profile** – Required for Compliance; the job profile that best matches the job you are performing the majority of the time.
-- **Secondary Profiles (Not Required for Compliance)** – profiles not required to safely and effectively complete your current job role.
-- **Secondary Profiles (Required for Compliance)** – profiles that contain a mandatory skill set for supporting or additional functions required for your job.
-- **SOP** – Safe Operating Practice.
-- **SSOP** – Site-Specific Operating Procedure; generally, a document that describes the steps that must be followed to perform a task, typically the start-up, shut down, or maintenance of a piece of equipment or process.
-- **TG** – Training Guides.
-- **TSSC** – Time Sensitive Safety Certificates; certificates that are generally time sensitive in nature (e.g., First Aid and Ground Disturbance).
+- **ACR** - Additional Compliance Requirements; general compliance category, allows each organization to track and assign training requirements that may not fall into one of the existing categories.
+- **CMDS** - Competency Management and Development System.
+- **CMDS blog** - information sharing platform where news and updates are posted <https://www.keyeracmds.com/tag/blog/>.
+- **COP** - Code of Practice; generally segregated due to the Alberta OH&S Code requirement stating that organizations must have a code of practice for all listed harmful substances (e.g., Benzene and Asbestos).
+- **Critical Competency** - a competency that addresses a high-risk activity or subject. Generally, this competency is marked time sensitive and requires revalidation at a set interval (e.g., 1 year).
+- **eLearning Modules** - unique to CMDS, these modules provide users with additional information and short quizzes to test their understanding. Generally, completing an eLearning module is optional unless otherwise indicated by your organization / manager / validator.
+- **HRD** - Human Resource Document; a document that requires employee review and sign off (e.g., a corporate drug and alcohol policy).
+- **Primary Profile** - Required for Compliance; the job profile that best matches the job you are performing the majority of the time.
+- **Secondary Profiles (Not Required for Compliance)** - profiles not required to safely and effectively complete your current job role.
+- **Secondary Profiles (Required for Compliance)** - profiles that contain a mandatory skill set for supporting or additional functions required for your job.
+- **SOP** - Safe Operating Practice.
+- **SSOP** - Site-Specific Operating Procedure; generally, a document that describes the steps that must be followed to perform a task, typically the start-up, shut down, or maintenance of a piece of equipment or process.
+- **TG** - Training Guides.
+- **TSSC** - Time Sensitive Safety Certificates; certificates that are generally time sensitive in nature (e.g., First Aid and Ground Disturbance).
 
-## Additional Information
+## Additional information
 
 - If you require help or have a question, you can:
     - Contact your local admin
     - Contact your account manager
     - Submit a help request from the **"Help"** drop down in CMDS
     - Email <admin_cmds@keyera.com>
-- If you are interested in registering for the Validator Training Course, go to <https://www.keyeracmds.com/>, click **"VALIDATOR TRAINING"** on your home page, click on the upcoming session you would like to attend. You will be contacted with the course details within 2 working days of submitting your registration.
+- If you are interested in registering for the Validator Training Course, look for an upcoming session under **"Upcoming Training Sessions"** in your Learning Portal and register for the session you would like to attend. You will be contacted with the course details within 2 working days of submitting your registration.
     - Please note: you must finish your self-assessments prior to attending the Validator Course.
-- Check out the CMDS Blog for up-to-date CMDS information <https://www.keyeracmds.com/blog>. **"SUBSCRIBE"** to stay in the loop!
+- Check out the CMDS Blog for up-to-date CMDS information <https://www.keyeracmds.com/tag/blog/>. **"SUBSCRIBE"** to stay in the loop!
 
-## CMDS Terminology & Hierarchy
+## CMDS terminology and hierarchy
 
 In an **Organization**, **Learners** are assigned to **Departments** created in CMDS. Each **Department** has a set of **Profiles** and **Programs** available for assignment to its Learners. Each **Program** contains a list of **Achievements** based on premise of the Program. Each **Profile** has a set of **Competencies** that best represent the role and function of the Profile. **Competencies** have **Achievements** attached to them to fulfil the 'Knowledge' needed to safely perform a task. **Achievements** are classified by their **type**, and depending on the **Achievement Type**, a **File or Link** may be attached to be reviewed and signed-off by the Learner. Learners use their **Accounts** to complete the **Achievements** that are assigned to them.
 
-- **Organization → Departments → Programs → Achievements**
-- **Departments → Profiles → Competencies → Achievements**
+- **Organization > Departments > Programs > Achievements**
+- **Departments > Profiles > Competencies > Achievements**
 - **Achievements** include: Additional Compliance Requirements, Orientations, Corporate Safe Operating Practices, Site Safe Operating Practices, Operating Procedures, Human Resources Documents, Time-Sensitive Safety Certificates, eLearning Modules, Training Documents.
 - **File or Link**: Files and Links are typically attached to Additional Compliance Requirements, Corporate Safe Operating Practices, Human Resources Documents, Site Safe Operating Practices, Operating Procedures, and Training Documents.
 - **Programs**: A template of achievements that can be uniformly assigned to Learners. These achievements may not be assigned through competencies, but are necessary or recommended for the Learner to complete for their role.

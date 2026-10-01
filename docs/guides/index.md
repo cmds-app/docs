@@ -18,14 +18,14 @@ Go to the [Administration guide](administration.md)
 **Complete a site orientation** - register for My Orientations, complete required orientations, and access your certificates.
 Go to the [Orientation guide](orientation.md)
 
-**Upload a safety certificate** — self-declare a Time-Sensitive Safety Certificate in Skills Passport.
-→ [Certification guide](certification.md)
+**Upload a safety certificate** - self-declare a Time-Sensitive Safety Certificate in My Orientations.
+Go to the [Certification guide](certification.md)
 
 **Find a course and register** - browse what's available in your learning catalogue and sign up for online learning or classroom training.
 Go to the [Registration guide](registration.md)
 
-**Understand CMDS terms and structure** — learn how Organizations, Departments, Profiles, Programs, Competencies, and Achievements relate.
-→ [Terminology and hierarchy](terminology.md)
+**Understand CMDS terms and structure** - learn how Organizations, Departments, Profiles, Programs, Competencies, and Achievements relate.
+Go to [Terminology and hierarchy](terminology.md)
 
 ## Available guides
 
