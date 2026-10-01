@@ -1,7 +1,5 @@
 # Date and time values
 
-> "Punctuality is not just limited to arriving at a place at the right time; it is also about taking actions at the right time." - Amit Kalantri
-
 The API stores date/time values in Microsoft SQL Server using the [DATETIMEOFFSET](https://learn.microsoft.com/en-us/sql/t-sql/data-types/datetimeoffset-transact-sql?view=sql-server-ver16) data type, and in PostgreSQL using the [timestamp with time zone](https://www.postgresql.org/docs/17/datatype-datetime.html) data type.
 
 ## Why is explicit time zone information so important?
