@@ -26,6 +26,8 @@ You generally won't be invited to Test unless you're actively working with our t
 
 Demo uses a separate dataset from Live. Nothing you do here affects your real users, and nothing they do affects you. It's a safe sandbox where you can poke around, make mistakes, and learn.
 
+To log in to Demo, choose your organization on the [Demo links](https://www.keyeracmds.com/demo-links/) page.
+
 **Tip:** check [What's new in CMDS](changelog/index.md) to see when each release will appear in Demo.
 
 ## Live
@@ -33,6 +35,8 @@ Demo uses a separate dataset from Live. Nothing you do here affects your real us
 **For your real users.** Live is the production environment your learners, validators, and administrators use every day. It holds your real data - completions, certificates, registrations - and it's the environment your reports and integrations pull from.
 
 Live is the most stable environment. Updates only arrive after a release has spent a week in Demo, giving our team and yours time to catch anything that needs attention before real users see it.
+
+To log in to Live, choose your organization on the [Partners](https://www.keyeracmds.com/partners/) page.
 
 ## Quick comparison
 
@@ -44,8 +48,8 @@ Live is the most stable environment. Updates only arrive after a release has spe
 
 ## Which one do I log in to?
 
-- Doing your normal work? Use **Live**.
-- Want to try a new feature, practice a workflow, or test a setting? Use **Demo**.
+- Doing your normal work? Use [**Live**](https://www.keyeracmds.com/partners/).
+- Want to try a new feature, practise a workflow, or test a setting? Use [**Demo**](https://www.keyeracmds.com/demo-links/).
 - Working with our development team on a specific issue? Use **Test** (we'll point you there).
 
 If you're unsure, start with **Live**.
