@@ -24,3 +24,4 @@ We use each of these versions of .NET for specific purposes:
 ## Development tools
 
 - VS Code with the C# Dev Kit extension is the recommended editor for all development work: .NET, React, and the documentation. See [VS Code](../../contributors/tools/vscode.md) for the extensions.
+- The exception is the CMDS V4 codebase, which targets .NET Framework 4.8 and builds ASP.NET Web Forms projects. The C# Dev Kit does not build those, so V4 work needs Visual Studio.
