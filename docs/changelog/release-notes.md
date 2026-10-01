@@ -27,5 +27,5 @@ Draft release notes are [available here](version-26-5.md).
 ## Previous releases
 
 - **Version 26.3** - released June 10, 2026 ([release notes](version-26-3.md))
-- **Version 26.2** - released May 6, 2026 ([release notes](version-26-2.md))
+- **Version 26.2** - released May 6, 2026
 - **Version 26.1** - released February 18, 2026
