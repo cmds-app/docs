@@ -2,13 +2,9 @@
 
 Welcome! This section is for developers building against the CMDS API - whether you're wiring CMDS into another system, pulling data for reports, automating a workflow, or integrating with a partner platform.
 
-If you're just getting started, read **Queries and commands** to learn the two basic patterns the API uses, then head to **Introduction** in the **API** section to make your first request.
+If you're just getting started, read **Introduction** in the **API** section to make your first request.
 
 ## What you'll find here
-
-### Getting started
-
-- [**Queries and commands**](getting-started/queries-and-commands.md) - the core idea behind the API. Queries ask questions (Count, Search, Retrieve); commands change things (Add, Delete, Send).
 
 ### API
 
@@ -26,8 +22,6 @@ If you're just getting started, read **Queries and commands** to learn the two b
 ### Integrations
 
 - [**Power BI**](integrations/power-bi.md) - step-by-step guide to connecting Power BI to CMDS as a data source.
-- [**Safe Exam Browser**](integrations/safe-exam-browser.md) - using SEB to secure online assessments.
-- [**Single Sign-On**](integrations/single-sign-on.md) - Azure, Google, and LTI-based SSO options.
 
 ## Need help?
 
