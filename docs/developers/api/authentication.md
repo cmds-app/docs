@@ -23,7 +23,9 @@ The shape is `vsk_<environment>_<random>`, after the pattern Stripe and Cloudfla
 Access is a grant, not self-service. Before you can generate a working secret, an operator has to enable API access for your account on the **Security > Accounts** page. Two grants are kept apart:
 
 - **API access.** Whether your account may hold and use a secret at all.
-- **Report access.** Whether that secret may reach the compliance reporting surface, which reads a whole organization's standing and is gated more tightly than the rest of the API.
+- **Report access.** Whether that secret may reach the reporting surface (`reporting/compliance-summary`, `reporting/monthly-statistics`, and `reporting/competency-validations`), which reads a whole organization's standing and is gated more tightly than the rest of the API.
+
+Granting report access turns API access on with it, since a secret that may report but may not call would be refused on every request.
 
 Both are re-checked on every request. If an operator revokes either one, your secret stops working on its next call rather than at some expiry.
 
@@ -84,7 +86,7 @@ These endpoints act on the account making the request, so you typically manage a
 
 ## Shared service key
 
-The shared service key is a single secret configured for the environment, used by trusted server-to-server callers that cannot carry a user's session - for example, an external system registering itself with the platform. Send it in the `X-Api-Key` header:
+The shared service key is a single secret configured for the environment, used by trusted server-to-server callers that cannot carry a user's session - for example, the platform's own command-line tool running scheduled jobs. Send it in the `X-Api-Key` header:
 
 ```
 X-Api-Key: <shared-service-key>
@@ -94,25 +96,25 @@ A caller holding this key is not a person and is not scoped to one organization.
 
 ## Session authentication
 
-Most API endpoints also accept a session cookie. This suits a browser-based integration - for example, if you run the platform in [headless mode](https://en.wikipedia.org/wiki/Headless_software) and build your own interface with a library such as [React](https://react.dev/), your authenticated users' requests can carry the cookie the browser already sends.
+Most API endpoints also accept a session cookie. This suits a browser-based interface served from a `cmds.app` address the platform trusts: the cookie is scoped to `.cmds.app`, and the API accepts credentialed browser requests only from the origins configured for each environment. A front end on your own domain cannot use the session; give it a personal API secret held on your server instead.
 
 A session is established by signing in, either through single sign-on or with an email and password, and the server mints a signed cookie. The cookie is built with several protections:
 
 - The `Secure` flag ensures it travels only over HTTPS, preventing interception in transit.
 - The `HttpOnly` attribute keeps client-side scripts from reading it, mitigating cross-site scripting (XSS).
-- An expiration date bounds its lifetime.
+- It expires 8 hours after you sign in.
 - The `Domain` (`.cmds.app`) and `Path` (`/`) attributes limit where the browser sends it.
 - The value is a signed [JSON Web Token](https://datatracker.ietf.org/doc/html/rfc7519), so it cannot be forged or altered. It is not encrypted: anyone holding the cookie can decode and read its claims, so treat it like any other credential and never log it or pass it in a URL.
 
-A cookie session does not name your organization on its own. Send the `X-Company` header with each request to say which organization you are acting for (see below).
+A cookie session records the organization you signed in to, but many endpoints read the organization from the request itself and answer `400 Company required` without it. Send the `X-Company` header with each request to say which organization you are acting for; it can name any organization your account belongs to (see below).
 
 ## Naming your organization
 
 API URLs carry no organization segment, so most requests name the organization in a header:
 
 - A **personal API secret** carries its own organization. Send no `X-Company` header.
-- A **session cookie** does not. Send `X-Company: <your-organization-handle>` with each request.
-- A **shared service key** is not scoped to an organization; it names one per request where the endpoint needs it.
+- A **session cookie** records where you signed in, but send `X-Company: <your-organization-handle>` with each request anyway.
+- A **shared service key** is not scoped to an organization. Where an endpoint supports it, it names one with the `companyId` query parameter, which only operators and the service key may use.
 
 The header value is your organization's handle. It must name a registered organization, or the request is rejected:
 
@@ -127,7 +129,7 @@ Authorization today is authenticate-only: a valid credential can call any endpoi
 
 Two checks sit on top of that:
 
-- **Operator endpoints.** A small set of administrative endpoints require an operator account and answer `403` otherwise.
-- **Report access.** The compliance reporting surface checks the report grant described under [Enabling access](#enabling-access), because it reads a whole organization's standing.
+- **Operator endpoints.** Whole administrative modules require an operator account and answer `403` otherwise: `notification/*`, `sync/*`, `quad/*`, `workday/employees`, `support/issues`, `vimeo`, `reporting/video-statistics`, and `diagnostic/about`, among others. A personal secret owned by an operator carries operator rights across every organization, so guard one carefully.
+- **Report access.** The three reporting endpoints check the report grant described under [Enabling access](#enabling-access), because they read a whole organization's standing.
 
 Everything else is open to any authenticated caller scoped to the organization. Plan your integration on the assumption that a secret is as capable as the account behind it - which is why the shortest safe lifetime and prompt revocation of a leaked key both matter.

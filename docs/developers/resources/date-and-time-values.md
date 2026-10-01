@@ -1,6 +1,6 @@
 # Date and time values
 
-The API stores date/time values in Microsoft SQL Server using the [DATETIMEOFFSET](https://learn.microsoft.com/en-us/sql/t-sql/data-types/datetimeoffset-transact-sql?view=sql-server-ver16) data type, and in PostgreSQL using the [timestamp with time zone](https://www.postgresql.org/docs/17/datatype-datetime.html) data type.
+The API stores date/time values in PostgreSQL using the [timestamp with time zone](https://www.postgresql.org/docs/18/datatype-datetime.html) data type. Values it reads from the CMDS V4 database use the SQL Server [DATETIMEOFFSET](https://learn.microsoft.com/en-us/sql/t-sql/data-types/datetimeoffset-transact-sql) data type.
 
 ## Why is explicit time zone information so important?
 
@@ -48,7 +48,9 @@ In turn, this guarantees the precise meaning of a value is never ambiguous with 
 
 ## ISO 8601
 
-The API uses the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format for all date/time values.
+The API uses the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format for date/time values. A moment in time carries its offset; values stored in PostgreSQL come back in UTC (`Z`), not in the offset they were written with. A few fields are dates without a time (`2026-09-30`).
+
+When you send an offset in a query string, URL-encode the plus sign: `lastChangeTimeSince=2026-08-01T00:00:00%2B02:00`. An unencoded `+` reads as a space and the value does not parse.
 
 This format is often referred to as the **round-trip format** in data serialization contexts because it guarantees a date/time value can be:
 
@@ -111,62 +113,4 @@ DateTimeOffset parsed = DateTimeOffset.Parse(serialized);
 !!! success
     `parsed == original` - the round-trip is **lossless**
 
-### Practice makes perfect
-
-Check out this service in the API:
-
-![Date/time service endpoint in the API](../../assets/developers/api-v2-datetime-service.png)
-
-You can practise with your own input values to see exactly how they are parsed and interpreted by the server. For example:
-
-#### Example input
-
-`api/schemas/formats/time?value=2025-11-11T22:30:00-07:00`
-
-#### Example output
-
-```json
-{
-  "Original": "2025-11-11T22:30:00-07:00",
-  "Formats": {
-    "Value": "Tuesday - November 11, 2025 - 10:30:00 PM America/Edmonton",
-    "RoundTrip": "2025-11-11T22:30:00.0000000-07:00",
-    "Offset": "-07:00:00",
-    "TimeZone": "America/Edmonton",
-    "ISO8601": "2025-11-11T22:30:00.0000000-07:00",
-    "RFC3339": "2025-11-11T22:30:00.000-07:00",
-    "ShortDate": "2025-11-11",
-    "LongDate": "November 11, 2025",
-    "ShortTime": "10:30 PM",
-    "LongTime": "10:30:00 PM",
-    "FullDateTime": "November 11, 2025 10:30:00 PM",
-    "SortableDateTime": "2025-11-11T22:30:00",
-    "UniversalSortable": "2025-11-12 05:30:00Z",
-    "UnixTimestamp": "1762925400",
-    "UTC": "2025-11-12 05:30:00 UTC",
-    "UTC_ISO8601": "2025-11-12T05:30:00.0000000Z",
-    "Quarter": "4",
-    "Week": "46",
-    "Day": "315",
-    "IsWeekend": "False"
-  },
-  "Conversions": {
-    "Eastern": {
-      "DateTime": "Nov 12, 2025 12:30:00 AM EST",
-      "Offset": "-05:00"
-    },
-    "Mountain": {
-      "DateTime": "Nov 11, 2025 10:30:00 PM MST",
-      "Offset": "-07:00"
-    },
-    "Pacific": {
-      "DateTime": "Nov 11, 2025 9:30:00 PM PST",
-      "Offset": "-08:00"
-    }
-  }
-}
-```
-
-The **TimeZone** value is the first supported time zone whose offset matches the input on that date, identified by its [IANA](https://www.iana.org/time-zones) name. `ShortDate`, `LongDate`, `ShortTime`, `LongTime`, and `FullDateTime` follow the server's culture settings, so they can differ from this sample.
-
-The **Original** format is the format your code should use whenever it sends any date/time value to the API.
+The round-trip format is the format your code should use whenever it sends any date/time value to the API.

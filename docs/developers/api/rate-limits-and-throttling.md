@@ -4,7 +4,7 @@ The API caps how fast a single credential can call it. The point is fairness: on
 
 ## How the limits work
 
-Each limit is a **fixed window**: a maximum number of requests within a rolling span of time, counted per credential. Your personal API secret has its own count; another developer's secret has its own. When the count for the current window is used up, further requests are rejected until the window resets.
+Each limit is a **fixed window**: a maximum number of requests within a fixed span of time that resets when it ends, counted per credential. Your personal API secret has its own count; another developer's secret has its own. When the count for the current window is used up, further requests are rejected until the window resets.
 
 Requests are counted separately per surface. Your everyday reads and your compliance reports draw on different buckets, so a burst of reports cannot exhaust the allowance for the rest of the API, and neither starves the other.
 
@@ -13,10 +13,10 @@ Requests are counted separately per surface. Your everyday reads and your compli
 | Surface | What it covers | Limit |
 | :--- | :--- | :--- |
 | Default | Every authenticated endpoint that is not one of the below | 300 requests / minute |
-| Reports | `reporting/compliance-summary` | 30 requests / minute |
+| Reports | `reporting/compliance-summary`, `reporting/monthly-statistics`, `reporting/competency-validations` | 30 requests / minute |
 | Sign-in | `auth/login`, `auth/ticket` | 10 requests / 5 minutes, per IP address |
 
-The report surface is tighter because a single compliance request reads a whole organization's standing and can return a multi-megabyte body. Sign-in is capped per IP address rather than per credential, since a caller signing in does not have one yet; the tighter count blunts brute-force attempts.
+The report surface is tighter because a single report request reads a whole organization's standing and can return a multi-megabyte body. Sign-in is capped per IP address rather than per credential, since a caller signing in does not have one yet; the tighter count blunts brute-force attempts.
 
 These are the starting values and may be tuned over time. Treat the `Retry-After` header on a rejection, not a hardcoded number, as the authority on how long to wait.
 

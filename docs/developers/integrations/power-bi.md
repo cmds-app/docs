@@ -30,7 +30,7 @@ Replace the contents of the editor with this query, then put your own secret and
 ```
 let
     BaseUrl = "https://test-api.cmds.app",
-    Secret = "vsk_live_your_secret_here",
+    Secret = "vsk_test_your_secret_here",
     Body = [ departments = { "3f2504e0-4f89-41d3-9a0c-0305e82c3301" } ],
 
     Response = Web.Contents(
@@ -76,7 +76,7 @@ Select **Close & Apply** to load the table into your report.
 
 ## Step 4: Publish and schedule a refresh
 
-When the report is ready, change `BaseUrl` to `https://api.cmds.app`, publish it to the Power BI service, and set up a scheduled refresh on the semantic model. When the service asks for data source credentials, choose **Anonymous** again.
+When the report is ready, generate a personal secret on Live (a Test secret does not authenticate there), change `BaseUrl` to `https://api.cmds.app` and `Secret` to the Live secret, publish it to the Power BI service, and set up a scheduled refresh on the semantic model. When the service asks for data source credentials, choose **Anonymous** again.
 
 The report reads the same snapshot the API does, so there is little point refreshing it more often than that snapshot changes. A daily refresh suits most compliance dashboards.
 

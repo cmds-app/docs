@@ -1,6 +1,6 @@
 # Introduction
 
-The CMDS API is a RESTful interface built on [HTTPS](https://datatracker.ietf.org/doc/html/rfc2818) requests and [JSON](https://www.json.org/json-en.html) responses, so you can work with it from the programming language of your choice. It reads the data in your account - accounts, members, teams, achievements, certification records, and more - through one secure, organization-scoped surface.
+The CMDS API is a RESTful interface built on [HTTPS](https://datatracker.ietf.org/doc/html/rfc2818) requests and [JSON](https://www.json.org/json-en.html) responses, so you can work with it from the programming language of your choice. It reads the data in your account - accounts, members, teams, achievements, certification records, and more - and carries out a set of actions on it, through one secure, organization-scoped surface.
 
 !!! info
     API access is granted per account. An operator enables it for your account before you can generate a credential. If you need access, [contact our service and support team](mailto:support@cmds.app) or ask your operator to enable it on the Security > Accounts page.
@@ -30,13 +30,13 @@ See [Authentication](authentication.md) for how to generate a secret, how to sen
 
 ## Requests and responses
 
-Responses are JSON with camelCase property names. Directory collections come back as plain JSON arrays with no paging: the endpoint returns the whole collection, and you bound the next read by its last change time. Search collections, such as certification plans and competencies, come back one page at a time in a small envelope. Errors follow [RFC 7807](https://datatracker.ietf.org/doc/html/rfc7807) problem+json.
+Responses are JSON with camelCase property names. Directory collections come back as plain JSON arrays with no paging: the endpoint returns the whole collection, and you bound the next read by its last change time. Search collections, such as certification plans and competencies, come back one page at a time in a small envelope. Errors follow [RFC 9457](https://datatracker.ietf.org/doc/html/rfc9457) problem+json, with a few plain JSON exceptions.
 
 The full rules - HTTP methods, field selection, paging, incremental reads, status codes, and error shape - are on the [Request and response formats](request-and-response-formats.md) page.
 
 ## OpenAPI specification
 
-The API describes itself with an [OpenAPI](https://github.com/OAI/OpenAPI-Specification) document. Development builds serve an interactive Swagger UI at `/swagger`; to try a request there, paste a personal API secret into the **Authorize** box (the `Bearer` scheme) and the authenticated surface opens up.
+The API describes itself with an [OpenAPI](https://github.com/OAI/OpenAPI-Specification) document. The Test environment serves an interactive Swagger UI at `https://test-api.cmds.app/swagger`; Live does not. To try a request there, paste a personal API secret generated on Test into the **Authorize** box (the `Bearer` scheme) and the authenticated surface opens up.
 
 We use [Insomnia](https://insomnia.rest) and [Postman](https://www.postman.com) to design and test the API, and either is a good tool for exploring your own requests against it.
 

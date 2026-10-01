@@ -43,7 +43,7 @@ To narrow further, name specific members and specific measurements instead:
 }
 ```
 
-The identifiers are the department, member, and measurement ids you already hold from the directory reads. Leave a list out (or send it as `null`) to mean "all of them" for that axis.
+The department and member identifiers are the ids you already hold from the directory reads. No endpoint lists the measurement keys; run a department-wide request once and read them from each row's `measurement.key` and `measurement.name`. Leave a list out (or send it as `null`) to mean "all of them" for that axis.
 
 ## Step 2: Send it
 
@@ -114,7 +114,7 @@ A few things worth knowing when you read this:
 
 ## Step 4: Get it as a CSV
 
-Add `?format=csv` to receive the same data as a `text/csv` file attachment, one row per member per measurement - the same shape as the JSON, flattened:
+Add `?format=csv` to receive the same data as a `text/csv` file attachment, one row per member per department per measurement - the same data as the JSON, flattened into its own column names:
 
 ```bash
 curl -X POST "https://api.cmds.app/reporting/compliance-summary?format=csv" \
@@ -155,6 +155,7 @@ In practice: name a department, or name members together with the measurements y
 | `400 Bad Request` | The request is unbounded (see above), or names an unknown format |
 | `401 Unauthorized` | No valid credential |
 | `403 Forbidden` | Your account has not been granted report access |
+| `429 Too Many Requests` | You have exceeded the report rate limit; wait for the number of seconds in `Retry-After` |
 | `501 Not Implemented` | A named but unbuilt format (`xlsx`, `pdf`) |
 
 ## A note on freshness
