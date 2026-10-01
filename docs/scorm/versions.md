@@ -6,46 +6,46 @@ Just like smartphones have evolved from basic devices to powerful computers, eLe
 
 ## Standards comparison at a glance
 
-| Standard | Year | Still Relevant? | Best For | Cross-Platform? |
-| :--- | :--- | :--- | :--- | :---: |
-| **SCORM 1.2** | 2001 | Yes | Most current training programs | No |
-| **SCORM 2004** | 2009 | Yes | Advanced course sequencing | No |
-| **xAPI** | 2013 | Growing | Mobile, games, advanced tracking | Yes |
-| **cmi5** | 2016 | Growing | Modern LMS with xAPI benefits | Yes |
+| Standard | Best For |
+| :--- | :--- |
+| **SCORM 1.2** | Most current training programs |
+| **SCORM 2004** | Advanced course sequencing |
+| **xAPI** | Mobile, games, advanced tracking |
+| **cmi5** | Modern LMS with xAPI benefits |
 
 ---
 
 ## The SCORM family tree
 
-### SCORM 1.0 (January 2000)
+### SCORM 1.0
 
 **Status:** Historical only
 **What it was:** The first rough draft of what would become SCORM. Think of it as the prototype that proved the concept could work.
 **Our recommendation:** Ignore it completely - no one uses this anymore.
 
-### SCORM 1.1 (January 2001)
+### SCORM 1.1
 
 **Status:** Obsolete
 **What it was:** The first version that actually worked, but with many rough edges that needed smoothing.
 **Our recommendation:** If you find old content in this format, it's time to upgrade.
 
-### SCORM 1.2 (October 2001)
+### SCORM 1.2
 
 **Status:** Still widely used
 **What it was:** The version that made SCORM famous and widely adopted across the industry.
 **What makes it special:** Reliable, simple, and works with virtually every LMS on the market.
 **Our recommendation:** **Essential support.** This is still the workhorse of the eLearning industry. If you're just getting started with SCORM, begin here.
 
-### SCORM 2004 editions (2004-2009)
+### SCORM 2004 editions
 
 **Status:** Widely supported
 **What they added:** Advanced navigation controls and course sequencing - think of it as giving course authors the ability to create "if-then" rules for learner progress.
 
 **The editions you'll encounter:**
 
-- **2nd Edition (2004):** Fixed major problems from the 1st edition
-- **3rd Edition (2006):** Most widely used version of SCORM 2004
-- **4th Edition (2009):** Latest and most refined version
+- **2nd Edition:** Fixed major problems from the 1st edition
+- **3rd Edition:** Most widely used version of SCORM 2004
+- **4th Edition:** Latest and most refined version
 
 **Our recommendation:** Support **3rd or 4th Edition** if you need advanced course navigation features. Otherwise, SCORM 1.2 is often sufficient.
 
@@ -53,7 +53,7 @@ Just like smartphones have evolved from basic devices to powerful computers, eLe
 
 ## Beyond SCORM: other standards you should know
 
-### xAPI/Tin Can API (2013)
+### xAPI/Tin Can API
 
 **The modern alternative designed for today's learning**
 
@@ -72,7 +72,7 @@ Just like smartphones have evolved from basic devices to powerful computers, eLe
 
 **Our recommendation:** Consider adopting if you want to track learning beyond traditional courses or if mobile learning is important to your strategy.
 
-### cmi5 (2016)
+### cmi5
 
 **xAPI's business-friendly companion**
 
@@ -80,7 +80,7 @@ Just like smartphones have evolved from basic devices to powerful computers, eLe
 **Why it exists:** Gives you xAPI benefits while working like traditional LMS courses.
 **Our recommendation:** Ideal if you want to modernize your tracking capabilities without completely changing how you manage courses.
 
-### IMS Common Cartridge (2008)
+### IMS Common Cartridge
 
 **The academic world's answer to SCORM**
 
@@ -88,7 +88,7 @@ Just like smartphones have evolved from basic devices to powerful computers, eLe
 **Includes:** Discussion forums, question banks, and other classroom-style learning tools
 **Our recommendation:** Only relevant if you work in academic institutions or provide training to universities.
 
-### IMS LTI (2010)
+### IMS LTI
 
 **The plug-and-play standard for educational tools**
 
