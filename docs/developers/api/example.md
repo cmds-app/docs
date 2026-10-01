@@ -22,7 +22,7 @@ You need three things in place:
 2. **Report access.** The compliance report reads a whole organization's standing, so it is gated more tightly than the rest of the API. An operator has to grant your account report access on the Security > Accounts page, on top of API access. Without it the endpoint answers `403`, even with a working secret.
 3. **Your base address.** Use the environment you are integrating against - `https://api.cmds.app` for production, or `https://test-api.cmds.app` for the sandbox. See [Introduction](introduction.md).
 
-Your personal secret carries its own organization, so you do not send an `X-Tenant` header with it.
+Your personal secret carries its own organization, so you do not send an `X-Company` header with it.
 
 ## Step 1: Shape the request
 

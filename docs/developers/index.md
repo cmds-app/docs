@@ -2,7 +2,7 @@
 
 Welcome! This section is for developers building against the CMDS API - whether you're wiring CMDS into another system, pulling data for reports, automating a workflow, or integrating with a partner platform.
 
-If you're just getting started, read **Queries and commands** to learn the two basic patterns the API uses, then head to **API → Introduction** to make your first request.
+If you're just getting started, read **Queries and commands** to learn the two basic patterns the API uses, then head to **Introduction** in the **API** section to make your first request.
 
 ## What you'll find here
 

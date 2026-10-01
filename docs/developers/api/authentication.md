@@ -52,7 +52,7 @@ The `X-Api-Key` header is also accepted and carries the same value:
 X-Api-Key: vsk_live_your_secret_here
 ```
 
-A personal secret carries its own tenant - the organization you generated it under - so you do **not** send the `X-Tenant` header with it. The secret names the organization for you.
+A personal secret carries its own organization - the one you generated it under - so you do **not** send the `X-Company` header with it. The secret names the organization for you.
 
 #### curl (Linux / macOS)
 
@@ -100,27 +100,26 @@ A session is established by signing in, either through single sign-on or with an
 
 - The `Secure` flag ensures it travels only over HTTPS, preventing interception in transit.
 - The `HttpOnly` attribute keeps client-side scripts from reading it, mitigating cross-site scripting (XSS).
-- The `SameSite` attribute limits it to the contexts that should send it, mitigating cross-site request forgery (CSRF).
 - An expiration date bounds its lifetime.
-- Domain and path restrictions limit where it is sent.
-- The value is signed and encrypted, so it cannot be forged or read.
+- The `Domain` (`.cmds.app`) and `Path` (`/`) attributes limit where the browser sends it.
+- The value is a signed [JSON Web Token](https://datatracker.ietf.org/doc/html/rfc7519), so it cannot be forged or altered. It is not encrypted: anyone holding the cookie can decode and read its claims, so treat it like any other credential and never log it or pass it in a URL.
 
-A cookie session does not name your organization on its own. Send the `X-Tenant` header with each request to say which organization you are acting for (see below).
+A cookie session does not name your organization on its own. Send the `X-Company` header with each request to say which organization you are acting for (see below).
 
 ## Naming your organization
 
-API URLs carry no tenant segment, so most requests name the organization in a header:
+API URLs carry no organization segment, so most requests name the organization in a header:
 
-- A **personal API secret** carries its own organization. Send no `X-Tenant` header.
-- A **session cookie** does not. Send `X-Tenant: <your-organization-handle>` with each request.
+- A **personal API secret** carries its own organization. Send no `X-Company` header.
+- A **session cookie** does not. Send `X-Company: <your-organization-handle>` with each request.
 - A **shared service key** is not scoped to an organization; it names one per request where the endpoint needs it.
 
 The header value is your organization's handle. It must name a registered organization, or the request is rejected:
 
 | Response | Meaning |
 | :--- | :--- |
-| `400 Unknown tenant` | The `X-Tenant` value does not name a registered organization |
-| `403 No access to this tenant` | Your account is authenticated but is not a member of the named organization |
+| `400 Unknown company` | The `X-Company` value does not name a registered organization |
+| `403 No access to this company` | Your account is authenticated but is not a member of the named organization |
 
 ## What a credential can do
 

@@ -22,18 +22,31 @@ Send a request body as JSON with `Content-Type: application/json`. Property name
 Also send:
 
 - `Authorization: Bearer <secret>` or `X-Api-Key: <key>` to authenticate (see [Authentication](authentication.md)).
-- `X-Tenant: <organization-handle>` to name your organization, unless your credential already carries it.
+- `X-Company: <organization-handle>` to name your organization, unless your credential already carries it.
 - `Accept: application/json` (assumed when absent).
 
 ## Response bodies
 
 A response body is JSON with camelCase property names.
 
-**A collection returns a plain JSON array.** Not an envelope, not a file attachment - the array is the whole response. A projected collection omits any property whose value is null, so a field that is absent from a row is null rather than an error.
+**A directory collection returns a plain JSON array.** The `directory/*` collections (`directory/accounts`, `directory/members`, `directory/affiliations`, and so on) return no envelope and no file attachment - the array is the whole response. A projected collection omits any property whose value is null, so a field that is absent from a row is null rather than an error.
 
-**A single resource returns a JSON object.** For example, `directory/tenants/{tenant}` answers with one object rather than an array, because a caller looks up a specific organization by id.
+**A search collection returns one page in an envelope.** The search collections - `certification/plans`, `certification/assignments`, `competency/competencies`, `competency/validations`, `competency/profiles`, and `competency/designations` - return an object with four properties:
 
-There is no wrapping metadata object, no `data` key, and no status field inside the body - the HTTP status carries that.
+```json
+{
+    "items": [ ... ],
+    "total": 1342,
+    "page": 1,
+    "pageSize": 25
+}
+```
+
+`items` holds the rows on this page and `total` counts the rows across every page. Ask for a page with the `page` (1-based) and `pageSize` query parameters. `pageSize` defaults to 25 and is capped at 200. An out-of-range value is corrected rather than rejected: a page below 1 reads as the first page, and a page size above 200 reads as 200.
+
+**A single resource returns a JSON object.** For example, `directory/companies/{company}` answers with one object rather than an array, because a caller looks up a specific organization by id.
+
+Apart from the search envelope, there is no wrapping metadata object, no `data` key, and no status field inside the body - the HTTP status carries that.
 
 ## Selecting fields
 
@@ -47,7 +60,7 @@ Matching is case-insensitive. The order you list is the order you get. If none o
 
 ## Reading changes incrementally
 
-**There is no paging.** A collection endpoint returns the entire collection. That is what a caller building a mirror wants, and it is what every caller does today. Know what it means at scale: against production data, `directory/members` returns roughly 111,000 rows and `directory/affiliations` roughly 239,000.
+**Directory collections are not paged.** A `directory/*` endpoint returns the entire collection. That is what a caller building a mirror wants. Know what it means at scale: against production data, `directory/members` returns roughly 111,000 rows and `directory/affiliations` roughly 239,000.
 
 The pattern is to mirror once, then read only what has moved since. Pass `lastChangeTimeSince` as an inclusive lower bound on a row's last change time:
 
@@ -76,9 +89,9 @@ The CSV leads with a UTF-8 byte order mark so a spreadsheet reads accented names
 | :--- | :--- |
 | `200 OK` | The request succeeded and the body carries the result |
 | `204 No Content` | The request succeeded and there is no body (for example, a `DELETE`) |
-| `400 Bad Request` | The request is malformed, unbounded, or names an unknown tenant or report format |
-| `401 Unauthorized` | No valid credential, or no `X-Tenant` header where one is required |
-| `403 Forbidden` | Authenticated, but not entitled - not a member of the tenant, not an operator, or lacking report access |
+| `400 Bad Request` | The request is malformed, unbounded, or names an unknown organization or report format |
+| `401 Unauthorized` | No valid credential, or no `X-Company` header where one is required |
+| `403 Forbidden` | Authenticated, but not entitled - not a member of the organization, not an operator, or lacking report access |
 | `404 Not Found` | The resource does not exist, or you may not see it (a single-resource read you are not entitled to answers `404`, not `403`, so its existence is not revealed) |
 | `409 Conflict` | The request collides with current state - for example, preparing a dispatch while one is already waiting |
 | `501 Not Implemented` | A named but unbuilt capability, such as a report format without a renderer |
@@ -91,10 +104,10 @@ Error responses follow [RFC 7807](https://datatracker.ietf.org/doc/html/rfc7807)
 ```json
 {
     "type": "https://httpstatuses.io/400",
-    "title": "Unknown tenant.",
+    "title": "Unknown company.",
     "status": 400,
-    "detail": "'acme' is not a registered tenant.",
-    "code": "unknown-tenant"
+    "detail": "'acme' is not a registered company.",
+    "code": "unknown-company"
 }
 ```
 
@@ -105,7 +118,7 @@ Error responses follow [RFC 7807](https://datatracker.ietf.org/doc/html/rfc7807)
 | `status` | The HTTP status code, repeated in the body |
 | `detail` | A human-readable explanation specific to this occurrence |
 | `instance` | A URI for this specific occurrence, when present |
-| `code` | A stable, machine-readable discriminator on the errors that carry one (for example `unknown-tenant`, `no-tenant-access`) |
+| `code` | A stable, machine-readable discriminator on the errors that carry one (for example `unknown-company`, `no-company-access`) |
 
 Match on `status` and `code` rather than on the text of `title` or `detail`, which may be reworded.
 
@@ -115,6 +128,6 @@ Match on `status` and `code` rather than on the text of `title` or `detail`, whi
 | :--- | :--- | :--- |
 | `Authorization` | Request | Bearer credential (`Bearer vsk_...`) |
 | `X-Api-Key` | Request | Shared service key, or a personal secret |
-| `X-Tenant` | Request | The organization handle, unless the credential carries it |
+| `X-Company` | Request | The organization handle, unless the credential carries it |
 | `Content-Type` | Request, response | `application/json` for JSON bodies; `text/csv` for a CSV report |
 | `Accept` | Request | `application/json`, assumed when absent |
