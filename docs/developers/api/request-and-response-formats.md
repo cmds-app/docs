@@ -127,10 +127,9 @@ Error responses follow [RFC 9457](https://datatracker.ietf.org/doc/html/rfc9457)
 
 Match on `status` and `code` rather than on the text of `title` or `detail`, which may be reworded. The `type` URI varies by error, and some problem bodies also carry a `traceId`.
 
-A few refusals are plain `application/json` rather than problem+json:
+A `401` from the authentication gate is a problem like any other. When the request named its organization, it also carries a `loginUrl` member, the sign-in path a browser session should follow.
 
-- A `401` from the authentication gate carries a `detail` naming what is missing, or a `loginUrl` for a browser session.
-- A refusal from an operator-only or service-key-only endpoint is `{ "error": "Operator access required." }` or `{ "error": "Service-key access required." }`.
+One kind of refusal is plain `application/json` rather than problem+json: a refusal from an operator-only or service-key-only endpoint is `{ "error": "Operator access required." }` or `{ "error": "Service-key access required." }`.
 
 ## Headers
 
