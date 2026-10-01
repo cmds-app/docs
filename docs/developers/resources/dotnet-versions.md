@@ -23,6 +23,4 @@ We use each of these versions of .NET for specific purposes:
 
 ## Development tools
 
-- Visual Studio 2026 (version 18) is the recommended IDE for all .NET Framework and .NET 10 development work. Visual Studio 2022 cannot target .NET 10.
-- VS Code is the recommended IDE for all React development work.
-- Either (or both) tools can be used for .NET Standard and .NET Core development work.
+- VS Code with the C# Dev Kit extension is the recommended editor for all development work: .NET, React, and the documentation. See [VS Code](../../contributors/tools/vscode.md) for the extensions.
