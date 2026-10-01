@@ -9,7 +9,7 @@ Version 26.5 is a major release. It updates 116 pages across the platform, along
 - The compliance summary report now shows up-to-the-minute information
 - A new compliance trend report charts each department's compliance month by month, with Excel and PDF export
 - Training reports offer new filter criteria and clearer labels
-- Learners can request enrolment in a training program, and administrators can review and approve or reject each request
+- Learners can request enrolment in a training program, and members of the CMDS Program Enrollment Reviewers role review each request and approve or reject it
 - SCORM courses packaged in more than one language are supported, and course completion is reported more reliably from the Scoop (OpenSCORM) platform
 
 ## Updated pages
@@ -236,7 +236,7 @@ This release also improves shared components that appear on many pages. You may 
 - Invoicing teams
 - Department and follower subscriber lists for CMDS messages, and notification settings on person records
 - Education and training certificates and search results
-- Admin navigation, including the new search box and recent links
+- Admin navigation, including recent links
 - Date and time selection, time zone lists, and time zone handling (Alberta adopted permanent daylight time (UTC−6) under the Official Time Act, eliminating the usual fall back on November 1, 2026)
 - Person search criteria and results, memberships, and sign-in details
 - Department checklists and role lists on groups
