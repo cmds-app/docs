@@ -28,15 +28,14 @@ The random salt is why two people who happen to choose the same password still e
 
 ## How it works, in detail
 
-For readers who want the specifics, this is the actual mechanism. The logic lives in the `PasswordHash` class in the `Shift.Common` library, and the sign-in check is in the user record (`User.cs`).
+For readers who want the specifics, this is the actual mechanism.
 
 - **Algorithm.** PBKDF2 (Password-Based Key Derivation Function 2) over SHA-1, using the .NET `Rfc2898DeriveBytes` implementation.
 - **Salt.** 24 random bytes, generated per password each time one is set.
 - **Iterations.** The password is run through PBKDF2 1,000 times. The count is stored alongside the hash and can be raised later without invalidating existing passwords, because each stored hash carries the count it was made with. A higher count makes every guess more expensive for an attacker.
 - **Output.** A 24-byte fingerprint.
-- **Storage format.** The three parts are held as a single colon-separated string, `iterations:salt:hash`, with the salt and hash Base64-encoded - for example `1000:<salt>:<hash>`. It lives in the user record's `UserPasswordHash` field. The salt and the iteration count are not secret; only the password is, and it is never stored.
+- **Storage format.** The three parts are held as a single colon-separated string, `iterations:salt:hash`, with the salt and hash Base64-encoded - for example `1000:<salt>:<hash>`. It is stored on your user record. The salt and the iteration count are not secret; only the password is, and it is never stored.
 - **Comparison.** The stored fingerprint and the freshly computed one are compared in length-constant time, so a rejected sign-in takes the same amount of time whether the first character was wrong or the last. That keeps the timing of a rejection from leaking a hint about how close a guess was.
-- **In code.** Setting a password calls `CreateHash(password)`. Checking one calls `ValidatePassword(entered, stored)`, which pulls the salt and iteration count out of the stored value, recomputes the fingerprint from the entered password, and reports whether the two match.
 
 ## What this means for you
 
