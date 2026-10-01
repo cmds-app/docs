@@ -1,4 +1,4 @@
-# CMDS Terminology & Hierarchy
+# CMDS terminology and hierarchy
 
 [Download PDF](terminology.pdf){ .md-button }
 
@@ -64,7 +64,7 @@ Achievement types:
 - Time-Sensitive Safety Certificates
 - Training Documents
 
-### File or Link
+### File or link
 
 Files and Links are typically attached to:
 

@@ -1,4 +1,4 @@
-# My Orientations User Guide
+# My Orientations user guide
 
 <https://www.myorientations.com/>
 
@@ -6,9 +6,9 @@ Revised: May 29, 2026
 
 [Download PDF](orientation.pdf){ .md-button }
 
-## New Users
+## New users
 
-### Creating An Account
+### Creating an account
 
 1. Navigate to <https://www.myorientations.com/start/>.
 2. Locate the company for which you are working and click **"Start."**
@@ -28,7 +28,7 @@ Revised: May 29, 2026
 5. Press **"Continue."**
 6. You are now registered for My Orientations. Please **remember your email and password** as you will need this information to login in the future.
 
-### Completing Your Orientations
+### Completing your orientations
 
 1. Locate the orientation(s) you are required to complete.
     - » *Note: If you are unsure, please ask your site contact.*
@@ -41,27 +41,27 @@ Revised: May 29, 2026
     - » *Note: You will not receive your orientation certificate until you complete both the lesson and pass the quiz.*
 6. Repeat the process above for any additional orientation(s) you are required to complete.
 
-### Accessing Your Certificates
+### Accessing your certificates
 
 1. Return to the home page by selecting **"Portal"** in the top toolbar.
 2. Select **"Certificates"** to access your certificate(s).
 3. Press the download icon to download a PDF copy of your certificate.
 
-### Logging Out
+### Logging out
 
 1. Hover over your name in the top toolbar.
 2. Press **"Sign Out"** to log out.
 
-## Returning Users
+## Returning users
 
-### Logging In
+### Logging in
 
 1. Navigate to <https://www.myorientations.com/start/>.
 2. Locate the company for which you are working and click **"Start."**
 3. Enter your **email address** and **password**.
 4. Click **"Login with Email."**
 
-### Completing Your Orientations
+### Completing your orientations
 
 1. Locate the orientation(s) you are required to complete.
     - » *Note: If you are unsure, please ask your site contact.*
@@ -74,7 +74,7 @@ Revised: May 29, 2026
     - » *Note: You will not receive your orientation certificate until you complete both the lesson and pass the quiz.*
 6. Repeat the process above for any additional orientation(s) you are required to complete.
 
-### Renewing Your Orientations
+### Renewing your orientations
 
 1. Locate the orientation(s) you are required to renew.
     - » *Note: If you are unsure, please ask your site contact.*
@@ -84,32 +84,32 @@ Revised: May 29, 2026
 5. Complete the orientation Lesson and Quiz.
 6. Repeat the process above for any additional orientation(s) you are required to renew.
 
-### Accessing Your Certificates
+### Accessing your certificates
 
 1. Return to the home page by selecting **"Portal"** in the top toolbar.
 2. Select **"Certificates"** to access your certificate(s).
 3. Press the download icon to download a PDF copy of your certificate.
 
-### Completing Another Company's Orientations
+### Completing another company's orientations
 
 1. Return to the home page by selecting **"Portal"** in the top toolbar.
 2. Select **"Partners"** to access the list of other companies.
 3. Select the appropriate company from the list.
 4. Follow the **"Completing Your Orientations"** steps above for any required orientation(s).
 
-### Logging Out
+### Logging out
 
 1. Hover over your name in the top toolbar.
 2. Press **"Sign Out"** to log out.
 
-### Resetting Your Password
+### Resetting your password
 
 1. Navigate to <https://www.myorientations.com/start/>.
 2. Select **"Forgot your password?"**
 3. Type the email you registered under.
 4. Press **"Continue"** to send your email a password reset link.
 
-## My Orientations Administrators
+## My Orientations administrators
 
 » *Note: Please contact <Admin_CMDS@keyera.com> for administrative access.*
 
@@ -118,7 +118,7 @@ Revised: May 29, 2026
 - Visible by both regular users and administrators.
 - Lists company site contact information.
 
-### User Certificates
+### User certificates
 
 - Visible to administrators only.
 - Shows My Orientations users and their quiz scores.
@@ -126,11 +126,11 @@ Revised: May 29, 2026
 - Use the **"Downloads"** tab to export your search results as a CSV file or Excel spreadsheet.
 - Use the **"Results"** tab to see the filtered list of users, achievements (orientations and TSSCs), status, and expiry dates.
 
-#### Downloading a User's Certificate
+#### Downloading a user's certificate
 
 1. Press the download icon.
 
-#### Manually Expiring an Achievement
+#### Manually expiring an achievement
 
 1. Press the clock icon.
 2. Click **"OK"** to confirm.
@@ -140,18 +140,18 @@ Revised: May 29, 2026
 - Visible to administrators only.
 - Lists current My Orientations users, their session count, and the last date they signed into the portal.
 
-#### Resetting a User's Password
+#### Resetting a user's password
 
 1. Confirm the user's email is **entered correctly**.
 2. Click the circle arrow icon under actions.
 3. Click **"OK"** to confirm.
 
-#### Sending a Welcome Email
+#### Sending a welcome email
 
 1. Click the paper airplane icon under actions.
 2. Click **"OK"** to confirm.
 
-#### Impersonating a User
+#### Impersonating a user
 
 1. Click the detective icon under actions.
 2. Check the top toolbar to confirm impersonation.
@@ -159,9 +159,9 @@ Revised: May 29, 2026
 3. Troubleshoot and/or support the user by viewing the portal from their perspective.
 4. To stop impersonating, click **your name** on the top toolbar.
 
-### Troubleshooting Common User Issues
+### Troubleshooting common user issues
 
-#### Issue #1: A Non-CMDS User Cannot Log In
+#### Issue #1: a non-CMDS user cannot log in
 
 1. Check to see if the user has registered for My Orientations.
 2. Click on **"Users."**
@@ -171,26 +171,26 @@ Revised: May 29, 2026
 6. If the user is not in My Orientations, help them register using the steps above.
 7. Once you locate the user or finish registering them, reset their password using the steps above.
 
-#### Issue #2: A CMDS User Cannot Log In
+#### Issue #2: a CMDS user cannot log in
 
 1. Have the user log in to CMDS.
 2. From their homepage, have them click the **Orientations** button.
 3. If the user does not see the button, contact <Admin_CMDS@keyera.com>.
 
-#### Issue #3: A User Cannot Access Their Orientation Quiz
+#### Issue #3: a user cannot access their orientation quiz
 
 1. Confirm that:
     - The user has completed the orientation lesson by watching the full video, reading the full embedded contents, or launching and completing the external contents.
     - The user has pressed **"Next"** at the bottom of the lesson page.
 2. If they still cannot access the quiz, contact <Admin_CMDS@keyera.com>.
 
-#### Issue #4: A User Did Not Print Their Certificate
+#### Issue #4: a user did not print their certificate
 
 - Ask the user to login to My Orientations and click **"Certificates."** The user will see their completed orientations and can print their certificate(s) by clicking the "Download" button to the right.
 - *OR* as the administrator, go to **"User Certificates,"** type in the user's first or last name in the **"Criteria"** tab. You will see if the user has successfully completed any orientations.
 - *OR* as the administrator, go to **"Users,"** search for the user using the **"Search"** tab, and click the impersonate icon. You will be viewing the user's home page and can click on "Certificates" to access certificates for their completed orientations. To stop impersonating the user, click on your name in the top right.
 
-#### Issue #5: A User Cannot Access the Company They Need for Orientations
+#### Issue #5: a user cannot access the company they need for orientations
 
 - Ask the user to log out and choose the correct company they need prior to signing in. Ensure they are using Microsoft Edge, Firefox, or Google Chrome as their browser.
 - *OR* have the user click **"Partners"** to navigate to the correct company.

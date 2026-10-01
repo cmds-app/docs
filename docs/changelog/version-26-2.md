@@ -2,7 +2,7 @@
 
 This update to the Live environment was released on May 6, 2026 at 8:00 PM MDT.
 
-## Business Summary
+## Business summary
 
 **Scope.** This is a major release.
 It includes 370 code-change commits from 3 developers over multiple weeks, affecting 813 files.
@@ -16,7 +16,7 @@ Hundreds more pages potentially affected indirectly via shared helper code.
 
 **Risk.** This is a major release. Recommendation: Full test/review.
 
-## Technical Details
+## Technical details
 
 Here is a list of changes, based on differences between version 26.1 and 26.2 in the source code repository.
 
@@ -24,7 +24,7 @@ This is the command used to identify differences:
 
 `git diff --name-only release/v26.1..release/v26.2`
 
-### 1. Modified Screens
+### 1. Modified screens
 
 These screens had their markup or code-behind changed. Every URL below should be retested.
 
@@ -95,14 +95,14 @@ These screens had their markup or code-behind changed. Every URL below should be
 | Start a course | `ui/portal/learning/course` |
 | View my profile | `ui/portal/profile` |
 
-### 2. High-Impact Page Layout Changes
+### 2. High-impact page layout changes
 
 These changes affect MANY forms. Smoke-test a representative page in each bucket below.
 
 - **Portal Layout** - every `ui/portal/*` page. Spot-check `ui/portal/home`, `ui/portal/learning/catalog`, `ui/portal/events/calendar`, `ui/portal/profile`.
 - **Admin Layout** - every `ui/admin/*` page. Spot-check `ui/admin/home`, `ui/admin/assessments/home`, `ui/admin/records/home`, `ui/admin/workflow/home`.
 
-### 3. Shared UI Component Changes - Pages to Retest by Module
+### 3. Shared UI component changes - pages to retest by module
 
 Shared components used by multiple URLs affect multiple screens. Here is a list of screens to smoke-test and ensure no unexpected side-effects from changes to shared components.
 

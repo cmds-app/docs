@@ -9,7 +9,7 @@ Just like smartphones have evolved from basic devices to powerful computers, eLe
 
 ## Standards comparison at a glance
 
-| Standard | Best For |
+| Standard | Best for |
 | :--- | :--- |
 | **SCORM 1.2** | Most current training programs |
 | **SCORM 2004** | Advanced course sequencing |

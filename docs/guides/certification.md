@@ -1,14 +1,14 @@
-# Self-Upload Guide: Safety Certificates
+# Self-upload guide: safety certificates
 
 [Download PDF](certification.pdf){ .md-button }
 
-## Accessing the Portal
+## Accessing the portal
 
 - Log in to My Orientations (<https://www.myorientations.com/start/>).
 - Go to **“Certificates”**.
 - Click the **“Add New Certificate”** tab at the top of the screen.
 
-## Submission Step 1: Certificate Details
+## Submission step 1: certificate details
 - **Achievement:** Select your certificate title (or closest match).
 - **Issued:** Enter the date your certificate was granted.
 - **Valid for:** Enter validity in months (i.e., 1 yr = 12, 2 yrs = 24, 
@@ -19,7 +19,7 @@
 !!! note
     _Temporary certificates will be rejected._ A certificate for an achievement that belongs to a paid training program cannot be self-uploaded.
 
-## Submission Step 2: Details Verification
+## Submission step 2: details verification
 
 Review all entered details for accuracy, then confirm your attached file meets the following 
 checklist before pressing **“Save”**:
@@ -29,7 +29,7 @@ checklist before pressing **“Save”**:
 - All required **signature fields are signed** (employee and/or employer).
 - The file contains **only this specific certificate**.
 
-## Awaiting Validation
+## Awaiting validation
 
 Reviews are typically completed within **2 business days**.
 
@@ -41,7 +41,7 @@ Reviews are typically completed within **2 business days**.
 
 **Need help?** Contact <Admin_CMDS@keyera.com> if your review exceeds 2 business days.
 
-## Viewing an Uploaded Certificate
+## Viewing an uploaded certificate
 
 - Log in to **My Orientations** and navigate to **“Certificates”**.
 - Find your **certificate name** under the Achievement column.

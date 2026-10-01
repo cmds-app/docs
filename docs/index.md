@@ -1,4 +1,4 @@
-# CMDS Docs
+# CMDS docs
 
 Welcome to the documentation site for CMDS. Use the tabs above to jump to a specific section, or pick a starting point below.
 
