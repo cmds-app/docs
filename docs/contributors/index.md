@@ -2,13 +2,12 @@
 
 Welcome! This section is for people who write code for CMDS — whether you're adding a new feature, fixing a bug, or starting on a brand new project. You'll find everything you need here to get set up and fit in with how the team works.
 
-New to the team? Start with **Conventions** to see how we organize code and name things. Then browse **Tools** to set up your development environment, and **Projects** for details about specific applications and libraries.
+New to the team? Start with **Conventions** to see how we organize code and name things. Then browse **Tools** to set up your development environment.
 
 ## What you'll find here
 
-- [**Environment Setup**](./environment-setup.md) — how to set up a local environment to build and preview the docs site.
-- **Conventions** — the shared rules we follow across every CMDS repository: folder structure, project names, database and API naming, README files, style guide, task comment tokens, version numbers, and more.
-- **Tools** — the tools we recommend and notes on how to install and configure them.
+- **Conventions** - the shared rules we follow across every CMDS repository: folder structure, project names, database and API naming, README files, style guide, task comment tokens, version numbers, and more.
+- **Tools** - the tools we recommend and notes on how to install and configure them.
 
 ## Something missing?
 

@@ -110,7 +110,6 @@ nav:
           - Single Sign-On: developers/integrations/single-sign-on.md
   - Contributors:
       - Overview: contributors/index.md
-      - Environment setup: contributors/environment-setup.md
       - Conventions:
           - Folder structure: contributors/conventions/folder-structure.md
           - Project names: contributors/conventions/project-names.md
