@@ -90,4 +90,4 @@ In this query the secret is stored inside the report. Anyone who can open the `.
 
 ## Need help?
 
-If you get stuck, reach out to our support team. We're happy to help.
+If you get stuck, reach out to CMDS Administration (<admin_cmds@keyera.com>). We're happy to help.

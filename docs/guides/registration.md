@@ -146,6 +146,4 @@ Once the event is complete, please complete the following activities in the modu
 
 ## Need help?
 
-For Keyera Learning Catalogue course-related questions, please reach out to Lovelyn Malvar (<Lovelyn_Malvar@keyera.com>).
-
-For CMDS support, please reach out to CMDS Administration (<Admin_CMDS@keyera.com>).
+For Keyera Learning Catalogue course questions or CMDS support, please reach out to CMDS Administration (<admin_cmds@keyera.com>).

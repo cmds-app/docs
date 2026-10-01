@@ -25,4 +25,4 @@ If you're just getting started, read **Introduction** in the **API** section to 
 
 ## Need help?
 
-If you're stuck or hit something unexpected, reach out to our support team - we're happy to help you get unblocked.
+If you're stuck or hit something unexpected, reach out to CMDS Administration (<admin_cmds@keyera.com>) - we're happy to help you get unblocked.

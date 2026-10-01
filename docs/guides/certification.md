@@ -39,7 +39,7 @@ Reviews are typically completed within **2 business days**.
 | **Valid** | Approved. No further action required. |
 | **Pending** | Requirements missing. Check your email for resubmission instructions. |
 
-**Need help?** Contact <Admin_CMDS@keyera.com> if your review exceeds 2 business days.
+**Need help?** Contact <admin_cmds@keyera.com> if your review exceeds 2 business days.
 
 ## Viewing an uploaded certificate
 

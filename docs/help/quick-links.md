@@ -14,6 +14,6 @@ Jump straight to what you need:
 
 - [What's new in CMDS](../changelog/index.md)
 
-**Something isn't working.** Contact the support team and they'll help you sort it out:
+**Something isn't working.** Contact CMDS Administration and they'll help you sort it out:
 
-- [Submit a support request](https://www.keyeracmds.com/support/)
+- Email CMDS Administration (<admin_cmds@keyera.com>)

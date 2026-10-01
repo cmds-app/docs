@@ -252,4 +252,4 @@ This release also improves shared components that appear on many pages. You may 
 - Achievements, registrations, and search on the portal contact pages
 - Navigation and search on the newer admin home page
 
-If you have questions about anything in this release, reach out to our support team.
+If you have questions about anything in this release, reach out to CMDS Administration (<admin_cmds@keyera.com>).

@@ -51,4 +51,4 @@ Prefer a printable copy? Download any guide as a PDF.
 
 ## Can't find what you need?
 
-If none of the guides cover your question, our support team is here to help. Reach out any time and we'll point you in the right direction.
+If none of the guides cover your question, email CMDS Administration (<admin_cmds@keyera.com>) any time and we'll point you in the right direction.

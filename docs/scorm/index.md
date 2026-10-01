@@ -36,4 +36,4 @@ CMDS also supports SCORM courses on OpenSCORM that are packaged in more than one
 
 ## Need help?
 
-If you need a hand setting up a SCORM course, reach out to our support team. We're happy to help.
+If you need a hand setting up a SCORM course, reach out to CMDS Administration (<admin_cmds@keyera.com>). We're happy to help.

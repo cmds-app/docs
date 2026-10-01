@@ -4,7 +4,7 @@ Welcome! This is the starting point for finding help with CMDS. Below you'll fin
 
 ## Get help
 
-- [Submit a support request](https://www.keyeracmds.com/support/)
+- Email CMDS Administration (<admin_cmds@keyera.com>)
 - [Blog posts, news, and updates](https://www.keyeracmds.com/blog)
 
 ## User guides
@@ -23,4 +23,4 @@ Welcome! This is the starting point for finding help with CMDS. Below you'll fin
 
 ## Still stuck?
 
-Our support team is happy to help. If you're not sure where to start, or you've tried the guides and still have questions, reach out - we'll get you moving.
+If you're not sure where to start, or you've tried the guides and still have questions, email CMDS Administration (<admin_cmds@keyera.com>) - we'll get you moving.

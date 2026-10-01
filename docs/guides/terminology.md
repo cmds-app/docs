@@ -82,4 +82,4 @@ Files and Links are typically attached to:
 
 ---
 
-If you have questions or need clarification, please reach out to the CMDS Help inbox (<admin_cmds@keyera.com>).
+If you have questions or need clarification, please reach out to CMDS Administration (<admin_cmds@keyera.com>).

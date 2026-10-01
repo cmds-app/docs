@@ -166,7 +166,7 @@ This release also improves shared components that appear on many pages. You may 
 - <area 1>
 - ...
 
-If you have questions about anything in this release, reach out to our support team.
+If you have questions about anything in this release, reach out to CMDS Administration (<admin_cmds@keyera.com>).
 ```
 
 The opening line says "is scheduled for" until the release goes Live. After it goes Live it says "This update was released to the Live environment on <DATE> at <TIME>." Leave the tense as "is scheduled for" when drafting.

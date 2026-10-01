@@ -648,7 +648,6 @@ You can see a user's expiry date by:
 - If you require help or have a question, you can:
     - Contact your local admin
     - Contact your account manager
-    - Submit a help request from the **"Help"** drop down in CMDS
     - Email <admin_cmds@keyera.com>
 - If you are interested in registering for the Validator Training Course, look for an upcoming session under **"Upcoming Training Sessions"** in your Learning Portal and register for the session you would like to attend. You will be contacted with the course details within 2 working days of submitting your registration.
     - Please note: you must finish your self-assessments prior to attending the Validator Course.
@@ -669,4 +668,4 @@ In an **Organization**, **Learners** are assigned to **Departments** created in 
 - **Achievements**: Items consisting of files, links, lessons and quizzes, or external training required for completion that contribute to the knowledge and skills of competencies. Some achievements require a safety certificate to be uploaded by your administrator.
 - **Accounts**: Accounts are created by the administrators of the organization. Learners use these accounts to complete training that is assigned to them or that is deemed supplemental.
 
-If you have questions or need clarification, please reach out to the CMDS Help inbox (<admin_cmds@keyera.com>).
+If you have questions or need clarification, please reach out to CMDS Administration (<admin_cmds@keyera.com>).

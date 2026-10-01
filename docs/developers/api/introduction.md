@@ -3,7 +3,7 @@
 The CMDS API is a RESTful interface built on [HTTPS](https://datatracker.ietf.org/doc/html/rfc2818) requests and [JSON](https://www.json.org/json-en.html) responses, so you can work with it from the programming language of your choice. It reads the data in your account - accounts, members, teams, achievements, certification records, and more - and carries out a set of actions on it, through one secure, organization-scoped surface.
 
 !!! info
-    API access is granted per account. An operator enables it for your account before you can generate a credential. If you need access, [contact our service and support team](mailto:support@cmds.app) or ask your operator to enable it on the Security > Accounts page.
+    API access is granted per account. An operator enables it for your account before you can generate a credential. If you need access, contact CMDS Administration (<admin_cmds@keyera.com>) or ask your operator to enable it on the Security > Accounts page.
 
 ## Base address
 
@@ -42,4 +42,4 @@ We use [Insomnia](https://insomnia.rest) and [Postman](https://www.postman.com) 
 
 ## Need help?
 
-Send email to the CMDS service and support team with any questions: [support@cmds.app](mailto:support@cmds.app).
+Send any questions to CMDS Administration (<admin_cmds@keyera.com>).

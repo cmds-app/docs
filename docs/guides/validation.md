@@ -327,7 +327,6 @@ The canned validator comments are:
 - If you require help or have a question, you can:
     - Contact your local admin
     - Contact your account manager
-    - Submit a help request from the **"Help"** drop down in CMDS
     - Email <admin_cmds@keyera.com>
 - If you are interested in registering for the Validator Training Course, look for an upcoming session under **"Upcoming Training Sessions"** in your Learning Portal and register for the session you would like to attend. You will be contacted with the course details within 2 working days of submitting your registration.
     - Please note: you must finish your self-assessments prior to attending the Validator Course.

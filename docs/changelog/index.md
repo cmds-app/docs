@@ -2,6 +2,6 @@
 
 This is where we share new features, improvements, and fixes. Check back whenever you want to see what's changed.
 
-If anything in the changelog is unclear, or you'd like more detail about a specific release, reach out to our support team. We're happy to help.
+If anything in the changelog is unclear, or you'd like more detail about a specific release, reach out to CMDS Administration (<admin_cmds@keyera.com>). We're happy to help.
 
 Upcoming releases are published on the [release dates](release-dates.md) page.

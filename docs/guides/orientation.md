@@ -111,7 +111,7 @@ Revised: May 29, 2026
 
 ## My Orientations administrators
 
-» *Note: Please contact <Admin_CMDS@keyera.com> for administrative access.*
+» *Note: Please contact <admin_cmds@keyera.com> for administrative access.*
 
 ### Directory
 
@@ -175,14 +175,14 @@ Revised: May 29, 2026
 
 1. Have the user log in to CMDS.
 2. From their homepage, have them click the **Orientations** button.
-3. If the user does not see the button, contact <Admin_CMDS@keyera.com>.
+3. If the user does not see the button, contact <admin_cmds@keyera.com>.
 
 #### Issue #3: a user cannot access their orientation quiz
 
 1. Confirm that:
     - The user has completed the orientation lesson by watching the full video, reading the full embedded contents, or launching and completing the external contents.
     - The user has pressed **"Next"** at the bottom of the lesson page.
-2. If they still cannot access the quiz, contact <Admin_CMDS@keyera.com>.
+2. If they still cannot access the quiz, contact <admin_cmds@keyera.com>.
 
 #### Issue #4: a user did not print their certificate
 
