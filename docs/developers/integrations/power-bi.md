@@ -1,88 +1,93 @@
 # Power BI
 
-First steps on building reports from your LMS data.
+If you report on compliance in Power BI, you can pull the data straight from the CMDS API instead of exporting spreadsheets by hand. This page connects Power BI to the same compliance summary endpoint that the [worked example](../api/example.md) walks through, so read that page first if you have not called the API before.
 
-Power BI is Microsoft's business intelligence and data visualization platform. In simplest terms, it is a report builder — and a very good one. It is designed to make reporting accessible to business users, not just technical experts.
+## Why use the API?
 
-Many of our customers use Power BI to extract, analyze, and report data from the system. Here is a quick guide to help you get started.
+A report built on an exported spreadsheet is out of date the moment someone downloads it. A report built on the API refreshes itself: Power BI calls the endpoint on a schedule and replaces the data each time, so every dashboard shows the latest snapshot without anyone copying files around.
 
-## Overview
+## Before you start
 
-The API uses [Bearer authentication](https://swagger.io/docs/specification/v3_0/authentication/bearer-authentication/) to secure access to the data in your account.
+You need the same three things as the worked example:
 
-This means you'll use Bearer token authentication to prove that Power BI has permission to access your data, whenever you connect Power BI to the API as a data source.
+1. **A personal API secret.** An operator enables API access for your account, then you generate the secret on your account page. See [Authentication](../api/authentication.md).
+2. **Report access.** The compliance summary is gated more tightly than the rest of the API. An operator grants it on the **Security > Accounts** page. Without it, every refresh fails with `403`.
+3. **Your base address.** Use `https://test-api.cmds.app` while you build the report, and `https://api.cmds.app` once it is ready for production.
 
-**What is a bearer access token?** A bearer access token is like a digital key that the API provides to authorize access to your data. Think of your access token as a temporary pass that says "whoever has this token is allowed to read my data."
+You also need Power BI Desktop, and the department ids you want to report on.
 
-**How it works with Power BI:**
+## Step 1: Open the Advanced Editor
 
-1. You sign in as a CMDS developer, integrator, or administrator, and generate your own private access token.
-2. When you configure a data connection in Power BI, you'll enter this token in the authentication settings.
-3. Power BI will then use your token to identify itself to the API each time it needs to refresh your data.
+The compliance summary is a `POST` request with a JSON body. The **From Web** dialog in Power BI only sends `GET` requests, so write the query in Power Query instead:
 
-## Step 1: Make sure your developer account is enabled
+1. In Power BI Desktop, select **Get data > Blank query**.
+2. In the Power Query Editor, select **Advanced Editor**.
 
-If you are working with the API for the first time, then always start in the Development environment.
+## Step 2: Paste the query
 
-Sign in and visit the My Profile page. If your account is enabled for development and integration work with the API then you'll see a Developer Settings panel on this page.
+Replace the contents of the editor with this query, then put your own secret and department id in the first lines:
 
-![Developer Settings panel on the My Profile page](../../assets/developers/power-bi-1.png)
+```
+let
+    BaseUrl = "https://test-api.cmds.app",
+    Secret = "vsk_live_your_secret_here",
+    Body = [ departments = { "3f2504e0-4f89-41d3-9a0c-0305e82c3301" } ],
 
-If you don't see a Developer Settings panel then contact your LMS administrator to have this enabled for your account.
+    Response = Web.Contents(
+        BaseUrl,
+        [
+            RelativePath = "reporting/compliance-summary",
+            Headers = [
+                #"Authorization" = "Bearer " & Secret,
+                #"Content-Type" = "application/json"
+            ],
+            Content = Json.FromValue(Body)
+        ]
+    ),
 
-## Step 2: Generate an access token from your client secret
+    Rows = Json.Document(Response),
+    Table = Table.FromList(Rows, Splitter.SplitByNothing(), {"Row"}),
+    Expanded = Table.ExpandRecordColumn(Table, "Row", {"department", "member", "primaryProfile", "measurement"}),
+    Department = Table.ExpandRecordColumn(Expanded, "department", {"id", "name"}, {"Department id", "Department"}),
+    Member = Table.ExpandRecordColumn(Department, "member", {"id", "name", "code"}, {"Member id", "Member", "Member code"}),
+    Profile = Table.ExpandRecordColumn(Member, "primaryProfile", {"name"}, {"Primary profile"}),
+    Measurement = Table.ExpandRecordColumn(Profile, "measurement", {"name", "score", "required", "satisfied", "expired", "notCompleted"}, {"Measurement", "Score", "Required", "Satisfied", "Expired", "Not completed"})
+in
+    Measurement
+```
 
-Visit the My Profile page and click the key beside the API Access Token label in the Developer Settings section. The system will create a token that you can copy to your clipboard with a single mouse-click.
+A few things to know about this query:
 
-![Generating an API access token](../../assets/developers/power-bi-2.png)
+- **Adding `Content` makes it a `POST`.** `Web.Contents` sends a `GET` unless you give it a body.
+- **`RelativePath` keeps the base address fixed.** Power BI can only refresh a query in the Power BI service when the base address in `Web.Contents` does not change, so keep the path in `RelativePath` rather than joining it onto the base address.
+- **The body follows the same rules as the worked example.** Name at least one department, or name members together with the measurements you want. An unbounded request answers `400`. See [Bounding your request](../api/example.md#bounding-your-request) and the full list of [request fields](../api/example.md#request-fields).
+- **The result is one table, with no paging.** The compliance summary returns every row in a single response, so you do not need a loop to collect pages.
 
-## Step 3: Create a data source in Power BI
+Select **Done**. If Power BI asks how to connect, choose **Anonymous**: the secret travels in the `Authorization` header, not in a Power BI credential.
 
-Start the Power BI Desktop app on your computer and create a new report.
+## Step 3: Shape and load the data
 
-When you are prompted for a data source, select "Get data from another source". In the "Get Data" dialog box, select "Web".
+The query expands the nested JSON into columns: department, member, primary profile, and the measurement with its score and counts. Two details from the worked example matter when you build visuals on top of it:
 
-![Selecting Web as the data source type in Power BI](../../assets/developers/power-bi-3.png)
+- **`Score` runs from 0 to 1.** Format the column as a percentage. It is empty when a score does not apply to the row.
+- **Group by the measurement name, not its key.** The key is not a stable identifier, which is why the query keeps `name` and leaves `key` out.
 
-In the "From Web" dialog box, select "Advanced" and input the settings for the URL parts and the HTTP request header.
+Select **Close & Apply** to load the table into your report.
 
-#### URL parts
+## Step 4: Publish and schedule a refresh
 
-You can input the entire, fully-qualified URL for an API endpoint as a single URL part (in one of the available text boxes), or you can separate the URL into logical pieces so it is easier to read and understand. Our team prefers the latter, but of course this is optional. In the example below, you'll see:
+When the report is ready, change `BaseUrl` to `https://api.cmds.app`, publish it to the Power BI service, and set up a scheduled refresh on the semantic model. When the service asks for data source credentials, choose **Anonymous** again.
 
-- In the first part I identify the base URL for the server where the API is hosted. This is copied directly from the Developer Settings panel of my profile.
-- In the second part I identify the specific request that I want to send.
-- In the third part I specify additional options and/or input parameters for my query.
+The report reads the same snapshot the API does, so there is little point refreshing it more often than that snapshot changes. A daily refresh suits most compliance dashboards.
 
-#### HTTP request header
+## Keeping the secret safe
 
-- The parameter name is "Authorization".
-- The parameter value is the word "Bearer", followed by a blank space, followed by my access token.
+In this query the secret is stored inside the report. Anyone who can open the `.pbix` file or edit the semantic model can read it, and with it call the API as you. Treat the file as you would the secret itself:
 
-Here is an example for reference:
+- **Share the report, not the file.** Publish to the Power BI service and share the report from there, rather than sending the `.pbix` around.
+- **Know what stops a refresh.** A personal secret has no expiry date, so a scheduled refresh keeps working until the secret is replaced or revoked, or an operator removes your API or report access. Generating a new secret replaces the old one immediately, so update the query in the same sitting.
+- **Revoke on exposure.** If the file leaves your control, revoke the secret on your account page and generate a new one.
 
-![From Web dialog box with URL parts and Authorization header](../../assets/developers/power-bi-4.png)
+## Need help?
 
-## That's it!
-
-Click "OK", and the data source is ready to use in Power BI.
-
-![Power BI data source ready to use](../../assets/developers/power-bi-5.png)
-
-## Next steps: explore and experiment
-
-Spend some time exploring the API libraries, and experiment with your Power BI integration. The development environment is intended for this purpose, so you can test and debug your Power BI reports without any impact on your organization's live, production environment.
-
-!!! success
-    There are more than twenty API libraries available in the platform, with hundreds of available queries.
-
-### Need technical help?
-
-Of course, if you get stuck, we have a professional services team with deep knowledge of the platform, and many years of experience building integrations between systems — including large-scale data migrations. Our team is always excited about working with other developers and integrators who are building their own integrations, migrations, and extensions.
-
-!!! info
-    You can leverage our team through a simple consulting services agreement, which can be short-term or long-term. If you're just getting started, then we usually recommend a part-time resource (half-time or quarter-time) for a period between one and six months.
-
-We can also recommend third-party integration partners, if you'd prefer to work with someone who has an orientation and perspective on the platform that is more externally focused.
-
-Contact us any time to discuss either of these options.
+If you get stuck, reach out to our support team. We're happy to help.

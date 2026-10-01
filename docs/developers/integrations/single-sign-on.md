@@ -4,13 +4,12 @@ Single Sign-On (SSO) is an authentication scheme that allows a user to log in wi
 
 Refer to this Wikipedia article for background information about [Single Sign-On](https://en.wikipedia.org/wiki/Single_sign-on).
 
-CMDS supports three industry-standard mechanisms for SSO:
+CMDS supports four industry-standard mechanisms for SSO:
 
-1. Microsoft Office 365
-2. Google
-3. Microsoft Entra ID (formerly Azure Active Directory)
-4. Security Assertion Markup Language (SAML)
-5. Learning Tools Interoperability (LTI)
+1. Microsoft, through Microsoft Entra ID (formerly Azure Active Directory), which covers Microsoft 365 work and school accounts - the **Login with Microsoft** button on the sign-in page
+2. Google - the **Login with Google** button on the sign-in page
+3. Security Assertion Markup Language (SAML)
+4. Learning Tools Interoperability (LTI)
 
 We do not implement or support custom SSO mechanisms due to the potential security and privacy risks associated with them.
 
@@ -30,7 +29,7 @@ An LTI launch message submitted for SSO access to CMDS looks something like this
 
 ![LTI launch message example](../../assets/developers/lti-launch.png)
 
-The LTI Launch message is signed with a secure digital signature, using [HMAC-SHA1](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.hmacsha1?view=net-7.0) or [HMAC-SHA256](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.hmacsha256?view=net-7.0), with a secret key that is shared between the two systems.
+The LTI Launch message is signed with a secure digital signature, using [HMAC-SHA1](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.hmacsha1), with a secret key that is shared between the two systems. This is the OAuth 1.0a signature method that LTI 1.1 specifies. CMDS supports HMAC-SHA1 only; HMAC-SHA256 is not supported.
 
 When CMDS receives this message from a user's web browser, it validates the signature on the message to confirm it is a legitimate interoperability request from an authorized external system.
 

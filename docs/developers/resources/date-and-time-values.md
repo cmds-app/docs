@@ -10,31 +10,36 @@ Consider the following date/time value for example:
 
 **2025-11-02 01:30 AM**
 
-The exact meaning of this value is ambiguous. In Canada and the United States, Daylight Savings Time (DST) ends on November 2, 2025 at 2:00 AM. At that moment, clocks are set back one hour. Therefore, the hour from 1:00 AM to 2:00 AM occurs twice:
+The exact meaning of this value is ambiguous. In most of Canada and the United States, daylight saving time (DST) ended on November 2, 2025 at 2:00 AM. At that moment, clocks are set back one hour. Therefore, the hour from 1:00 AM to 2:00 AM occurs twice:
 
 - First, under Eastern Daylight Time (EDT, UTC-4)
 - Then again, under Eastern Standard Time (EST, UTC-5)
 
 Furthermore, without a time zone or UTC offset specified, the value might also represent:
 
-- November 2, 2025 at 5:30 AM UTC in Europe/London
-- November 1, 2025 at 10:30 PM Mountain Standard Time in Canada/Calgary
-- November 1, 2025 at 11:30 PM Mountain Daylight Time in America/Phoenix (no DST)
-- November 1, 2025 at 10:30 PM Pacific Daylight Time in America/Los Angeles
+- November 2, 2025 at 5:30 AM Greenwich Mean Time in Europe/London
+- November 1, 2025 at 11:30 PM Mountain Daylight Time in America/Edmonton (Calgary), where DST had not yet ended
+- November 1, 2025 at 10:30 PM Mountain Standard Time in America/Phoenix (no DST)
+- November 1, 2025 at 10:30 PM Pacific Daylight Time in America/Los_Angeles
 
 In contrast, consider the following date/time offset value:
 
 **2025-11-01T22:30:00-07:00**
 
-In contrast to the previous example, the exact meaning of this value is **not** ambiguous. It can be interpreted one way only:
+In contrast to the previous example, the exact meaning of this value is **not** ambiguous. It identifies one moment only:
 
-- November 1, 2025 at 10:30 PM Mountain Standard Time, as observed in Canada/Calgary and in America/Denver
+- November 2, 2025 at 5:30 AM UTC
 
-It cannot be interpreted to mean any other day, or time, or time zone.
+It cannot be interpreted to mean any other moment. On that date, a local time seven hours behind UTC was Pacific Daylight Time in America/Vancouver and America/Los_Angeles, and Mountain Standard Time in America/Phoenix.
 
-Explicitly including time zone awareness — i.e., embedding it in a single atomic value with the date and time — ensures every date/time value includes the calendar date, the time of day (based on a 24-hour clock), and the time zone offset (based on Coordinated Universal Time).
+Note that an offset pins down the moment, not the time zone. Several time zones can share the same offset on a given date, so if you also need to know *where* a value was recorded, store the time zone identifier (such as `America/Edmonton`) alongside it.
 
-In turn, this guarantees the precise meaning of a value is never ambiguous with regard to time zone or (where applicable) rules about daylight savings time.
+!!! note "Alberta Time"
+    Alberta has eliminated the practice of semi-annual clock changes and adopted [permanent Alberta Time](https://www.alberta.ca/albertas-new-time-system-abt), equivalent to UTC-6:00. Beginning in November 2026, clocks in Alberta no longer reset to Mountain Standard Time. The 2025 examples on this page follow the rules in effect at the time: Mountain Daylight Time (UTC-6) in summer and Mountain Standard Time (UTC-7) in winter. This is one more reason to store the offset with every value: a value recorded with its offset keeps its meaning when a jurisdiction changes its rules.
+
+Explicitly including time zone awareness - i.e., embedding it in a single atomic value with the date and time - ensures every date/time value includes the calendar date, the time of day (based on a 24-hour clock), and the time zone offset (based on Coordinated Universal Time).
+
+In turn, this guarantees the precise meaning of a value is never ambiguous with regard to time zone or (where applicable) rules about daylight saving time.
 
 ### Other benefits of using date/time offset values with time zone awareness
 
@@ -87,11 +92,13 @@ Here are a few examples that show ISO 8601 values and their corresponding local 
 
 | ISO 8601 Date/Time | Local Time |
 | :--- | :--- |
-| `2025-10-31T23:00:00-07:00` | October 31, 2025 11:00 PM MST |
+| `2025-10-31T23:00:00-07:00` | October 31, 2025 11:00 PM PDT |
 | `2025-07-01T12:00:00-07:00` | July 1, 2025 12:00 PM PDT |
 | `2025-12-25T10:00:00-05:00` | December 25, 2025 10:00 AM EST |
-| `2025-03-10T01:30:00-07:00` | March 10, 2025 1:30 AM MST |
+| `2025-01-15T09:00:00-07:00` | January 15, 2025 9:00 AM MST |
+| `2025-03-10T01:30:00-07:00` | March 10, 2025 1:30 AM PDT |
 | `2025-09-15T16:15:00-07:00` | September 15, 2025 4:15 PM PDT |
+| `2026-12-01T09:00:00-06:00` | December 1, 2026 9:00 AM Alberta Time |
 
 ### Code examples
 
@@ -116,7 +123,7 @@ You can practise with your own input values to see exactly how they are parsed a
 
 #### Example input
 
-`platform/formats/time?value=2025-11-11T22:30:00-07:00`
+`api/schemas/formats/time?value=2025-11-11T22:30:00-07:00`
 
 #### Example output
 
@@ -124,10 +131,10 @@ You can practise with your own input values to see exactly how they are parsed a
 {
   "Original": "2025-11-11T22:30:00-07:00",
   "Formats": {
-    "Value": "Tuesday - November 11, 2025 - 10:30:00 PM Mountain Standard Time",
+    "Value": "Tuesday - November 11, 2025 - 10:30:00 PM America/Edmonton",
     "RoundTrip": "2025-11-11T22:30:00.0000000-07:00",
     "Offset": "-07:00:00",
-    "TimeZone": "Mountain Standard Time",
+    "TimeZone": "America/Edmonton",
     "ISO8601": "2025-11-11T22:30:00.0000000-07:00",
     "RFC3339": "2025-11-11T22:30:00.000-07:00",
     "ShortDate": "2025-11-11",
@@ -161,5 +168,7 @@ You can practise with your own input values to see exactly how they are parsed a
   }
 }
 ```
+
+The **TimeZone** value is the first supported time zone whose offset matches the input on that date, identified by its [IANA](https://www.iana.org/time-zones) name. `ShortDate`, `LongDate`, `ShortTime`, `LongTime`, and `FullDateTime` follow the server's culture settings, so they can differ from this sample.
 
 The **Original** format is the format your code should use whenever it sends any date/time value to the API.

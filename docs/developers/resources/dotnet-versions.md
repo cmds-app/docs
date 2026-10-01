@@ -6,9 +6,9 @@ A few important details about the Microsoft .NET platform.
 
 We use each of these versions of .NET for specific purposes:
 
-- [.NET Framework 4.8](https://versionsof.net/framework/4.8.1/)
+- [.NET Framework 4.8](https://versionsof.net/framework/4.8/)
 - [.NET Standard 2.0](https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-2-0)
-- [.NET Core 9.0](https://versionsof.net/core/9.0/)
+- [.NET 10](https://versionsof.net/core/10.0/) (from version 26.5; earlier versions targeted .NET 9)
 
 ### Dependencies
 
@@ -23,6 +23,6 @@ We use each of these versions of .NET for specific purposes:
 
 ## Development tools
 
-- Visual Studio 2022 is the recommended IDE for all .NET Framework development work.
+- Visual Studio 2026 (version 18) is the recommended IDE for all .NET Framework and .NET 10 development work. Visual Studio 2022 cannot target .NET 10.
 - VS Code is the recommended IDE for all React development work.
 - Either (or both) tools can be used for .NET Standard and .NET Core development work.
