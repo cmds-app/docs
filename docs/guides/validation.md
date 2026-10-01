@@ -6,6 +6,62 @@ Last revised: September 2026
 
 [Download PDF](validation.pdf){ .md-button }
 
+## About CMDS validators
+
+A CMDS validator is a certified subject-matter expert who reviews, verifies, and approves worker competency self-assessments in Keyera's Competency Management and Development System (CMDS).
+
+### Validator responsibilities
+
+- **Verify competence.** Confirm workers have the knowledge and practical skills to perform tasks independently.
+- **Review self-assessments.** Agree or disagree with a worker's self-evaluations, and document the rationale or supporting evidence.
+- **Apply standards.** Use approved validation methods and follow the system's ethical guidelines.
+
+### Validator training and certification
+
+The validator course is one day of online training, delivered through Microsoft Teams. To take it, you need:
+
+- Supervisor or leadership approval
+- Relevant subject-matter expertise
+- Extensive experience with the equipment and processes being evaluated
+- A commitment to unbiased assessments and to Keyera's safety and operational standards
+
+You must also finish your own self-assessments before you attend.
+
+### Registering for validator training
+
+To register, email <admin_cmds@keyera.com> and include:
+
+- Your department
+- Your supervisor's name
+- Your operations area
+
+## Reviewing a competency submission
+
+When a worker submits a competency for validation, you review their self-assessment and decide whether they can perform the task safely and independently.
+
+- Open the validation request.
+- Review the worker's self-assessment.
+- Consider their demonstrated knowledge, their practical ability, your previous observations, and the training and certifications the competency requires.
+- Decide whether the self-assessment accurately reflects the worker's competency.
+
+### If you agree
+
+- Validate the worker as competent, and record the reason for your decision.
+
+### If you disagree
+
+- Record why. CMDS sets the competency to **"Needs Training"**.
+- Meet with the worker to discuss the competency.
+- Decide the next steps: additional training, coaching, or an updated self-assessment.
+
+### Document and follow up
+
+Validation is more than clicking "Approve". Provide supporting comments, and make sure the worker receives any development they need.
+
+- Write meaningful comments.
+- Confirm that required training is completed where it is needed.
+- Validate only competencies that you are qualified to validate.
+
 ## Logging into CMDS
 
 Go to <https://www.keyeracmds.com/> and click **"Sign In"** (top right corner).
@@ -230,7 +286,7 @@ There are a variety of ways to access user validations and validating users/comp
 
 ### From your home page
 
-- Scroll down to your 'Learning Portal' and, under 'Competencies', click **"Validate Competencies"**.
+- Scroll down to your 'Learning Portal' and, under 'Competencies', click **"Validate Competencies"**, or click **"Validations"** under 'Management' in the side menu.
 - You will see a list of the individuals for who you are the validator and who have submitted competencies for validation.
     - NOTE: If someone is missing from this list, they may not have submitted their competencies for validation OR you may not be validated in the competencies that they have submitted.
     - To confirm who your 'Learners' are (individuals for which you are the validator), from your home page, click the 'Contacts' tab and you will see your 'Learners' listed.
@@ -328,6 +384,5 @@ The canned validator comments are:
     - Contact your local admin
     - Contact your account manager
     - Email <admin_cmds@keyera.com>
-- If you are interested in registering for the Validator Training Course, look for an upcoming session under **"Upcoming Training Sessions"** in your Learning Portal and register for the session you would like to attend. You will be contacted with the course details within 2 working days of submitting your registration.
-    - Please note: you must finish your self-assessments prior to attending the Validator Course.
+- To register for validator training, see [Registering for validator training](#registering-for-validator-training).
 - Check out the CMDS Blog for up-to-date CMDS information <https://www.keyeracmds.com/tag/blog/>. **"SUBSCRIBE"** to stay in the loop!

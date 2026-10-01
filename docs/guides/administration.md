@@ -649,8 +649,8 @@ You can see a user's expiry date by:
     - Contact your local admin
     - Contact your account manager
     - Email <admin_cmds@keyera.com>
-- If you are interested in registering for the Validator Training Course, look for an upcoming session under **"Upcoming Training Sessions"** in your Learning Portal and register for the session you would like to attend. You will be contacted with the course details within 2 working days of submitting your registration.
-    - Please note: you must finish your self-assessments prior to attending the Validator Course.
+- To register for validator training, email <admin_cmds@keyera.com> with your department, your supervisor's name, and your operations area. See [Registering for validator training](validation.md#registering-for-validator-training) for what the course requires.
+    - Please note: you must finish your self-assessments prior to attending the validator course.
 - Check out the CMDS Blog for up-to-date CMDS information <https://www.keyeracmds.com/tag/blog/>. **"SUBSCRIBE"** to stay in the loop!
 
 ## CMDS terminology and hierarchy
