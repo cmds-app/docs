@@ -1,121 +1,64 @@
 # Database naming conventions
 
-Naming conventions to help every contributor speak the same schema.
-
-!!! info
-    Some of the naming conventions here are new, and some are revised from old/existing conventions. Existing code and existing database objects are **not** expected to follow these conventions perfectly. New code and new database objects should follow these conventions.
-
-## Databases
-
-- The name of a database is a hybrid of Pascal case and snake case.
-  **Partition_Environment_Application**
-- Examples:
-    - E00_Development_Engine
-    - E02_Sandbox_Shift
-    - E05_Production_Shift
+Naming conventions to help every contributor speak the same schema. The database is PostgreSQL, and PostgreSQL folds unquoted names to lowercase, so every name is lowercase snake case. Upper-case names force quoting everywhere they are used, which is why they are [strongly discouraged](https://wiki.postgresql.org/wiki/Don't_Do_This#Don.27t_use_upper_case_table_or_column_names).
 
 ## Schemas
 
-- The name of a schema is lowercase and singular form.
-- A schema name should match a component (toolkit) name.
-- Examples:
-    - billing
-    - platform
+A schema groups the tables for one area of the product. Its name is a singular noun:
+
+- `public` - the core tables every area shares, such as `company`, `account`, and `migration`
+- `integration` - copies of data from external systems, and the runs that keep them in sync
+- `learning` - course enrolments and progress
+- `notice` - notification rules, subscribers, and deliveries
 
 ## Tables
 
-- T = The name of a base **Table** (i.e., a non-projection table) has a `T` prefix. A base table stores raw, unprojected data.
-- P = The name of a **Projection** table (also called a **Query** table) has an `R` prefix (or a `Q` prefix). A projection table stores a projection of data from a base table.
-- B = The name of a temporary **Buffer** table has a `B` prefix. A buffer table caches intermediate results for complex multi-stage algorithms, queries, and reports.
-- Z = The name of deprecated **Zombie** table has a `Z` prefix. A zombie table is a candidate for removal or replacement.
-- The name of a table name is singular Pascal case (i.e. the first letter of each word in a compound word is capitalized).
-- Examples:
-    - Good: TUser, BComplexReportPreparation
-    - Bad: User, Users, TUsers
-
-## Views
-
-- The name of a view has a `V` prefix.
-- The name of an indexed view has an `X` prefix.
-- The name of a view is singular Pascal case.
-- Examples:
-    - VOrganizationDetail
-    - XFastInventorySummary
-
-!!! warning
-    This is a question for future discussion: should the name of a view follow the naming convention for a query?
-
-## Stored procedures
-
-- The name of a stored procedure follows the naming convention for queries and commands.
-- If it is not possible to follow the naming convention for queries and commands, then the name of a stored procedure has a `P` prefix.
+- A table name is singular: `company`, not `companies`; `course_enrolment`, not `course_enrolments`.
+- A table that mirrors an external system starts with the system's name: `google_country`, `workday_employee`, `vimeo_video`. The prefix tells you the data is a copy, and where the source of truth lives.
+- Avoid a bare reserved word such as `user` or `group`. A prefix or a more specific noun (`account`, `team`) avoids quoting.
 
 ## Columns
 
-- The name of a column is Pascal case.
-- Ideally, a column name should be unique.
-    - If two different tables contain a column with the same name, then both columns should have the same meaning.
-    - If two different columns have different meanings then they should have different names.
-    - For example, TUser.FullName and TPerson.FullName may be acceptable, but TUser.Name and TModule.Name is not recommended because a person's full name is not semantically equivalent to a module's name. Therefore, TUser.FullName and TModule.ModuleName are better column names.
-- The name of a column that stores an email notification message identifier should follow this convention:
-    - **When** \<ChangeType\> **Notify** \<RecipientDescriptor\> **MessageIdentifier**
-    - For example: WhenCrazyWidgetColorChangedNotifyMyImaginaryFriendsInGreenlandMessageIdentifier
-    - Notice the terms **When**, **Notify**, and **MessageIdentifier** can be used (if needed) to parse the ChangeType and/or RecipientDescriptor from this type of a column name.
+Every column starts with the name of its table. In the `company` table the columns are `company_id`, `company_name`, `company_handle`, and `company_started_at`, never `id`, `name`, or `started_at`.
 
-### Data types
+You'd expect this to be noise, but it pays for itself in a join. With the prefix, a column name means the same thing in every query and every result set, no two tables share a column name by accident, and a search for `company_handle` finds every place that value is read or written.
 
-- If a date/time column contains both a Date part and a Time part then the data type must be DATETIMEOFFSET to ensure the meaning of its values is unambiguous with regard to time zone.
-- If a date/time column contains a Date part only then the data type must be DATE.
-- If a date/time column contains a Time part only then the data type must be TIME.
+- **Primary key.** `<table>_id`, a `uuid` that defaults to `gen_random_uuid()`.
+- **Foreign key.** A column that points at another table takes the name of the key it references, such as `company_id` in `course_enrolment`. When the role matters, or a table points at the same table twice, a role prefix says which is which: `learner_user_id`.
+- **Handle.** A URL-friendly identifier token is called a handle (`company_handle`), in the database, the code, the API, and the UI alike.
 
-## Entity Framework
+### Suffixes and data types
 
-- The name of an entity class should match the name of the database table (or view) to which it binds, with the suffix "Entity".
-    - For example, if an entity class binds to a database table named TRole, then the C# entity class should be named TRoleEntity.
-- The name of an entity type configuration class should match the name of the database table (or view) to which it binds, with the suffix "Configuration".
-    - For example, TRoleConfiguration.
-- The name of a `DbSet<T>` property within a DbContext class should exactly match the name of the database table (or view) to which it binds.
-    - For example, if a DbContext contains a property of type `DbSet<TOrganizationEntity>`, which binds to the database table named QOrganization, then the name of the property should be QOrganization:
-      `internal DbSet<OrganizationEntity> QOrganization { get; set; }`
+| Suffix | Type | Example |
+| :----- | :--- | :------ |
+| `_id` | `uuid` | `course_enrolment_id` |
+| `_at` | `timestamp with time zone` | `course_enrolment_completed_at` |
+| `_date` | `date` | `vimeo_video_day_date` |
+| `_is_<adjective>` | `boolean` | `subscriber_is_active` |
+| `_count` | `integer` | `course_enrolment_restart_count` |
+| `_handle` | `character varying(100)` | `company_handle` |
+| `_url` | `character varying(254)` | `company_website_url` |
 
-## SQL Server versus PostgreSQL
+A value with both a date and a time is always `timestamp with time zone`, so its meaning never depends on the server's time zone. A date with no time is `date`.
 
-The naming conventions above are intended for SQL Server databases, and are **not** a good fit for PostgreSQL databases because PostgreSQL automatically applies lowercase to object names.
+Audit timestamps follow the same prefix rule: `course_enrolment_created_at` and `course_enrolment_updated_at`.
 
-Therefore, upper case letters are **strongly discouraged**. For details, refer to this article: [Do not use upper case table or column names in PostgreSQL](https://wiki.postgresql.org/wiki/Don't_Do_This#Don.27t_use_upper_case_table_or_column_names).
+## Constraints and indexes
 
-Snake case is **strongly recommended** for all object names in PostgreSQL databases.
+A constraint or index name starts with its kind, then the table:
 
-When you use PostgreSQL, follow the de-facto standards.
+| Prefix | Kind | Example |
+| :----- | :--- | :------ |
+| `pk_` | Primary key | `pk_company` |
+| `fk_` | Foreign key | `fk_delivery_dispatch` |
+| `uq_` | Unique | `uq_course_enrolment_learner_course` |
+| `ck_` | Check | `ck_vimeo_video_duration` |
+| `ix_` | Index | `ix_google_province_google_country_code` |
 
-**Timestamps (date + time):**
+## Migrations
 
-- `created_at` and `updated_at` — by far the most popular, especially in web applications and ORMs
-- `created_on` and `updated_on` — alternative that some prefer
-- `created_when` and `updated_when` — grammatically logical but rarely used in open-source projects
+Schema changes are hand-written SQL files in `db/migrations/`, named with a three-digit sequence and a short description: `126_create_learning_catalogue_setting.sql`. The migration runner applies files in filename order, each in its own transaction, and records every applied file in `public.migration`.
 
-**Date-only columns:**
-
-- `created_date`, `start_date`, `end_date`
-- `birth_date`, `due_date`, etc.
-
-**Time-only columns:**
-
-- `created_time`, `start_time`, `end_time`
-
-**User identity columns:**
-
-- `created_by` and `updated_by` — storing the user ID (foreign key)
-- `created_by_id` and `updated_by_id` — more explicit about storing an ID
-- `creator_id` and `updater_id` — noun-based approach
-- `created_by_user_id` and `updated_by_user_id` — very explicit but verbose
-
-The pattern `created_by` and `updated_by` is overwhelmingly the most popular in open-source projects, with the assumed understanding that "by" is an alias for "id".
-
-`updated_at` is significantly more popular than `modified_at`, though both are grammatically correct. This is mainly a semantic preference, because developers tend to think of database operations as:
-
-- **CREATE** → `created_at`
-- **UPDATE** → `updated_at`
-- **DELETE** → `deleted_at` (for soft deletes)
-
-This maps directly to CRUD operations, making `updated_at` feel more natural in a database context.
+- Never edit a migration that has been applied. Add a new one.
+- Start each file with a comment that explains why the change is needed, not only what it does.
+- After a migration, regenerate the schema artifacts with `db/export-schema.ps1`. It writes `db/schema.sql` and an ER diagram (`db/schema.dot` and `db/schema.svg`) covering every schema.

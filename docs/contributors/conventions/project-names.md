@@ -1,9 +1,26 @@
 # Project names
 
-The name of a source code project that targets .NET uses Pascal Case: the first letter of each word in a multi-word identifier is capitalized, and there are no spaces or separators between words.
+The name of a .NET project uses Pascal case: the first letter of each word is capitalized, with no spaces or separators between words. A dot separates the product from the part of the product the project builds.
 
-Use dots in the project name (as needed) to indicate architectural boundaries. For example:
+Projects sit directly under `src/`, one folder per project, with the folder named exactly like the project. There are no grouping folders such as `src/api/` or `src/lib/`. The part after the dot already says what kind of project it is, so a second level would only repeat it.
 
-- src/api/DanielMiller.Api
-- src/cli/Workday.Integration
-- src/lib/Shift.Assessment.Sdk
+For example (the product name here is illustrative):
+
+- `src/<Product>.Api` - the web API
+- `src/<Product>.Cli` - the command-line tool, including the database migration runner
+- `src/<Product>.Notices` - a class library for notifications, referenced by the API
+
+## Test projects
+
+Each test project is named after the project it tests, with a `.Tests` suffix, and lives in `tests/` rather than `src/`:
+
+- `tests/<Product>.Api.Tests`
+- `tests/<Product>.Notices.Tests`
+
+## Namespaces
+
+Namespaces follow folders. A class in `src/<Product>.Api/Certification/Plans/` belongs to the namespace `<Product>.Api.Certification.Plans`. Inside a project, group code by feature area (`Certification`, `Learning`, `Notification`) rather than by kind (`Controllers`, `Services`, `Models`), so everything a feature needs sits in one folder.
+
+## Customer brand names
+
+CMDS is the product's customer brand, and a brand can change. Keep it out of project names, namespaces, and assembly names, where a rename would touch every file.

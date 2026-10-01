@@ -12,7 +12,7 @@ The official reference is here: [Material Design style guide](https://m3.materia
 
 The sequence of the tabs on a form should follow this basic rule:
 
-Primary/essential content → Secondary content → Advanced/optional content
+Primary/essential content, then secondary content, then advanced/optional content
 
 Tabs should represent a logical information architecture, and should use progressive disclosure (don't overwhelm with too much detail on the first tab).
 

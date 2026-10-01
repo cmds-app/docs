@@ -1,40 +1,44 @@
 # Version numbers
 
-This convention guarantees unique version numbers for every build, regardless of where the build is packaged (e.g., in a development environment or in a CI/CD build environment).
+Every build gets a version number that no other build has, wherever the build runs. You'd expect a timestamp to be the simplest way to guarantee that, but two builds in the same minute collide, and a timestamp says nothing about what changed. Instead, the release build asks a central version service for the next number, and the service hands out each number exactly once.
 
-## Major.Minor.Build.Revision
+## Major.Minor.Patch
 
-- **Major** = Two-digit year **plus** the release cycle number. For example, **251** is Year 20**25** Release Cycle **1**.
-- **Minor** = Four-digit year from the build time. For example, **2025** means the year 2025.
-- **Build** = Month and Day from the build time. For example, **0205** means February 5.
-- **Revision** = Hour and Minute from the build time. For example, **2359** means 12:59 PM UTC.
+Version numbers follow [Semantic Versioning](https://semver.org/). For example:
 
-Here is a complete example:
+- **5.0.33**
 
-- **Version 251.2025.205.2359**
+| Part | Example | Meaning |
+| :--- | :------ | :------ |
+| Major | `5` | The generation of the platform. `5` is CMDS version 5. This changes only when the platform itself is replaced. |
+| Minor | `0` | Raised for a build that adds a significant new capability. The patch number resets to `0`. |
+| Patch | `33` | Raised for every other build. This is the default. |
 
-This version was built on February 5, 2025 at 12:59 PM UTC for Release #1 in 2025.
+## How a build gets its number
 
-## Release numbers in Git and Jira
+The release build script in `build/` starts by asking the version service for a bump. It sends the level (`major`, `minor`, or `patch`) and gets back the new version number. The level defaults to `patch`, so an everyday build needs no argument, and a minor or major bump is always a deliberate choice:
 
-The release number for a production deployment follows this convention:
+```powershell
+.\build\build.ps1 -BumpLevel minor
+```
 
-- v25.1
+Because the service keeps the counter, a build on a developer's machine and a build on a CI runner can never be given the same number, and a failed build simply leaves a gap in the sequence.
 
-The release number for hotfix deployments should follow this convention:
+## One number for the whole release
 
-- v25.1a — This is the first hotfix release for version 25.1.
-- v25.1b — This is the second hotfix release.
-- v25.1c — This is the third hotfix release.
+Every package in a release carries the same number: the API, the command-line tool, the web app, and the operations scripts.
 
-## Release numbers in Sentry
+- **.NET assemblies.** The number is stamped into the .NET assemblies at compile time.
+- **Web bundle.** It is stamped into the web bundle, so the web app can show which build it is.
+- **Package files.** It is part of every package file name, for example `<Package>.5.0.33.zip`.
+- **Deployment.** The release in the deployment tool is created with the same number.
 
-The Release number in a message submitted to Sentry includes only the first 3 segments (Major.Minor.Build). Segment 4 is not necessary in this context, because multiple deployments to a given environment are not needed within any 24-hour period.
+To check which build an environment is running, ask the API:
 
-This improves the readability and management of Sentry issues. Also, it enables us to mark an issue "Resolved until next release", which fits with our daily automated deployments to Development and Sandbox.
+```
+GET diagnostic/version
+```
 
-![Sentry release version format](../../assets/conventions/sentry-release-format.png)
+## Release names in the changelog
 
-Here is a code sample to show how this is achieved:
-
-![Sentry release code sample](../../assets/conventions/sentry-release-code.png)
+The [changelog](../../changelog/index.md) names scheduled releases with the two-digit year and a release number within that year, such as 26.5. A release name marks a date on the release calendar, and one scheduled release can include many builds, each with its own version number.
