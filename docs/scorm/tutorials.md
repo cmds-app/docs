@@ -6,13 +6,13 @@ Here are the step-by-step instructions.
 
 ## Step 1
 
-Add a Link activity to a module in your course.
+Add a Link activity to a module in your course, and set its **Link Type** to **"SCORM Package"** (on an existing activity, the option is called **"SCORM Course"**).
 
 ![Add Link activity](../assets/scorm/add-link-activity.png)
 
 ## Step 2
 
-Select the option to use "OpenSCORM (Scoop)" as your SCORM Platform.
+Select "OpenSCORM (Scoop)" as your SCORM Platform. It is the only platform available.
 
 If an SCO library is not already created for your organization, the system will create it automatically, and display a link to the library.
 
@@ -45,3 +45,9 @@ Save your changes, preview the course in CMDS, and click the Launch button to co
 ![Preview the course in CMDS](../assets/scorm/preview.png)
 
 ![Launch the SCORM content](../assets/scorm/launch.png)
+
+## Courses in more than one language
+
+If you have the same course in several languages, upload one package per language and give them the same base identifier followed by a language code, for example `i-100-intro-en` and `i-100-intro-fr`.
+
+On the activity, enter the base identifier (`i-100-intro`) as the SCORM Package ID and check **"Append a language code to SCORM Package ID"**. CMDS launches the package that matches each learner's language, and falls back to English when there is no package in their language.

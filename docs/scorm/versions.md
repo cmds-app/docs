@@ -4,6 +4,9 @@ The evolution of eLearning standards: what you need to know.
 
 Just like smartphones have evolved from basic devices to powerful computers, eLearning standards have grown more sophisticated over time. Understanding this evolution helps you make smart decisions about which standards to support and when to upgrade your training technology.
 
+!!! note "What CMDS supports"
+    CMDS launches and records completion for **SCORM 1.2**, **SCORM 2004**, and **xAPI** content hosted on OpenSCORM. cmi5, IMS Common Cartridge, and PENS are described for background; CMDS does not handle them.
+
 ## Standards comparison at a glance
 
 | Standard | Best For |
