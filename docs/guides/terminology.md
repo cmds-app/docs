@@ -9,13 +9,14 @@ In an **Organization**, **Learners** are assigned to **Departments** created in 
 ```
 Organization
 └── Departments
+    ├── Learners
+    │   └── Accounts
     ├── Programs
     │   └── Achievements
     └── Profiles
         └── Competencies
             └── Achievements
                 └── File or Link
-                    └── Accounts
 ```
 
 ## Levels
@@ -59,7 +60,7 @@ Achievement types:
 - Site Safe Operating Practices
 - Operating Procedures
 - Human Resources Documents
-- e-Learning Modules
+- eLearning Modules
 - Time-Sensitive Safety Certificates
 - Training Documents
 

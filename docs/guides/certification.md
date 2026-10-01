@@ -13,10 +13,11 @@
 - **Issued:** Enter the date your certificate was granted.
 - **Valid for:** Enter validity in months (i.e., 1 yr = 12, 2 yrs = 24, 
 3 yrs = 36). _May auto-populate_.
-- **Select a file to attach:** Upload a **valid** copy.
+- **Select a file to attach:** Upload a **valid** copy as a .jpg, .png, or .pdf file.
+- Click **"Next"**.
 
-> [!NOTE]
-> _Temporary certificates will be rejected._
+!!! note
+    _Temporary certificates will be rejected._ A certificate for an achievement that belongs to a paid training program cannot be self-uploaded.
 
 ## Submission Step 2: Details Verification
 
@@ -34,6 +35,7 @@ Reviews are typically completed within **2 business days**.
 
 | Status | Outcome |
 | --- | --- |
+| **Submitted** | Received and waiting for review. |
 | **Valid** | Approved. No further action required. |
 | **Pending** | Requirements missing. Check your email for resubmission instructions. |
 

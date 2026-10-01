@@ -54,7 +54,7 @@ Notes about this page:
 - The **Venue** column indicates whether the course is offered **Online** or **In-Person**.
 - The **Status** column shows seat availability:
     - **Full**: No seats are available.
-    - **Waiting list available**: Course is full, and you can join the waitlist.
+    - **Waiting list is available**: Course is full, and you can join the waitlist. This badge appears beside **Full**.
     - **Blank (no status listed)**: Seats are available.
 
 ### Option 2: Through the Registration Link within the Course
@@ -100,24 +100,25 @@ You are now registered for the course! Your status will be updated in the list o
 ***Note:*** *These steps should only be followed by leaders for employees who report directly to them.*
 
 1. Click the green **"Register Employees"** button.
-2. In the search box, type the employee's email address and click **"Search."**
-3. Once you locate the employee, click **"Register"** next to their name.
-4. **Review the participant information** to ensure the **First Name** and **Last Name** are correct. If Person Code is blank, check the box for "Learner ID not available." This field will auto-populate.
-5. Click **"Next."**
-6. Review the **Price Options** available and select the one that applies to your employee under **"Your Registration."**
-7. **Read the Agreement** and select "I Agree" to proceed.
-8. Click **"Next."**
+2. If CMDS asks you to **Select Registration Process**, choose whether you are registering one person or two or more people with one invoice/payment.
+3. Under **Find Employee**, enter the employee's **Last Name** together with their **Email** or **Tradeworker ID** (your organization decides which are required) and click **"Search."**
+4. Once you locate the employee, click **"Register"** next to their name.
+5. **Review the participant information** to ensure the **First Name** and **Last Name** are correct. If Person Code is blank, check the box for "Learner ID not available." This field will auto-populate.
+6. Click **"Next."**
+7. Review the **Price Options** available and select the one that applies to your employee under **"Your Registration."**
+8. **Read the Agreement** and select "I Agree" to proceed.
+9. Click **"Next."**
 
 ***Note:*** *The following billing steps apply only to courses that require payment. For courses with a $0 fee, skip the billing steps and proceed to confirmation.*
 
-9. In the **'Bill To'** text box, type in the code for your cost centre. If you are unsure of your cost centre, please contact your manager.
-10. Click **"Next."**
+10. In the **'Bill To'** text box, type in the code for your cost centre. If you are unsure of your cost centre, please contact your manager.
+11. Click **"Next."**
 
 ***Note:*** *This concludes the billing steps.*
 
-11. **Review the course information.** The following course information will be listed: **Date**, **Address**, and the **Cancellation & Refund Policy**. Review the employee's information and 'Bill To' information to ensure it is correct.
-12. Click **"Confirm Registration."**
-13. You have now registered your employee for the course! They will see their 'Status' updated on the list of available events.
+12. **Review the course information.** The following course information will be listed: **Date**, **Address**, and the **Cancellation & Refund Policy**. Review the employee's information and 'Bill To' information to ensure it is correct.
+13. Click **"Confirm Registration."**
+14. You have now registered your employee for the course! They will see their 'Status' updated on the list of available events.
 
 ## Getting Ready for the Course
 

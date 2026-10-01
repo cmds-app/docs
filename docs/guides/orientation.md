@@ -23,7 +23,7 @@ Revised: May 29, 2026
     4. First Name
     5. Last Name
     6. Password
-        - » *Note: Your password must be 12+ characters long.*
+        - » *Note: Your password must be at least 12 characters long and include uppercase and lowercase letters, a number, and a symbol. Use only Latin letters, numbers, and symbols.*
     7. Confirm Password
 5. Press **"Continue."**
 6. You are now registered for My Orientations. Please **remember your email and password** as you will need this information to login in the future.

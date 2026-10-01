@@ -26,15 +26,16 @@ Click **"Login with Email"**.
 
 ### Sidebar
 
-- **Home:** click to navigate home at any time.
-- **Profiles:** lists the profiles assigned to your account.
-- **Request Validation:** lists the competencies for which you have assessed your skill and are ready to submit to your validator.
-- **Self-Assessments:** lists the critical and non-critical competencies assigned to you.
-- **Training Plan:** lists your assigned training (default displays incomplete training).
+- **CMDS logo:** click it to return home at any time.
+- **My Development**
+    - **Profiles:** lists the profiles assigned to your account.
+    - **Request Validation:** lists the competencies for which you have assessed your skill and are ready to submit to your validator.
+    - **Self-Assessments:** lists the critical and non-critical competencies assigned to you.
+- Your training plan is not in the side menu; open it with the **Training Plan** shortcut button.
 
 ### Shortcut buttons
 
-- A row of shortcut buttons at the top of your home page gives you quick access to the most commonly used tools in CMDS: **eLearning**, **Orientations**, **Training Plan**, and **Education & Training**. Your organization may also add buttons for its own catalogues.
+- A row of shortcut buttons at the top of your home page gives you quick access to the most commonly used tools in CMDS: **eLearning**, **Training Plan**, and **Education & Training**, plus **Orientations** if your account has orientation access. Your organization may also add buttons for its own catalogues.
 
 ### Home page box
 
@@ -70,7 +71,8 @@ Click **"Login with Email"**.
 
 ### Learning portal
 
-- Contains 4 sections - **Upcoming Training Sessions, College Certificates, Competencies, and Achievements.** If you are enrolled in a program, a **My Programs** section also appears.
+- Contains up to 4 sections - **Upcoming Training Sessions, College Certificates, Competencies, and Achievements.** A section appears only when it applies to you: Upcoming Training Sessions, for example, is hidden when there are no sessions. If you are enrolled in a program, a **My Programs** section also appears.
+- Below it, a **Progress** section shows your progress as circular charts.
 - Each section consists of various tools and functions designed to assist users in performing their responsibilities efficiently and effectively.
 
 ## Self-assessment guide
@@ -83,21 +85,21 @@ There are a variety of ways to access your competencies to perform your self-ass
 - Listed under 'Competencies', click **"Begin Self-Assessment"** or **"View My Self-Assessments"**.
 - **"Begin Self-Assessment"** will bring you to the next competency waiting to be self-assessed.
 - Once you click **"View My Self-Assessments"** click on the competency number for which you would like to self-assess.
-    - NOTE: you can use Criteria to locate a specific competency, category, or criticality.
+    - NOTE: you can use the Criteria tab to locate a specific competency, category, or priority.
 
 ### Method #2: from your profile(s)
 
 - From your home page, click the **"Profiles"** tab.
 - Click on the Profile name that you would like to self-assess on.
 - Click on the competency number for which you would like to self-assess.
-    - NOTE: you can use Criteria to locate a specific competency, category, or criticality.
+    - NOTE: you can use the Criteria tab to locate a specific competency, category, or priority.
 
 ### Method #3: from the side menu
 
 - The side menu is available from any page in CMDS, *except* when completing an e-learning module.
-- Click **"Self-Assessments"** under 'My Competencies' on the side menu.
+- Click **"Self-Assessments"** under 'My Development' on the side menu.
 - Click on the competency number for which you would like to self-assess.
-    - NOTE: you can use Criteria to locate a specific competency, category, or criticality.
+    - NOTE: you can use the Criteria tab to locate a specific competency, category, or priority.
 
 ### Method #4: using your competency summary bar graph
 
@@ -116,7 +118,7 @@ There are a variety of ways to access your competencies to perform your self-ass
 ### Locating specific competencies for validation
 
 - When using any of the above methods, you can isolate a specific competency number, search for key words, isolate critical competencies, and/or search for expired competencies.
-- Expand the 'Criteria' box.
+- Open the **Criteria** tab.
 - Using the dropdowns and search boxes, enter the applicable information and click **"Search"**.
 
 ### Submitting your competencies for validation
@@ -139,7 +141,7 @@ If you have been **assigned** a document for review, an eLearning module for com
 - Display will default to show **ONLY items NOT COMPLETE**.
     - To see BOTH complete and incomplete training, switch the toggle next to "*the completed achievements in my training plan*" from **Hide** to **Show**.
 - Click on the **name** of the achievement you are looking to complete.
-- Review the attachments under "Training Achievements" / "Achievement Downloads" and click **"Sign Off"**.
+- Review the attachments under "Downloads/Resources" and click **"Sign Off"**. Confirm when CMDS asks *"Are you sure you want to sign off on this training?"*
 
 ### Option #2
 
@@ -149,14 +151,14 @@ If you have been **assigned** a document for review, an eLearning module for com
     - A *green flag* means that the training is completed and valid.
     - A *red flag* means that the training is pending or expired.
 - Click on the **name** of the achievement you are looking to complete.
-- Review the attachments under "Training Achievements" / "Achievement Downloads" and click **"Sign Off"**.
+- Review the attachments under "Downloads/Resources" and click **"Sign Off"**. Confirm when CMDS asks *"Are you sure you want to sign off on this training?"*
 
 #### For codes of practice, safe operating practices, additional compliance requirements, site-specific documents, and training guides
 
 - To view what you have been assigned for completion, click the **"Training Plan"** shortcut button OR the **"Education & Training"** shortcut button at the top of your home page.
 - For any of the categories listed above, you are required to **READ/REVIEW** and **SIGN OFF** that you **understand** the content.
 - Click on the document you would like to sign off on.
-- Open the document(s), under "Training Achievements"/"Achievement Downloads", read/review its content.
+- Open the document(s) under "Downloads/Resources" and read/review the content.
 - Click **"Sign Off"**.
 - This will remove the achievement from your training plan and show it as complete.
 
@@ -181,7 +183,7 @@ If you have been **assigned** a document for review, an eLearning module for com
 ## eLearning user guide
 
 - Click the **"eLearning"** shortcut button at the top of your home page.
-- You will see a list of the available modules open in a new screen or tab - modules are displayed alphabetically.
+- You will see a list of the available modules - modules are displayed alphabetically.
     - You can also search by category by expanding the 'Catalogue' name and clicking on the name of the category you are looking for.
 - To access a module, click the title and register for the course by clicking **"Start"**.
 - The module will then display.

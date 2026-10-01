@@ -76,18 +76,23 @@ Click **"Login with Email"**.
 
 ### Sidebar
 
-- **Home:** click to navigate home at any time.
-- **Reports:** brings you to a list to access and run all CMDS reports.
-- **Tools:** brings you to a list of the CMDS tools available to you.
-- **People:** search for users in CMDS.
-- **Profiles:** lists the profiles assigned to your account.
-- **Request Validation:** lists the competencies for which you have assessed your skill and are ready to submit to your validator.
-- **Self-Assessments:** lists the critical and non-critical competencies assigned to you.
-- **Training Plan:** lists your assigned training (default displays incomplete training).
+- **CMDS logo:** click it to return home at any time.
+- **System**
+    - **Reports:** brings you to a list to access and run all CMDS reports.
+    - **Tools:** brings you to a list of the CMDS tools available to you.
+    - **People:** search for users in CMDS.
+    - **Organizations:** your organization and its departments.
+- **My Development**
+    - **Profiles:** lists the profiles assigned to your account.
+    - **Request Validation:** lists the competencies for which you have assessed your skill and are ready to submit to your validator.
+    - **Self-Assessments:** lists the critical and non-critical competencies assigned to you.
+- **Management**
+    - **Achievements**, **Competencies**, **Profiles**, **Programs**, and **Validations:** the libraries you manage for your organization.
+- Which items you see depends on your role. Your training plan is not in the side menu; open it with the **Training Plan** shortcut button.
 
 ### Shortcut buttons
 
-- A row of shortcut buttons at the top of your home page gives you quick access to the most commonly used tools in CMDS: **eLearning**, **Orientations**, **Training Plan**, and **Education & Training**. Your organization may also add buttons for its own catalogues.
+- A row of shortcut buttons at the top of your home page gives you quick access to the most commonly used tools in CMDS: **eLearning**, **Training Plan**, and **Education & Training**, plus **Orientations** if your account has orientation access. Your organization may also add buttons for its own catalogues.
 
 ### Home page box
 
@@ -123,7 +128,8 @@ Click **"Login with Email"**.
 
 ### Learning portal
 
-- Contains 4 sections - **Upcoming Training Sessions, College Certificates, Competencies, and Achievements.** If you are enrolled in a program, a **My Programs** section also appears.
+- Contains up to 4 sections - **Upcoming Training Sessions, College Certificates, Competencies, and Achievements.** A section appears only when it applies to you: Upcoming Training Sessions, for example, is hidden when there are no sessions. If you are enrolled in a program, a **My Programs** section also appears.
+- Below it, a **Progress** section shows your progress as circular charts.
 - Each section contains various tools designed to assist administrators in performing their responsibilities efficiently and effectively.
 
 ## Self-assessment guide
@@ -138,21 +144,21 @@ There are a variety of ways to access your competencies to perform your self-ass
 - Listed under 'Competencies', click **"Begin Self-Assessment"** or **"View My Self-Assessments"**.
 - **"Begin Self-Assessment"** will bring you to the next competency waiting to be self-assessed.
 - Once you click **"View My Self-Assessments"** click on the competency number for which you would like to self-assess.
-    - NOTE: you can use Criteria to locate a specific competency, category, or criticality.
+    - NOTE: you can use the Criteria tab to locate a specific competency, category, or priority.
 
 ### Method #2: from your profile(s)
 
 - From your home page, click the **"Profiles"** tab.
 - Click on the Profile name that you would like to self-assess on.
 - Click on the competency number for which you would like to self-assess.
-    - NOTE: you can use Criteria to locate a specific competency, category, or criticality.
+    - NOTE: you can use the Criteria tab to locate a specific competency, category, or priority.
 
 ### Method #3: from the side menu
 
 - The side menu is available from any page in CMDS, *except* when completing an e-learning module.
-- Click **"Self-Assessments"** under 'My Competencies' on the side menu.
+- Click **"Self-Assessments"** under 'My Development' on the side menu.
 - Click on the competency number for which you would like to self-assess.
-    - NOTE: you can use Criteria to locate a specific competency, category, or criticality.
+    - NOTE: you can use the Criteria tab to locate a specific competency, category, or priority.
 
 ### Method #4: using your competency summary bar graph
 
@@ -171,7 +177,7 @@ There are a variety of ways to access your competencies to perform your self-ass
 ### Locating specific competencies for validation
 
 - When using any of the above methods, you can isolate a specific competency number, search for key words, isolate critical competencies, and/or search for expired competencies.
-- Expand the 'Criteria' box.
+- Open the **Criteria** tab.
 - Using the dropdowns and search boxes, enter the applicable information and click **"Search"**.
 
 ### Submitting your competencies for validation
@@ -194,7 +200,7 @@ If you have been **assigned** a document for review, an eLearning module for com
 - Display will default to show **ONLY items NOT COMPLETE**.
     - To see BOTH complete and incomplete training, switch the toggle next to "*the completed achievements in my training plan*" from **Hide** to **Show**.
 - Click on the **name** of the achievement you are looking to complete.
-- Review the attachments under "Training Achievements" / "Achievement Downloads" and click **"Sign Off"**.
+- Review the attachments under "Downloads/Resources" and click **"Sign Off"**. Confirm when CMDS asks *"Are you sure you want to sign off on this training?"*
 
 ### Option #2
 
@@ -204,14 +210,14 @@ If you have been **assigned** a document for review, an eLearning module for com
     - A *green flag* means that the training is completed and valid.
     - A *red flag* means that the training is pending or expired.
 - Click on the **name** of the achievement you are looking to complete.
-- Review the attachments under "Training Achievements" / "Achievement Downloads" and click **"Sign Off"**.
+- Review the attachments under "Downloads/Resources" and click **"Sign Off"**. Confirm when CMDS asks *"Are you sure you want to sign off on this training?"*
 
 #### For codes of practice, safe operating practices, additional compliance requirements, site-specific documents, and training guides
 
 - To view what you have been assigned for completion, click the **"Training Plan"** shortcut button OR the **"Education & Training"** shortcut button at the top of your home page.
 - For any of the categories listed above, you are required to **READ/REVIEW** and **SIGN OFF** that you **understand** the content.
 - Click on the document you would like to sign off on.
-- Open the document(s), under "Training Achievements"/"Achievement Downloads", read/review its content.
+- Open the document(s) under "Downloads/Resources" and read/review the content.
 - Click **"Sign Off"**.
 - This will remove the achievement from your training plan and show it as complete.
 
@@ -236,7 +242,7 @@ If you have been **assigned** a document for review, an eLearning module for com
 ## eLearning user guide
 
 - Click the **"eLearning"** shortcut button at the top of your home page.
-- You will see a list of the available modules open in a new screen or tab - modules are displayed alphabetically.
+- You will see a list of the available modules - modules are displayed alphabetically.
     - You can also search by category by expanding the 'Catalogue' name and clicking on the name of the category you are looking for.
 - To access a module, click the title and register for the course by clicking **"Start"**.
 - The module will then display.
@@ -272,8 +278,8 @@ If you have been **assigned** a document for review, an eLearning module for com
 
 ## Adding new users to CMDS
 
-- Click on **"People"** under 'General' in the side menu.
-- Expand **"Criteria"** and enter the name of the user you would like to add.
+- Click on **"People"** under 'System' in the side menu.
+- On the **Criteria** tab, enter the name of the user you would like to add.
     - **\*\*Double check that the user you are adding is not already in the system!!!**
 - If the user is not in the system already, click **"Add New Person"**.
 - Enter the person's information - first name, last name, and email are **mandatory** fields.
@@ -282,10 +288,9 @@ If you have been **assigned** a document for review, an eLearning module for com
     - Select **"is employed by this organization"** if the user needs access to the organization / department but should not show up on reports (e.g., an administrator that needs access to multiple departments but should not show up on the reports).
     - Select **"has access to the data for this organization/department"** for individuals not employed with the organization (e.g., external validator).
 - Click **"Save"**.
-    - NOTE: If the name entered is similar to an existing user, the screen will indicate the name is similar to an existing user. Click **"Yes - Add New User"** if the user is new. If the person you are trying to enter already exists in the system, **STOP** and contact <admin_cmds@keyera.com>.
+    - NOTE: If the first and last name match an existing user, the screen will say so. Click **"Yes - Add New Person"** if the user is new. Only system administrators see this button for an exact name match; everyone else is asked to contact the CMDS administrator. If the person you are trying to enter already exists in the system, **STOP** and contact <admin_cmds@keyera.com>.
 - Click the 'Login' tab and change the status to **"Approved"**.
-- Click the 'Groups' tab. Check the appropriate user group for that user.
-    - NOTE: Everyone should be assigned to the **"CMDS Worker"** user group.
+- Every new person is added to the **"CMDS Workers"** group automatically. To give the user another role, check it under **'Roles'** on the 'Login' tab.
 - Click the 'Details' tab and click the **"Enable email notification for this person"** box.
 - Click **"Save"**.
 
@@ -299,18 +304,18 @@ If you have been **assigned** a document for review, an eLearning module for com
 - Click **"Assign Profile"**.
 - Secondary Profiles can be assigned using the same steps, choosing **"Secondary"** in the Type drop down.
 - To return to the user editor screen, click **"Edit User"**.
-- Click the 'Managers and Validators' tab to assign the appropriate manager(s) / supervisor(s) / validator(s).
-- Use the radio button to select **"Manager"**, **"Supervisor"**, or **"Validator"**.
+- Click the 'Reporting Lines' tab to assign the appropriate leader(s) / manager(s) / supervisor(s) / validator(s).
+- Use the radio button to select **"Leader"**, **"Manager"**, **"Supervisor"**, or **"Validator"**.
 - Use the dropdown to select the person to be in that role for the new user.
-- Click **"Add Relationship"**.
+- Click **"Assign"**.
 - For the user to access the system, **you must send them their login information**. Ensure the **"Enable email notification for this person"** box is checked off in the 'Person' tab.
 - Click **"Send Welcome Email"**. A new page will pop up with the automated email generated. You can add content to the email or additional recipients.
 - Click **"Send"**.
 
 ### Modifying profiles assigned to users
 
-- Click on **"People"** under 'General' in the side menu.
-- Expand **'Criteria'** and enter the name of the user whose profile(s) you would like to modify.
+- Click on **"People"** under 'System' in the side menu.
+- On the **Criteria** tab, enter the name of the user whose profile(s) you would like to modify.
 - Once you locate the user on the list, click **"Profiles"** to the right of their name.
 - Click the **"Organization Profiles"** tab. Here you can **remove profiles** assigned to the user.
 - Remove profiles by clicking the **garbage can icon** to the right of the profile.
@@ -326,7 +331,7 @@ If you have been **assigned** a document for review, an eLearning module for com
 
 ### Points to keep in mind
 
-- Yellow exclamation signs next to a user's name indicate the user **has not been assigned a primary profile**.
+- A yellow exclamation sign in a user's 'Profiles' column indicates the user's **primary profile is not fully specified**. Hover over it to see the message.
 - **Confirm** a user is **"Approved"** before sending the Welcome Email.
 - The system requires a **unique and valid email address for all users.**
 - A user can have **more than one Secondary Profile** but can **only have one Primary Profile**. That primary profile should represent the job they are currently performing.
@@ -336,26 +341,26 @@ If you have been **assigned** a document for review, an eLearning module for com
 To be completed ***after*** you have loaded your organization specific documents/links in the system.
 
 - Login to CMDS.
-- Click on **"Tools"** under 'General' in the side menu.
+- Click on **"Tools"** under 'System' in the side menu.
 - Scroll down, under 'Bulk Update', click **"Assign Education & Training to Learners"**.
 - Select an 'Achievement Type' using the dropdown (Example: SOP's, COP's).
-    - For assigning CMDS eLearning modules, change the 'Visibility' drop down to **"All Achievements"** to see the full list of available eLearnings.
+    - For assigning CMDS eLearning modules, change the 'Owner' drop down to **"This Organization and Global"** to see the full list of available eLearnings.
 - Select a **"Category"** to help filter the achievements (this can be left blank).
 - Select the achievements you would like to assign by **checking the box** beside them.
-- Click the **"Users"** tab.
+- Scroll down to the **'Learners'** section.
 - Select the **department** for which you would like to assign the achievement. Check the box for the type of employment if needed to find your selected users.
 - You can choose to make the achievement **Time-Sensitive** by **checking the box and typing an interval of months.**
 - Check the boxes for **"Training Plan"** and **"Required"** if the achievements you are assigning are mandatory.
 - Select the individuals you would like to assign the resources to by **checking the box** next to their name.
-- Once you have **checked the individuals** you would like to receive the selected achievement(s), click **"Add"**.
+- Once you have **checked the individuals** you would like to receive the selected achievement(s), click **"Save"** and confirm.
 
 If the boxes **"Training Plan"** and **"Required"** were checked, the individual(s) will receive the assigned resource to their **Training Plan** and will be required to **"Sign Off"** on the achievement once they have **reviewed the associated material.**
 
 ## Entering time-sensitive safety certificates (individual)
 
 - Login to CMDS.
-- Click on **"People"** under 'General' in the side menu.
-- Expand **'Criteria'** and search to locate the individual you would like to enter the Time Sensitive Safety Certificate(s) for.
+- Click on **"People"** under 'System' in the side menu.
+- On the **Criteria** tab, search to locate the individual you would like to enter the Time Sensitive Safety Certificate(s) for.
 - Once you have located the person in the system, click **"Education"** to the right of their name.
 - Check if the user already has the Time Sensitive Safety Certificate assigned to them. Click the **achievement name** if they do. If they do not have the Time Sensitive Safety Certificate, click **"Add New"**.
     - NOTE: if the achievement was already assigned, please proceed to the next section of this document.
@@ -373,8 +378,8 @@ If the boxes **"Training Plan"** and **"Required"** were checked, the individual
 
 ### Updating an existing time-sensitive safety certificate
 
-- Click on **"People"** under 'General' in the side menu.
-- Expand **'Criteria'** and search to locate the individual you would like to enter the Time Sensitive Safety Certificate(s) for.
+- Click on **"People"** under 'System' in the side menu.
+- On the **Criteria** tab, search to locate the individual you would like to enter the Time Sensitive Safety Certificate(s) for.
 - Once you have located the person in the system, click **"Education"** to the right of their name.
 - Scroll to find the certificate you would like to update.
 - Click on the name of the certificate (e.g., First Aid).
@@ -454,15 +459,15 @@ There are two ways to update organization specific achievements:
 - Upload the new file.
     - **IMPORTANT: The file name must be exactly the same as the existing file name in order to successfully override.**
 - Ensure the box beside **"Overwrite this file if it already exists"** is checked off.
-    - NOTE: *Replacing a document will not require users to re-sign off.* If you would like users to have to re-sign off on the document, please **"Bulk Expire"** the achievement after it has been updated.
+    - NOTE: *Replacing a document will not require users to re-sign off.* If you would like users to have to re-sign off on the document, please expire the achievement after it has been updated, using **"Expire Achievements"** under 'Bulk Update' on the Tools page.
 - Continue to populate the drop downs to match the existing file location.
 - Click **"Submit"**.
     - We recommend you refresh your browser, then check the document to make sure it was successfully replaced.
 
 ### Option 2
 
-- Under 'Libraries' on the side bar, click **"Achievements"**.
-- Expand **"Criteria"** and search for the achievement you would like to update.
+- Click **"Achievements"** under 'Management' in the side menu.
+- On the **Criteria** tab, search for the achievement you would like to update.
 - Click on the **"Title"** and click **"Upload"** under 'Downloads'.
 - From this screen, you can choose to upload a file, a new link, and/or remove any of the existing attachments by clicking the garbage can(s) to the right of the attachment.
     - We recommend you refresh your browser then check the document to make sure it was successfully replaced.
@@ -475,7 +480,7 @@ There are two ways to update organization specific achievements:
 ## Available CMDS reports
 
 - Login to CMDS.
-- Click **"Reports"** under 'General' in the side menu.
+- Click **"Reports"** under 'System' in the side menu.
 - Here you will see all the available CMDS reports.
 - For detailed report guidance, please contact your administrator or account manager.
 
@@ -483,7 +488,7 @@ The following tool tips will help you navigate, generate, and export all availab
 
 - To select the report criteria, click the applicable dropdowns, check the boxes, and click **"OK"** or **click outside of the dropdown** once you select the information.
 - The check box at the very top of the criteria list can be used to select/deselect all options.
-- Use the 'Departments' drop down to select the department(s) you would like to report on. Radio buttons will appear when you can select only **one department**, and check boxes will allow you to select **up to 10 departments**.
+- Use the 'Departments' drop down to select the department(s) you would like to report on. Radio buttons will appear when you can select only **one department**, and check boxes will allow you to select **several departments** (up to 20 on the compliance summary and compliance trend reports).
 - Use the 'Employees' drop down to either leave "All Employees" or choose an employee(s) to run the report on.
 - When running the report on profiles, choose whether you would like the report to be generated on only the **"Only primary profiles"**, **"Profiles that require compliance"**, or **"All profiles"**.
 - Click **"Report"** on the bottom left.
@@ -497,7 +502,7 @@ Companies interested in setting up an API (application programming interface) sh
 
 From your CMDS home page:
 
-- Click **"Tools"** under 'General' in the side menu.
+- Click **"Tools"** under 'System' in the side menu.
 - Under 'Libraries' click **"Programs"**.
 - Click **"Add New Program"**.
 - Under 'Program Name', **type in the name**.
@@ -517,9 +522,9 @@ From your CMDS home page:
 
 From your CMDS home page:
 
-- Click **"Tools"** under 'General' in the side menu.
+- Click **"Tools"** under 'System' in the side menu.
 - Under 'Libraries' click **"Programs"**.
-- Expand **'Criteria'** and search for the template you would like to edit.
+- On the **Criteria** tab, search for the template you would like to edit.
 - Under 'Results' click the **name** of the template.
 - To edit the achievements in the template, expand the **"Achievements"** tab.
 - To edit the settings for the template, expand the **"Settings"** tab.
@@ -534,7 +539,7 @@ From your CMDS home page:
 
 From your CMDS home page:
 
-- Click **"Tools"** under 'General' in the side menu.
+- Click **"Tools"** under 'System' in the side menu.
 - Under 'Bulk Update' click **"Assign Programs to Learners"**.
 - Select the **"Department"** from the drop down.
 - Select the **"Program"** from the drop down.
@@ -542,13 +547,21 @@ From your CMDS home page:
 - Select the **radio button** indicating what should happen to the user(s) existing achievements assigned to them.
     - **"Do nothing"** (the default) makes no changes to any previously assigned achievements.
     - **"Make all unplanned and optional"** sets every previously assigned achievement to not planned and not required.
-    - **"Delete all previously assigned achievements (outside the program)"** removes every existing achievement that is not part of this program.
+    - **"Delete all previously assigned achievements (outside the program)"** removes every existing achievement that is not part of this program. This option is greyed out unless you are a platform operator; contact <admin_cmds@keyera.com> if you need it.
 - Click **"Next"**.
 - Review, then click **"Save"**.
 
+### Reviewing program enrolment requests
+
+When a learner asks to join a paid program, they choose a self-funded or company-sponsored request on the program's page, and the request waits for a decision.
+
+- Only members of the **CMDS Program Enrollment Reviewers** role can approve or reject a request. The role starts empty; contact <admin_cmds@keyera.com> to be added.
+- Reviewers find waiting requests on the **Program Enrollment Request Search** page and open one to see the learner, the program, the funding path, the fee, and when it was submitted.
+- Click **"Approve"** to enrol the learner in the program, or **"Reject"** to decline the request. The learner is notified either way.
+
 ## Setting up email notifications
 
-From your CMDS home page, click **"Tools"** under 'General' in the side menu:
+From your CMDS home page, click **"Tools"** under 'System' in the side menu:
 
 ### Step 1
 
@@ -589,22 +602,20 @@ As an administrator, you can reset a user's password, returning it to the defaul
 
 To do this:
 
-- Go to **"People"** under 'General' in the side menu.
+- Go to **"People"** under 'System' in the side menu.
 - Search for the user and click on their name.
-- Under the **"Login"** tab, click **"Reset Password"**.
-- Click **"OK"** on the popup to confirm the reset.
-- Click **"Save"**.
-- Inform the user of their reset password.
+- Click **"Reset Password"** in the button bar at the top of the 'Person' tab. The password is reset and saved straight away; there is no confirmation and nothing else to save.
+- Read the message CMDS shows, then inform the user of their reset password.
 
 The user will then be able to login once using cmds246 and will be prompted to **change their password,** again to a password of their choice.
 
-This temporary password has a very short expiry date. If they do not login before this password expires, you will have to reset it again so that the "Password Expiry" date resets.
+This temporary password expires after 7 days. If they do not login before this password expires, you will have to reset it again so that the "Password Expiry" date resets.
 
 Passwords are also set to **expire every 6 months**, 6 months from the date the user last changed their password.
 
 You can see a user's expiry date by:
 
-- Going to **"People"** under 'General' in the side menu.
+- Going to **"People"** under 'System' in the side menu.
 - Search for the user and click on their name.
 - Under the **"Login"** tab you will see **"Password Expiry"** and a date.
 - If you know this date will be an issue for the user, you can **modify the expiry date** prior to the password expiring.
