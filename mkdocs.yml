@@ -114,7 +114,6 @@ nav:
           - README files: contributors/conventions/readme-files.md
           - Style guide: contributors/conventions/style-guide.md
           - Task list comment tokens: contributors/conventions/task-list-comment-tokens.md
-          - Version numbers: contributors/conventions/version-numbers.md
           - Video recommendations: contributors/conventions/video-recommendations.md
       - Tools:
           - VS Code: contributors/tools/vscode.md

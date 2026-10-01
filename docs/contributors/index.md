@@ -6,7 +6,7 @@ New to the team? Start with **Conventions** to see how we organize code and name
 
 ## What you'll find here
 
-- **Conventions** - the shared rules we follow across every CMDS repository: folder structure, project names, database and API naming, README files, style guide, task comment tokens, version numbers, and more.
+- **Conventions** - the shared rules we follow across every CMDS repository: folder structure, project names, database and API naming, README files, style guide, task comment tokens, and more. Version numbers follow the [contributing guide](https://github.com/daniel-miller/portfolio/blob/main/CONTRIBUTING.md#version-numbers) shared across all repositories.
 - **Tools** - the tools we recommend and notes on how to install and configure them.
 
 ## Something missing?
