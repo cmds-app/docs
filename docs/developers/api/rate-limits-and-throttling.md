@@ -13,7 +13,7 @@ Requests are counted separately per surface. Your everyday reads and your compli
 | Surface | What it covers | Limit |
 | :--- | :--- | :--- |
 | Default | Every authenticated endpoint that is not one of the below | 300 requests / minute |
-| Reports | `reporting/compliance-summary`, `reporting/monthly-statistics`, `reporting/competency-validations` | 30 requests / minute |
+| Reports | `reporting/compliance-summaries`, `reporting/monthly-statistics`, `reporting/competency-validations` | 30 requests / minute |
 | Sign-in | `auth/login`, `auth/ticket` | 10 requests / 5 minutes, per IP address |
 
 The report surface is tighter because a single report request reads a whole organization's standing and can return a multi-megabyte body. Sign-in is capped per IP address rather than per credential, since a caller signing in does not have one yet; the tighter count blunts brute-force attempts.

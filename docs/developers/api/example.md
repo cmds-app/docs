@@ -7,7 +7,7 @@ This page walks through calling it: what you need first, how to shape the reques
 ## What the endpoint does
 
 ```
-POST /reporting/compliance-summary
+POST /reporting/compliance-summaries
 ```
 
 It scores each selected member against each measurement, per department. The result is a flat list: one row per member, per department, per measurement category. A row carries who the member is, which department the row is for, and their standing on that measurement - a score from 0 to 1, plus the counts behind it.
@@ -52,7 +52,7 @@ The format is chosen with a `?format=` query parameter. Omit it for JSON, the de
 ### curl (Linux / macOS)
 
 ```bash
-curl -X POST "https://api.cmds.app/reporting/compliance-summary" \
+curl -X POST "https://api.cmds.app/reporting/compliance-summaries" \
     -H "Authorization: Bearer vsk_live_your_secret_here" \
     -H "Content-Type: application/json" \
     -d '{
@@ -71,7 +71,7 @@ $body = @'
 }
 '@
 
-curl.exe -X POST "https://api.cmds.app/reporting/compliance-summary" `
+curl.exe -X POST "https://api.cmds.app/reporting/compliance-summaries" `
     -H "Authorization: Bearer $secret" `
     -H "Content-Type: application/json" `
     -d $body
@@ -117,7 +117,7 @@ A few things worth knowing when you read this:
 Add `?format=csv` to receive the same data as a `text/csv` file attachment, one row per member per department per measurement - the same data as the JSON, flattened into its own column names:
 
 ```bash
-curl -X POST "https://api.cmds.app/reporting/compliance-summary?format=csv" \
+curl -X POST "https://api.cmds.app/reporting/compliance-summaries?format=csv" \
     -H "Authorization: Bearer vsk_live_your_secret_here" \
     -H "Content-Type: application/json" \
     -d '{ "departments": ["3f2504e0-4f89-41d3-9a0c-0305e82c3301"] }' \

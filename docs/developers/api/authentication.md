@@ -23,7 +23,7 @@ The shape is `vsk_<environment>_<random>`, after the pattern Stripe and Cloudfla
 Access is a grant, not self-service. Before you can generate a working secret, an operator has to enable API access for your account on the **Security > Accounts** page. Two grants are kept apart:
 
 - **API access.** Whether your account may hold and use a secret at all.
-- **Report access.** Whether that secret may reach the reporting surface (`reporting/compliance-summary`, `reporting/monthly-statistics`, and `reporting/competency-validations`), which reads a whole organization's standing and is gated more tightly than the rest of the API.
+- **Report access.** Whether that secret may reach the reporting surface (`reporting/compliance-summaries`, `reporting/monthly-statistics`, and `reporting/competency-validations`), which reads a whole organization's standing and is gated more tightly than the rest of the API.
 
 Granting report access turns API access on with it, since a secret that may report but may not call would be refused on every request.
 

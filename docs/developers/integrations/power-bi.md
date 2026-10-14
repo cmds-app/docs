@@ -36,7 +36,7 @@ let
     Response = Web.Contents(
         BaseUrl,
         [
-            RelativePath = "reporting/compliance-summary",
+            RelativePath = "reporting/compliance-summaries",
             Headers = [
                 #"Authorization" = "Bearer " & Secret,
                 #"Content-Type" = "application/json"

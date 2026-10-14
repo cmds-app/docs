@@ -13,7 +13,7 @@ The API uses the standard methods. A read names a thing, not an action performed
 | `PUT` | Replace or configure a resource |
 | `DELETE` | Remove or unconfigure a resource |
 
-Two conventions are worth knowing. A `POST` that queries a collection carries a `/search` suffix (for example `certification/tickets/search`), which leaves a bare `POST` to a collection free to mean "create" for as long as this API lives. A report chooses its rendering with a `?format=` parameter rather than a `/search` suffix, because choosing a format commissions an artifact rather than filtering a set. Most reports are a `GET`; `reporting/compliance-summary` is a `POST`, because its filters are too large for a query string.
+Two conventions are worth knowing. A `POST` that queries a collection carries a `/search` suffix (for example `certification/tickets/search`), which leaves a bare `POST` to a collection free to mean "create" for as long as this API lives. A report chooses its rendering with a `?format=` parameter rather than a `/search` suffix, because choosing a format commissions an artifact rather than filtering a set. Most reports are a `GET`; `reporting/compliance-summaries` is a `POST`, because its filters are too large for a query string.
 
 ## Request bodies
 
