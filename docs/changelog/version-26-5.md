@@ -1,6 +1,6 @@
 # Version 26.5
 
-This update to the Live environment is scheduled for October 7, 2026 at 8:00 PM MDT.
+This update was released to the Live environment on October 7, 2026 at 8:00 PM MDT.
 
 Version 26.5 is a major release. It updates 116 pages across the platform, along with several shared components used throughout CMDS. These notes cover only the pages and features used by CMDS.
 
