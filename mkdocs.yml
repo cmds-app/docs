@@ -98,6 +98,7 @@ nav:
           - Authentication: developers/api/authentication.md
           - Request/response formats: developers/api/request-and-response-formats.md
           - Example: developers/api/example.md
+          - Reporting: developers/api/reporting.md
           - Rate limits and throttling: developers/api/rate-limits-and-throttling.md
       - Resources:
           - .NET: developers/resources/dotnet-versions.md
