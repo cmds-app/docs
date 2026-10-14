@@ -1,4 +1,4 @@
-# Worked example: the compliance summary
+# Example: compliance summary reporting
 
 The compliance summary answers one of the most important questions for companies using CMDS:
 
@@ -170,10 +170,10 @@ In practice: name a department, or name members together with the measurements y
 
 ## How fresh is the data?
 
-The report is calculated when you call it, from this platform's copies of CMDS data rather than from a stored result. How current those copies are depends on what changed:
+The report is calculated when you call it, from copies of live CMDS data rather than from a direct connection to the live operational platform. How current those copies are depends on what changed:
 
-- **Records.** Validations, tickets, designations, memberships, and accounts are copied every hour, so a change made in CMDS typically shows up within the hour.
-- **Definitions.** Departments, profiles, competencies, and achievement types are copied once a day, so a change to one shows up the next day.
-- **Expiry.** Expiry is judged at the moment you call, so a validation or ticket that expired this morning counts as expired now, without waiting for a copy.
+- **Records.** Validations, tickets, designations, memberships, and accounts are copied every hour, so a change made in CMDS is visible to the API within the hour.
+- **Definitions.** Departments, profiles, competencies, and achievement types are copied once a day, so these changes are available through the API the next day.
+- **Expiry.** Expiry is calculated when you send your request to the API, so a validation or ticket that expired this morning counts as expired immediately, without waiting for a copy.
 
-Two calls an hour apart can return different numbers even when nobody changed anything, because an expiry date passed or the hourly copy landed.
+Two API requests, one hour apart from each other, can return different results even when nobody has changed any data, following an expiry date or the hourly copy.
