@@ -26,7 +26,7 @@ You need three things in place:
 
 1. **An API secret.** This is the credential you send with the request: either the API client secret shown on your profile page in CMDS V4, or a personal secret you generate on your account page in this platform. Both need the Developer role - see [Authentication](authentication.md).
 2. **Report access.** The compliance report reads your entire organization's status, so access to it is more restricted than other parts of the API. An operator must grant report access to your account on the Security > Accounts page (in addition to the Developer role). Without it the endpoint answers `403`, even with a working secret.
-3. **Your base address.** Use the environment you are integrating against - `https://test-api.cmds.app` (Test) while you build, and `https://api.cmds.app` (Live) when your integration is ready. See [Introduction](introduction.md).
+3. **Your base address.** Use the environment you are integrating against - `https://test-api.cmds.app` (Test) while you build, and `https://live-api.cmds.app` (Live) when your integration is ready. See [Introduction](introduction.md).
 
 Your secret belongs to your account in one organization, so you do not send a request header that identifies your company (`X-Company`). A request that names a different company in that header is refused with `403`.
 
@@ -127,7 +127,7 @@ A few things worth knowing when you read this:
 Add `?format=csv` to receive the same data as a `text/csv` file attachment, one row per member per department per measurement - the same data as the JSON, flattened into its own column names:
 
 ```bash
-curl -X POST "https://api.cmds.app/reporting/compliance-summaries?format=csv" \
+curl -X POST "https://live-api.cmds.app/reporting/compliance-summaries?format=csv" \
     -H "Authorization: Bearer your_client_secret_here" \
     -H "Content-Type: application/json" \
     -d '{ "departments": ["3f2504e0-4f89-41d3-9a0c-0305e82c3301"] }' \

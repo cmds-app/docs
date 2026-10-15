@@ -11,12 +11,12 @@ The API has its own host per environment. Append a route directly to it - there 
 
 | Environment | API base address | For |
 | :--- | :--- | :--- |
-| Live | `https://api.cmds.app` | Production - real data |
+| Live | `https://live-api.cmds.app` | Production - real data |
 | Test | `https://test-api.cmds.app` | Building and validating an integration before it goes Live |
 
 Every request must be secured over HTTPS on port 443.
 
-Throughout these pages, an endpoint is written as its route relative to that base - `me/client-secret` means `https://api.cmds.app/me/client-secret` on Live. Where an example needs a full URL, it uses Live.
+Throughout these pages, an endpoint is written as its route relative to that base - `me/client-secret` means `https://live-api.cmds.app/me/client-secret` on Live. Where an example needs a full URL, it uses Live.
 
 ## Naming your organization
 

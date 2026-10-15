@@ -59,7 +59,7 @@ A personal secret carries its own organization - the one you generated it under 
 #### curl (Linux / macOS)
 
 ```bash
-curl "https://api.cmds.app/me/client-secret" \
+curl "https://live-api.cmds.app/me/client-secret" \
     -H "Authorization: Bearer vsk_live_your_secret_here"
 ```
 
@@ -68,7 +68,7 @@ curl "https://api.cmds.app/me/client-secret" \
 ```powershell
 $secret = "vsk_live_your_secret_here"
 
-curl.exe "https://api.cmds.app/me/client-secret" `
+curl.exe "https://live-api.cmds.app/me/client-secret" `
     -H "Authorization: Bearer $secret"
 ```
 

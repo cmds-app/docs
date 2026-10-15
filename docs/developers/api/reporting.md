@@ -16,7 +16,7 @@ Every request needs the same three things:
 
 - **Your API secret**, sent in the `Authorization` header as the word `Bearer`, a space, and the secret: `Authorization: Bearer your_client_secret_here`. Either the API client secret from Developer Settings on your CMDS profile page or a personal secret works on every endpoint here. Both need the Developer role. See [Authentication](authentication.md).
 - **Report access**, for the four endpoints marked above. An operator grants it on the Security > Accounts page. Without it those endpoints answer `403`.
-- **The base address** of the environment you are calling: `https://test-api.cmds.app` while you build, `https://api.cmds.app` when your integration is ready.
+- **The base address** of the environment you are calling: `https://test-api.cmds.app` while you build, `https://live-api.cmds.app` when your integration is ready.
 
 Your secret belongs to your account in one organization, and every endpoint here reports on that organization alone. You do not send an `X-Company` header.
 

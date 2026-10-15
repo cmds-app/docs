@@ -12,7 +12,7 @@ You need the same three things as the worked example:
 
 1. **A personal API secret.** An operator enables API access for your account, then you generate the secret on your account page. See [Authentication](../api/authentication.md).
 2. **Report access.** The compliance summary is gated more tightly than the rest of the API. An operator grants it on the **Security > Accounts** page. Without it, every refresh fails with `403`.
-3. **Your base address.** Use `https://test-api.cmds.app` while you build the report, and `https://api.cmds.app` once it is ready for production.
+3. **Your base address.** Use `https://test-api.cmds.app` while you build the report, and `https://live-api.cmds.app` once it is ready for production.
 
 You also need Power BI Desktop, and the department ids you want to report on.
 
@@ -76,7 +76,7 @@ Select **Close & Apply** to load the table into your report.
 
 ## Step 4: Publish and schedule a refresh
 
-When the report is ready, generate a personal secret on Live (a Test secret does not authenticate there), change `BaseUrl` to `https://api.cmds.app` and `Secret` to the Live secret, publish it to the Power BI service, and set up a scheduled refresh on the semantic model. When the service asks for data source credentials, choose **Anonymous** again.
+When the report is ready, generate a personal secret on Live (a Test secret does not authenticate there), change `BaseUrl` to `https://live-api.cmds.app` and `Secret` to the Live secret, publish it to the Power BI service, and set up a scheduled refresh on the semantic model. When the service asks for data source credentials, choose **Anonymous** again.
 
 The report reads the same snapshot the API does, so there is little point refreshing it more often than that snapshot changes. A daily refresh suits most compliance dashboards.
 
