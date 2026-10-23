@@ -2,13 +2,13 @@
 
 Welcome to the documentation site for CMDS. Use the tabs above to jump to a specific section, or pick a starting point below.
 
-New to CMDS? Start with [Environments](environments.md) to learn what each environment is for and where to log in.
+New to CMDS? Start with [Environments](environments.md) to learn what each environment is for and where to sign in.
 
 ## Sections
 
 - [**Help Centre**](help/index.md) - orientation for new users, quick-start tips, and links to support, blog posts, guides, and terminology
 - [**Guides**](guides/index.md) - role-based guides for learners, validators, and administrators, plus orientation and course registration workflows
 - [**SCORM**](scorm/index.md) - SCORM and xAPI content delivery using CMDS, glossary of terms, and how to add a SCORM package to a CMDS course
-- [**Developers**](developers/index.md) - API reference (authentication, formats, rate limits), integrations (Power BI, Safe Exam Browser, SSO), and other technical resources
+- [**Developers**](developers/index.md) - API reference (authentication, request/response formats, reporting, rate limits), integrations (Power BI), and other technical resources
 - [**Contributors**](contributors/index.md) - developer standards applied across the CMDS codebase (including conventions and recommended tools)
 - [**Changelog**](changelog/index.md) - release dates, version updates, and what's new
